@@ -10,8 +10,7 @@ por WhatsApp.
 
 ## Demo
 
-**https://demos.emp2web.com/arreglodelavadoras** *(pendiente de publicar; ver
-`conocimiento_generado/PUBLICAR.md`)*
+**https://demos.emp2web.com/arreglodelavadoras**
 
 La rama `main` tiene el código. La rama `gh-pages` tiene solo el sitio compilado y es la que
 sirve GitHub Pages. Para actualizar la demo:

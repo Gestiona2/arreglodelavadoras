@@ -35,9 +35,8 @@ El script:
 
 La rama `main` conserva el código. La rama `gh-pages` es la que sirve GitHub Pages.
 
-**Antes de la primera publicación** hay que crear el repositorio en GitHub
-(`Gestiona2/arreglodelavadoras`) y ajustar la dirección dentro del script si cambia el
-nombre. Ver `PENDIENTES.md`.
+El repositorio ya existe (`Gestiona2/arreglodelavadoras`) y la demo está publicada. No hay
+que crear nada antes de publicar; solo correr el script.
 
 ## Publicar en producción
 

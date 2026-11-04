@@ -70,10 +70,11 @@ bien redactadas, pero **no han sido revisadas por un abogado**. Antes de producc
 
 ## 6. Repositorio y demo
 
-- El repositorio `Gestiona2/arreglodelavadoras` **todavía no existe**. Hay que crearlo en
-  GitHub y ajustar `scripts/publicar-demo.sh` si el nombre cambia.
-- La demo aún no se ha publicado. Cuando se publique, actualizar esta línea y la de
-  `PUBLICAR.md`.
+- Repositorio: [Gestiona2/arreglodelavadoras](https://github.com/Gestiona2/arreglodelavadoras)
+  (público, rama `main` con el código y `gh-pages` con el sitio compilado).
+- Demo publicada: **https://demos.emp2web.com/arreglodelavadoras**
+- Falta el repositorio del cliente. Cuando el dueño cree el suyo, se cambia el remoto de
+  `main` y se ajusta `scripts/publicar-demo.sh` si cambia el nombre.
 
 ## 7. Búsqueda en Google
 

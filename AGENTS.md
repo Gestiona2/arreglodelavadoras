@@ -64,8 +64,8 @@ no está en `src/datos/`, **pídeselo confirmado**. No lo deduzcas del sitio ant
 
 ## Publicar
 
-La demo está en **https://demos.emp2web.com/arreglodelavadoras** (ver `PUBLICAR.md`). Si aún
-no se ha publicado, el script `scripts/publicar-demo.sh` es el que lo hace.
+La demo está publicada en **https://demos.emp2web.com/arreglodelavadoras** y se actualiza
+con `bash scripts/publicar-demo.sh` (ver `PUBLICAR.md`).
 
 1. Cambiar.
 2. Mostrar en la vista previa y decir qué mirar.
