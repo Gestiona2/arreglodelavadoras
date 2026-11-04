@@ -1,0 +1,415 @@
+---
+/**
+ * Layout general. Aquí vive lo que se repite en todas las páginas:
+ * metadatos, menú, pie, botón de tema y el botón flotante de WhatsApp.
+ * El contenido editable NO se escribe aquí: sale de src/datos/.
+ */
+import "../styles/global.css";
+import sitio from "../datos/sitio.json";
+import servicios from "../datos/servicios.json";
+import { ruta, enlace } from "../lib/ruta.js";
+import Icon from "../components/Icon.astro";
+
+interface Props {
+  titulo: string;
+  descripcion?: string;
+  activa?: string;
+  imagen?: string;
+}
+const {
+  titulo,
+  descripcion = sitio.descripcion,
+  activa = "",
+  imagen = "/brand/og.jpg",
+} = Astro.props;
+
+const origen = Astro.site ?? new URL(sitio.dominio);
+const url = new URL(Astro.url.pathname, origen);
+const urlSitio = new URL(import.meta.env.BASE_URL, origen).href;
+const ogImagen = new URL(ruta(imagen), origen);
+
+// Las fuentes se declaran aquí (y no en global.css) para que respeten la base
+// del sitio cuando se publica en una subcarpeta, como la demo.
+const fuentes = `
+@font-face{font-family:"Sora";src:url("${ruta("/fonts/sora-latin.woff2")}") format("woff2");font-style:normal;font-weight:300 800;font-display:swap}
+@font-face{font-family:"Instrument Sans";src:url("${ruta("/fonts/instrument-sans-latin.woff2")}") format("woff2");font-style:normal;font-weight:400 700;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url("${ruta("/fonts/jetbrains-mono-latin.woff2")}") format("woff2");font-style:normal;font-weight:400 600;font-display:swap}
+`;
+
+const datosEstructurados = {
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  name: sitio.nombre,
+  description: sitio.descripcion,
+  url: urlSitio,
+  image: ogImagen.href,
+  logo: new URL(ruta("/brand/logo-tinta.png"), origen).href,
+  telephone: `+57 ${sitio.telefono}`,
+  email: sitio.correo,
+  priceRange: "$$",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: sitio.direccion,
+    addressLocality: sitio.ciudad,
+    addressRegion: sitio.departamento,
+    addressCountry: "CO",
+  },
+  areaServed: sitio.cobertura.map((c) => ({ "@type": "City", name: c })),
+  openingHours: "Mo-Sa 08:00-18:00",
+  sameAs: sitio.redes.filter((r) => r.href).map((r) => r.href),
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Servicios técnicos",
+    itemListElement: servicios.items.map((s) => ({
+      "@type": "Offer",
+      itemOffered: { "@type": "Service", name: s.nombre, url: new URL(ruta(`/${s.slug}/`), origen).href },
+    })),
+  },
+};
+---
+
+<!doctype html>
+<html lang="es-CO">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titulo}</title>
+    <meta name="description" content={descripcion} />
+    <link rel="canonical" href={url.href} />
+    <link rel="icon" href={ruta("/brand/favicon.png")} type="image/png" sizes="512x512" />
+    <link rel="apple-touch-icon" href={ruta("/brand/apple-touch-icon.png")} />
+    <meta name="theme-color" content="#08070f" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:site_name" content={sitio.nombre} />
+    <meta property="og:title" content={titulo} />
+    <meta property="og:description" content={descripcion} />
+    <meta property="og:url" content={url.href} />
+    <meta property="og:image" content={ogImagen.href} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={titulo} />
+    <meta name="twitter:description" content={descripcion} />
+    <meta name="twitter:image" content={ogImagen.href} />
+
+    <link rel="preload" href={ruta("/fonts/sora-latin.woff2")} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={ruta("/fonts/instrument-sans-latin.woff2")} as="font" type="font/woff2" crossorigin />
+    <style is:inline set:html={fuentes}></style>
+    <noscript>
+      <style>
+        .reveal, .reveal-up, .reveal-left, .reveal-right {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
+
+    <script type="application/ld+json" set:html={JSON.stringify(datosEstructurados)} />
+
+    <!-- Tema antes de pintar: evita el destello blanco al entrar en oscuro. -->
+    <script is:inline define:vars={{ clave: sitio.claveTema }}>
+      (function () {
+        try {
+          var t = localStorage.getItem(clave) || "light";
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+  </head>
+
+  <body>
+    <a class="salto-contenido" href="#contenido">Saltar al contenido</a>
+    <div class="progreso" id="progreso" aria-hidden="true"></div>
+
+    <!-- ==================== MENÚ ==================== -->
+    <header class="nav" id="nav">
+      <div class="container nav-inner">
+        <a href={ruta("/")} class="nav-logo" aria-label={`${sitio.nombre} — ${sitio.tagline}`}>
+          <img class="logo-claro" src={ruta("/brand/logo-tinta.png")} alt={sitio.nombre} width="503" height="79" />
+          <img class="logo-oscuro" src={ruta("/brand/logo-blanco.png")} alt={sitio.nombre} width="503" height="79" />
+        </a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+          {sitio.menu.map((item) =>
+            item.hijos ? (
+              <div class:list={["nav-grupo", { activo: activa === item.id }]}>
+                <button class="nav-grupo-boton" aria-expanded="false" aria-controls={`sub-${item.id}`}>
+                  {item.texto}
+                  <Icon nombre="chevron-down" tamano={16} />
+                </button>
+                <div class="nav-sub" id={`sub-${item.id}`}>
+                  <a href={enlace(item.href)} class="nav-sub-todos">
+                    <span>Ver todos los servicios</span>
+                    <Icon nombre="arrow-right" tamano={18} />
+                  </a>
+                  <div class="nav-sub-grid">
+                    {item.hijos.map((h) => (
+                      <a href={enlace(h.href)}>
+                        <Icon nombre={h.icono} tamano={20} />
+                        <span>{h.texto}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <a href={enlace(item.href)} class={activa === item.id ? "activo" : ""}>{item.texto}</a>
+            )
+          )}
+
+          <div class="menu-datos">
+            <a href={`tel:+57${sitio.whatsapp.slice(2)}`}><Icon nombre="phone" tamano={18} /> {sitio.telefono}</a>
+            <a href={`mailto:${sitio.correo}`}><Icon nombre="mail" tamano={18} /> {sitio.correo}</a>
+            <span><Icon nombre="map-pin" tamano={18} /> {sitio.direccion}, {sitio.ciudad}</span>
+            <a href={enlace(sitio.ctaPrincipal.href)} class="btn btn-primary">{sitio.ctaPrincipal.texto}</a>
+          </div>
+        </nav>
+
+        <div class="nav-actions">
+          <button id="botonTema" class="boton-icono" aria-label="Cambiar entre tema claro y oscuro">
+            <Icon nombre="moon" tamano={19} />
+          </button>
+          <a href={enlace(sitio.ctaPrincipal.href)} class="btn btn-primary nav-cta">
+            {sitio.ctaPrincipal.texto}
+          </a>
+          <button id="botonMenu" class="boton-icono boton-menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+            <Icon nombre="menu" tamano={22} />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <slot />
+    </main>
+
+    <!-- ==================== PIE ==================== -->
+    <footer class="pie">
+      <div class="container">
+        <div class="pie-top">
+          <div class="pie-marca">
+            <img src={ruta("/brand/logo-blanco.png")} alt={sitio.nombre} width="503" height="79" loading="lazy" />
+            <p>{sitio.pie.descripcion}</p>
+            <div class="pie-redes">
+              {sitio.redes.filter((r) => r.href).map((r) => (
+                <a href={r.href} target="_blank" rel="noopener" aria-label={r.nombre}>
+                  <Icon nombre={r.icono} tamano={20} />
+                </a>
+              ))}
+              <a href={`https://wa.me/${sitio.whatsapp}`} target="_blank" rel="noopener" aria-label="WhatsApp">
+                <Icon nombre="whatsapp" tamano={20} />
+              </a>
+            </div>
+          </div>
+
+          <div class="pie-col">
+            <h3>{sitio.pie.tituloServicios}</h3>
+            <nav aria-label="Servicios">
+              {servicios.items.map((s) => <a href={ruta(`/${s.slug}/`)}>{s.nombre}</a>)}
+            </nav>
+          </div>
+
+          <div class="pie-col">
+            <h3>{sitio.pie.tituloCobertura}</h3>
+            <ul class="pie-ciudades">
+              {sitio.cobertura.map((c) => <li>{c}</li>)}
+            </ul>
+            <p class="pie-horario"><Icon nombre="clock" tamano={16} /> {sitio.horario}</p>
+          </div>
+
+          <div class="pie-col pie-contacto">
+            <h3>{sitio.pie.tituloContacto}</h3>
+            <a href={`tel:+57${sitio.whatsapp.slice(2)}`}><Icon nombre="phone" tamano={17} /> {sitio.telefono}</a>
+            <a href="tel:+576082779514"><Icon nombre="phone" tamano={17} /> {sitio.fijo}</a>
+            <a href={`mailto:${sitio.correo}`}><Icon nombre="mail" tamano={17} /> {sitio.correo}</a>
+            <span><Icon nombre="map-pin" tamano={17} /> {sitio.direccion}<br />{sitio.ciudad}, {sitio.departamento}</span>
+            <a href={enlace(sitio.ctaPrincipal.href)} class="btn btn-borde pie-cta">
+              {sitio.ctaPrincipal.texto}
+              <Icon nombre="arrow-right" tamano={18} />
+            </a>
+          </div>
+        </div>
+
+        <div class="pie-marca-grande" aria-hidden="true">{sitio.nombre.toUpperCase()}</div>
+
+        <div class="pie-bottom">
+          <p>&copy; {new Date().getFullYear()} {sitio.razonSocial}. {sitio.pie.derechos}</p>
+          <nav class="legales" aria-label="Enlaces legales">
+            {sitio.legales.map((l) => <a href={enlace(l.href)}>{l.texto}</a>)}
+          </nav>
+        </div>
+        <p class="pie-aviso">{sitio.pie.aviso}</p>
+      </div>
+    </footer>
+
+    <a
+      href={`https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(sitio.mensajes.general)}`}
+      class="flota-wa"
+      target="_blank"
+      rel="noopener"
+      aria-label={sitio.pie.waAria}
+    >
+      <Icon nombre="whatsapp" tamano={26} />
+      <span>{sitio.pie.flotante}</span>
+    </a>
+
+    <!-- Barra fija para celular: las dos acciones que convierten. -->
+    <div class="barra-movil" aria-label="Contacto rápido">
+      <a href={`tel:+57${sitio.whatsapp.slice(2)}`} class="barra-movil-item">
+        <Icon nombre="phone" tamano={20} />
+        {sitio.pie.llamar}
+      </a>
+      <a
+        href={`https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(sitio.mensajes.general)}`}
+        class="barra-movil-item barra-movil-wa"
+        target="_blank"
+        rel="noopener"
+      >
+        <Icon nombre="whatsapp" tamano={20} />
+        {sitio.ctaPrincipal.texto}
+      </a>
+    </div>
+
+    <button class="volver-arriba" id="volverArriba" aria-label="Volver arriba">
+      <Icon nombre="arrow-up" tamano={20} />
+    </button>
+
+    <script is:inline define:vars={{ clave: sitio.claveTema }}>
+      (function () {
+        const $ = (s, c = document) => c.querySelector(s);
+        const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
+        const raiz = document.documentElement;
+        const menosMovimiento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        /* ---------- Tema claro / oscuro ---------- */
+        const botonTema = $("#botonTema");
+        const pintarBotonTema = () => {
+          const oscuro = raiz.getAttribute("data-theme") === "dark";
+          botonTema.innerHTML = oscuro
+            ? '<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>'
+            : '<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>';
+          botonTema.setAttribute("aria-label", oscuro ? "Cambiar a tema claro" : "Cambiar a tema oscuro");
+        };
+        botonTema?.addEventListener("click", () => {
+          const siguiente = raiz.getAttribute("data-theme") === "dark" ? "light" : "dark";
+          raiz.setAttribute("data-theme", siguiente);
+          try { localStorage.setItem(clave, siguiente); } catch (e) {}
+          pintarBotonTema();
+        });
+        pintarBotonTema();
+
+        /* ---------- Menú en celular ---------- */
+        const botonMenu = $("#botonMenu");
+        const navLinks = $("#navLinks");
+        const cerrarMenu = () => {
+          navLinks.classList.remove("abierto");
+          botonMenu.setAttribute("aria-expanded", "false");
+          botonMenu.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>';
+          document.body.classList.remove("menu-abierto");
+        };
+        botonMenu?.addEventListener("click", () => {
+          const abierto = navLinks.classList.toggle("abierto");
+          botonMenu.setAttribute("aria-expanded", String(abierto));
+          document.body.classList.toggle("menu-abierto", abierto);
+          botonMenu.innerHTML = abierto
+            ? '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>'
+            : '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>';
+        });
+        $$("#navLinks a").forEach((a) => a.addEventListener("click", cerrarMenu));
+        document.addEventListener("keydown", (e) => { if (e.key === "Escape") cerrarMenu(); });
+        window.addEventListener("resize", () => { if (window.innerWidth > 1024) cerrarMenu(); });
+
+        /* ---------- Submenú de servicios ---------- */
+        $$(".nav-grupo-boton").forEach((boton) => {
+          boton.addEventListener("click", () => {
+            const grupo = boton.parentElement;
+            const abierto = grupo.classList.toggle("sub-abierto");
+            boton.setAttribute("aria-expanded", String(abierto));
+          });
+        });
+        $$(".nav-grupo").forEach((grupo) => {
+          grupo.addEventListener("mouseenter", () => {
+            if (window.innerWidth > 1024) grupo.querySelector(".nav-grupo-boton").setAttribute("aria-expanded", "true");
+          });
+          grupo.addEventListener("mouseleave", () => {
+            if (window.innerWidth > 1024) {
+              grupo.classList.remove("sub-abierto");
+              grupo.querySelector(".nav-grupo-boton").setAttribute("aria-expanded", "false");
+            }
+          });
+        });
+
+        /* ---------- Menú con fondo al bajar + progreso ---------- */
+        const nav = $("#nav");
+        const volverArriba = $("#volverArriba");
+        const progreso = $("#progreso");
+        const alBajar = () => {
+          const y = window.scrollY;
+          nav.classList.toggle("bajado", y > 16);
+          volverArriba.classList.toggle("visible", y > 700);
+          if (progreso) {
+            const alto = document.documentElement.scrollHeight - window.innerHeight;
+            progreso.style.transform = `scaleX(${alto > 0 ? Math.min(y / alto, 1) : 0})`;
+          }
+        };
+        window.addEventListener("scroll", alBajar, { passive: true });
+        alBajar();
+        volverArriba?.addEventListener("click", () =>
+          window.scrollTo({ top: 0, behavior: menosMovimiento ? "auto" : "smooth" })
+        );
+
+        /* ---------- Apariciones al bajar ---------- */
+        const apariciones = $$(".reveal-up, .reveal-left, .reveal-right, .reveal-pop, .reveal");
+        $$("[data-stagger]").forEach((grupo) => {
+          Array.from(grupo.children).forEach((hijo, i) => hijo.style.setProperty("--i", i));
+        });
+
+        if (menosMovimiento || !("IntersectionObserver" in window)) {
+          apariciones.forEach((el) => el.classList.add("seen"));
+        } else {
+          const observador = new IntersectionObserver(
+            (entradas) => {
+              entradas.forEach((entrada) => {
+                if (entrada.isIntersecting) {
+                  entrada.target.classList.add("seen");
+                  observador.unobserve(entrada.target);
+                }
+              });
+            },
+            { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
+          );
+          apariciones.forEach((el) => observador.observe(el));
+        }
+
+        /* ---------- Contadores ---------- */
+        const nums = $$("[data-contar]");
+        if (nums.length) {
+          const pintar = (el) => {
+            const destino = parseInt(el.dataset.contar, 10) || 0;
+            const sufijo = el.dataset.sufijo || "";
+            if (menosMovimiento) { el.textContent = destino + sufijo; return; }
+            const inicio = performance.now();
+            const paso = (ahora) => {
+              const t = Math.min((ahora - inicio) / 1600, 1);
+              const valor = Math.round(destino * (1 - Math.pow(1 - t, 3)));
+              el.textContent = valor + sufijo;
+              if (t < 1) requestAnimationFrame(paso);
+            };
+            requestAnimationFrame(paso);
+          };
+          if (!("IntersectionObserver" in window)) {
+            nums.forEach(pintar);
+          } else {
+            const io = new IntersectionObserver((es) => {
+              es.forEach((e) => { if (e.isIntersecting) { pintar(e.target); io.unobserve(e.target); } });
+            }, { threshold: 0.5 });
+            nums.forEach((n) => io.observe(n));
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "_comentario": "Contenido de la página 404.",
+  "meta": {
+    "titulo": "Página no encontrada · Arreglo de Lavadoras",
+    "descripcion": "La página que buscas no existe o cambió de dirección. Vuelve al inicio o escríbenos por WhatsApp."
+  },
+  "codigo": "404",
+  "titulo": "Esta página se desconectó",
+  "texto": "Puede que el enlace haya cambiado o que el equipo ya esté reparado. Vuelve al inicio, revisa los servicios o escríbenos y te orientamos.",
+  "inicio": "Volver al inicio",
+  "servicios": "Ver servicios",
+  "whats": "Escribir por WhatsApp"
+}

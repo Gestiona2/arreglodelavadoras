@@ -1,0 +1,95 @@
+{
+  "_comentario": "Contenido de /contacto/ y del formulario de agendamiento. El formulario NO envía a un servidor: arma el mensaje y abre WhatsApp (decisión del cliente, sin backend).",
+
+  "meta": {
+    "titulo": "Contacto y agendamiento · Arreglo de Lavadoras",
+    "descripcion": "Agenda tu visita por WhatsApp. Reparación de lavadoras, neveras, calentadores, estufas, hornos, secadoras y lavavajillas en Ibagué y 6 ciudades."
+  },
+
+  "hero": {
+    "eyebrow": "Contacto",
+    "titulo": "Agenda en dos minutos",
+    "texto": "Completa el formulario y se abre WhatsApp con el mensaje listo para enviar. No necesitas crear cuenta ni esperar un correo de confirmación."
+  },
+
+  "canales": {
+    "titulo": "También puedes escribirnos por",
+    "items": [
+      {
+        "icono": "whatsapp",
+        "titulo": "WhatsApp",
+        "texto": "312 344 4325",
+        "href": "https://wa.me/573123444325",
+        "nota": "Respuesta en horario de atención"
+      },
+      {
+        "icono": "phone",
+        "titulo": "Teléfono fijo",
+        "texto": "608 277 9514",
+        "href": "tel:+576082779514",
+        "nota": "Ibagué"
+      },
+      {
+        "icono": "mail",
+        "titulo": "Correo",
+        "texto": "contacto@arreglodelavadoras.com.co",
+        "href": "mailto:contacto@arreglodelavadoras.com.co",
+        "nota": "Para cotizaciones y facturación"
+      }
+    ]
+  },
+
+  "oficina": {
+    "titulo": "Base en Ibagué",
+    "direccion": "Cra. 23 #64-33, Ibagué, Tolima",
+    "nota": "Atendemos a domicilio. Si necesitas traer un equipo, escríbenos antes para coordinar la recepción.",
+    "mapa": "https://www.google.com/maps/search/?api=1&query=Cra.+23+%2364-33,+Ibagu%C3%A9,+Tolima",
+    "mapaTexto": "Abrir en Google Maps"
+  },
+
+  "formulario": {
+    "titulo": "Solicita tu agendamiento",
+    "texto": "Estos datos viajan únicamente a nuestro WhatsApp. No se guardan en el sitio.",
+    "campos": {
+      "nombre": { "etiqueta": "Nombre completo", "placeholder": "Ej. Ana Rodríguez" },
+      "telefono": { "etiqueta": "Número de celular", "placeholder": "Ej. 312 344 4325" },
+      "ciudad": { "etiqueta": "Ciudad", "placeholder": "Selecciona tu ciudad" },
+      "servicio": { "etiqueta": "Equipo a revisar", "placeholder": "Selecciona el servicio" },
+      "marca": { "etiqueta": "Marca del equipo", "placeholder": "Opcional. Ej. LG, Haceb, Samsung" },
+      "franja": { "etiqueta": "Franja preferida", "placeholder": "Selecciona una franja" },
+      "problema": { "etiqueta": "¿Qué está pasando?", "placeholder": "Cuéntanos la falla: no centrifuga, no enfría, hace ruido…" }
+    },
+    "franjas": ["Mañana (8:00 a 12:00)", "Tarde (12:00 a 18:00)", "Me adapto a la disponibilidad"],
+    "boton": "Enviar por WhatsApp",
+    "aviso": "Al enviar se abre WhatsApp con tus datos escritos. Revisa el mensaje y pulsa enviar.",
+    "exito": "Abrimos WhatsApp con tu solicitud. Si no se abrió, usa el enlace de abajo.",
+    "enlaceManual": "Abrir WhatsApp manualmente",
+    "mensaje": {
+      "nombre": "Nombre",
+      "telefono": "Teléfono",
+      "ciudad": "Ciudad",
+      "equipo": "Equipo",
+      "marca": "Marca",
+      "franja": "Franja preferida",
+      "falla": "Falla"
+    },
+    "errores": {
+      "nombre": "Escribe tu nombre completo.",
+      "telefono": "Escribe un número de contacto válido.",
+      "ciudad": "Selecciona tu ciudad.",
+      "servicio": "Selecciona el equipo a revisar.",
+      "problema": "Cuéntanos brevemente la falla.",
+      "consentimiento": "Necesitamos tu autorización para contactarte."
+    }
+  },
+
+  "faq": {
+    "eyebrow": "Antes de escribir",
+    "titulo": "Dudas rápidas",
+    "items": [
+      { "pregunta": "¿El formulario reserva la visita?", "respuesta": "No. El formulario envía tu solicitud por WhatsApp; la visita queda confirmada cuando respondemos con día y franja." },
+      { "pregunta": "¿Puedo enviar fotos del equipo?", "respuesta": "Sí. Después de enviar el mensaje, adjunta en el mismo chat una foto de la placa del modelo y del código de error si lo hay." },
+      { "pregunta": "¿Atienden fines de semana?", "respuesta": "Sujeto a disponibilidad de ruta. Escríbenos y te confirmamos la franja más próxima." }
+    ]
+  }
+}

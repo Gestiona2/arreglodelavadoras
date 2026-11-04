@@ -1,0 +1,117 @@
+---
+/**
+ * Página de marca: /marcas/<slug>/.
+ * Solo se generan las marcas con pagina:true en marcas.json.
+ */
+import Layout from "../../layouts/Layout.astro";
+import Icon from "../../components/Icon.astro";
+import marcas from "../../datos/marcas.json";
+import servicios from "../../datos/servicios.json";
+import sitio from "../../datos/sitio.json";
+import { ruta } from "../../lib/ruta.js";
+
+export function getStaticPaths() {
+  return marcas.items
+    .filter((m) => m.pagina)
+    .map((marca) => ({ params: { slug: marca.slug }, props: { marca } }));
+}
+
+const { marca } = Astro.props as any;
+const d = marcas.detalle;
+const nombreServicio = (slug) => servicios.items.find((s) => s.slug === slug)?.nombre ?? slug;
+const otras = marcas.items.filter((m) => m.pagina && m.slug !== marca.slug).slice(0, 8);
+const listaServicios = servicios.items.filter((s) => marca.tipos.includes(s.slug));
+const texto = (t) => t.replace("{marca}", marca.nombre);
+const wa = `https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(`${sitio.mensajes.marca} ${marca.nombre}.`)}`;
+---
+
+<Layout titulo={`${texto(d.titulo)} · ${sitio.nombre}`} descripcion={marca.nota} activa="marcas">
+  <header class="pagina-hero">
+    <div class="container">
+      <nav class="migas" aria-label="Ruta de navegación">
+        <a href={ruta("/")}>Inicio</a>
+        <span>/</span>
+        <a href={ruta("/marcas/")}>Marcas</a>
+        <span>/</span>
+        <span class="actual">{marca.nombre}</span>
+      </nav>
+      <span class="eyebrow"><span class="dot"></span> {d.eyebrow}</span>
+      <h1>{texto(d.titulo)}</h1>
+      <p class="lead">{marca.nota}</p>
+      <a href={wa} class="btn btn-wa" target="_blank" rel="noopener">
+        <Icon nombre="whatsapp" tamano={19} />
+        {d.ctaMarca}
+      </a>
+    </div>
+  </header>
+
+  <section class="pad">
+    <div class="container detalle-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span> {marca.nombre}</span>
+        <h2 class="titulo-seccion" style="margin-top:1rem">{texto(d.focosTitulo)}</h2>
+        <div class="marca-focos">
+          {marca.focos.map((f) => (
+            <div class="marca-foco">
+              <Icon nombre="wrench" tamano={17} />
+              {f}
+            </div>
+          ))}
+        </div>
+
+        <h2 class="bloque-titulo">{texto(d.serviciosTitulo)}</h2>
+        <div class="chips">
+          {listaServicios.map((s) => (
+            <a href={ruta(`/${s.slug}/`)} class="chip">
+              <Icon nombre={s.icono} tamano={15} />
+              {s.nombre}
+            </a>
+          ))}
+        </div>
+
+        <p class="lead" style="margin-top:1.5rem">{marcas.nota}</p>
+      </div>
+
+      <div class="panel-form">
+        <span class="eyebrow"><span class="dot"></span> {d.eyebrow}</span>
+        <h2 style="margin-top:0.8rem;font-size:1.5rem">{marca.nombre}</h2>
+        <p class="lead" style="margin-top:0.6rem;font-size:0.92rem">
+          {listaServicios.map((s) => s.nombre).join(" · ")}
+        </p>
+        <a href={wa} class="btn btn-wa btn-full" style="margin-top:1.2rem" target="_blank" rel="noopener">
+          <Icon nombre="whatsapp" tamano={18} />
+          {d.ctaMarca}
+        </a>
+        <a href={`tel:+${sitio.whatsapp}`} class="btn btn-borde btn-full" style="margin-top:0.5rem">
+          <Icon nombre="phone" tamano={18} />
+          {sitio.telefono}
+        </a>
+        <p class="form-aviso">{sitio.horario}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad-sm">
+    <div class="container">
+      <div class="cabecera">
+        <div class="cabecera-texto">
+          <h2 class="titulo-seccion">{d.otrasTitulo}</h2>
+        </div>
+        <div class="cabecera-accion">
+          <a href={ruta("/marcas/")}>
+            {marcas.verPagina}
+            <Icon nombre="arrow-right" tamano={16} />
+          </a>
+        </div>
+      </div>
+      <div class="chips">
+        {otras.map((o) => (
+          <a href={ruta(`/marcas/${o.slug}/`)} class="chip">{o.nombre}</a>
+        ))}
+        {marcas.items.filter((m) => !m.pagina).slice(0, 6).map((m) => (
+          <span class="chip">{m.nombre}</span>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

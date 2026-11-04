@@ -1,0 +1,80 @@
+{
+  "_comentario": "Contenido de /nosotros/. Solo hechos verificables: los que ya estaban publicados en el sitio anterior.",
+
+  "meta": {
+    "titulo": "Nosotros · Arreglo de Lavadoras, servicio técnico en Ibagué",
+    "descripcion": "Más de 12 años reparando electrodomésticos a domicilio en Ibagué y otras seis ciudades. Técnicos especializados, repuestos originales y garantía de 6 meses."
+  },
+
+  "hero": {
+    "eyebrow": "Nosotros",
+    "titulo": "Oficio, no improvisación",
+    "texto": "Llevamos más de 12 años reparando electrodomésticos en Ibagué. En ese tiempo aprendimos que el cliente no quiere un discurso técnico: quiere saber qué tiene, cuánto cuesta y cuándo queda listo.",
+    "imagen": "/img/nosotros-tecnico.webp",
+    "imagenAlt": "Técnico revisando el panel de una lavadora"
+  },
+
+  "historia": {
+    "eyebrow": "Nuestra historia",
+    "titulo": "Empezamos con una lavadora y una caja de herramientas",
+    "parrafos": [
+      "El servicio nació en Ibagué atendiendo lavadoras y neveras de vecinos y conocidos. La recomendación fue el primer canal y sigue siendo el principal: la mayoría de los clientes llega porque alguien le contó cómo quedó su equipo.",
+      "Con los años el taller creció hacia calentadores, estufas, hornos, secadoras y lavavajillas, y el servicio se extendió a otras ciudades con rutas programadas. La lógica no cambió: diagnosticar bien antes de cambiar piezas y dejar constancia de lo que se hizo."
+    ]
+  },
+
+  "principios": {
+    "eyebrow": "Cómo trabajamos",
+    "titulo": "Tres cosas que no negociamos",
+    "items": [
+      {
+        "icono": "search",
+        "titulo": "Diagnosticar antes de cobrar",
+        "texto": "Primero se revisa y se explica. El cliente decide con el valor sobre la mesa, no después de que el equipo ya está abierto."
+      },
+      {
+        "icono": "package",
+        "titulo": "Usar el repuesto correcto",
+        "texto": "El más barato no siempre es el que sirve. Trabajamos con originales o equivalentes certificados y mostramos la referencia."
+      },
+      {
+        "icono": "shield",
+        "titulo": "Responder después",
+        "texto": "La garantía de 6 meses no es un sello: es el compromiso de volver si el mismo problema reaparece."
+      }
+    ]
+  },
+
+  "equipo": {
+    "eyebrow": "El equipo",
+    "titulo": "Técnicos especializados por línea",
+    "texto": "No todos los equipos se diagnostican igual. El equipo se organiza por línea —refrigeración, lavado, gas y cocción— para que quien llega a tu casa conozca el modelo y sus fallas típicas.",
+    "nota": "Trabajamos con herramientas de diagnóstico, multímetro, manómetros y equipo de protección. Cada intervención se documenta con el modelo, el repuesto y la prueba realizada."
+  },
+
+  "cifras": {
+    "items": [
+      { "numero": 12, "sufijo": "+", "texto": "Años de experiencia", "icono": "award" },
+      { "numero": 7, "sufijo": "", "texto": "Ciudades atendidas", "icono": "map-pin" },
+      { "numero": 8, "sufijo": "", "texto": "Líneas de equipo", "icono": "wrench" },
+      { "numero": 6, "sufijo": "", "texto": "Meses de garantía", "icono": "shield" }
+    ]
+  },
+
+  "compromiso": {
+    "titulo": "Lo que puedes esperar de una visita",
+    "items": [
+      "Un técnico identificado y con herramientas.",
+      "Explicación de la falla en lenguaje normal.",
+      "Valor del diagnóstico y de la reparación antes de intervenir.",
+      "Prueba del equipo contigo delante.",
+      "Garantía escrita y canal directo de soporte."
+    ]
+  },
+
+  "cierre": {
+    "titulo": "¿Le damos una segunda vida a tu equipo?",
+    "texto": "Escríbenos con el tipo de electrodoméstico y la falla. Te decimos si se puede revisar y cuándo podemos llegar.",
+    "boton": "Agendar por WhatsApp"
+  }
+}

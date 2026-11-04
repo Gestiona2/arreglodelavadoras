@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
+import datos from "../datos/404.json";
+import sitio from "../datos/sitio.json";
+import { ruta } from "../lib/ruta.js";
+
+const wa = `https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(sitio.mensajes.general)}`;
+---
+
+<Layout titulo={datos.meta.titulo} descripcion={datos.meta.descripcion} activa="">
+  <section class="error404">
+    <div class="container">
+      <p class="codigo" aria-hidden="true">{datos.codigo}</p>
+      <h1>{datos.titulo}</h1>
+      <p>{datos.texto}</p>
+      <div class="acciones">
+        <a href={ruta("/")} class="btn btn-primary">
+          <Icon nombre="home" tamano={18} />
+          {datos.inicio}
+        </a>
+        <a href={ruta("/servicios/")} class="btn btn-borde">
+          {datos.servicios}
+          <Icon nombre="arrow-right" tamano={17} />
+        </a>
+        <a href={wa} class="btn btn-wa" target="_blank" rel="noopener">
+          <Icon nombre="whatsapp" tamano={18} />
+          {datos.whats}
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

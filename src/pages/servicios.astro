@@ -1,0 +1,103 @@
+---
+/**
+ * Listado de servicios. Las páginas de detalle salen de [slug].astro.
+ * Todo el texto vive en src/datos/servicios-pagina.json y servicios.json.
+ */
+import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
+import pagina from "../datos/servicios-pagina.json";
+import servicios from "../datos/servicios.json";
+import sitio from "../datos/sitio.json";
+import { ruta } from "../lib/ruta.js";
+
+const wa = (texto) => `https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(texto)}`;
+const { meta, hero, ayuda, proceso, cierre, enlaceDetalle } = pagina;
+---
+
+<Layout titulo={meta.titulo} descripcion={meta.descripcion} activa="servicios">
+  <header class="pagina-hero">
+    <div class="container">
+      <span class="eyebrow"><span class="dot"></span> {hero.eyebrow}</span>
+      <h1>{hero.titulo}</h1>
+      <p class="lead">{hero.texto}</p>
+    </div>
+  </header>
+
+  <section class="pad">
+    <div class="container">
+      <div class="servicios-lista">
+        {servicios.items.map((s) => (
+          <a href={ruta(`/${s.slug}/`)} class="servicio-fila reveal-up">
+            <div class="servicio-fila-img">
+              <img src={ruta(s.imagen)} alt={s.imagenAlt} width="1200" height="900" loading="lazy" />
+            </div>
+            <div class="servicio-fila-cuerpo">
+              <div class="servicio-fila-cabecera">
+                <Icon nombre={s.icono} tamano={22} />
+                <h2>{s.nombre}</h2>
+              </div>
+              <p>{s.resumen}</p>
+              <div class="servicio-fila-pie">
+                <div class="mini-chips">
+                  {s.fallas.slice(0, 3).map((f) => <span class="mini-chip">{f}</span>)}
+                </div>
+                <span class="servicio-fila-enlace">
+                  {enlaceDetalle}
+                  <Icon nombre="arrow-right" tamano={15} />
+                </span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="pad oscuro proceso">
+    <div class="container">
+      <div class="cabecera">
+        <div class="cabecera-texto">
+          <span class="eyebrow reveal"><span class="dot"></span> {proceso.eyebrow}</span>
+          <h2 class="titulo-seccion reveal" style="margin-top:1rem">{proceso.titulo}</h2>
+        </div>
+      </div>
+      <div class="pasos">
+        {proceso.pasos.map((p) => (
+          <div class="paso reveal-up">
+            <span class="paso-numero">{p.numero}</span>
+            <h3>{p.titulo}</h3>
+            <p>{p.texto}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="container">
+      <div class="cabecera">
+        <div class="cabecera-texto">
+          <h2 class="titulo-seccion reveal">{ayuda.titulo}</h2>
+          <p class="lead reveal">{ayuda.texto}</p>
+        </div>
+        <div class="cabecera-accion reveal">
+          <a href={wa(sitio.mensajes.ayuda)} target="_blank" rel="noopener" class="btn btn-wa">
+            <Icon nombre="whatsapp" tamano={18} />
+            {ayuda.boton}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cierre">
+    <div class="container cierre-interior">
+      <h2 class="reveal">{cierre.titulo}</h2>
+      <p class="reveal">{cierre.texto}</p>
+      <a href={wa(sitio.mensajes.general)} class="btn btn-claro reveal" target="_blank" rel="noopener">
+        <Icon nombre="whatsapp" tamano={19} />
+        {cierre.boton}
+      </a>
+    </div>
+  </section>
+</Layout>

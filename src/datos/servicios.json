@@ -1,0 +1,311 @@
+{
+  "_comentario": "Un objeto por servicio. De aquí salen las tarjetas del inicio, la página /servicios/ y cada página de detalle (/reparacion-de-lavadoras/, etc.). Si se agrega un servicio, su página se crea sola.",
+  "_limite": "Entre 6 y 8 fallas por servicio: más de 8 saturan la lista en celular.",
+
+  "items": [
+    {
+      "slug": "reparacion-de-lavadoras",
+      "nombre": "Lavadoras",
+      "titulo": "Reparación de lavadoras en Ibagué",
+      "subtitulo": "Carga, centrífuga, drenaje y tablero. Diagnóstico a domicilio y garantía de 6 meses.",
+      "icono": "washer",
+      "imagen": "/img/servicios/lavadoras.webp",
+      "imagenAlt": "Tambor de lavadora con ropa durante el ciclo de lavado",
+      "resumen": "No centrifuga, no carga, vibra o deja la ropa mojada. Revisamos motor, bomba, sensores y tablero en tu casa.",
+      "intro": [
+        "Tu lavadora trabaja todos los días y, cuando falla, la casa entera se detiene. Por eso atendemos el mismo día según disponibilidad y llegamos con las herramientas y los repuestos más comunes para el equipo.",
+        "Revisamos el ciclo completo antes de entregar: llenado, lavado, enjuague, centrífuga y drenaje. Si algo no queda probado, no lo damos por reparado."
+      ],
+      "fallas": [
+        "No centrifuga o deja la ropa escurriendo agua",
+        "No carga agua, la deja llena o no desagua",
+        "Vibra, golpea o hace ruido metálico en el tambor",
+        "No enciende o el tablero muestra error y parpadea",
+        "Fuga de agua por la puerta, la bomba o las mangueras",
+        "Se detiene a mitad del ciclo o reinicia sola"
+      ],
+      "incluye": [
+        { "titulo": "Diagnóstico en sitio", "texto": "Revisamos motor, bomba, válvulas, sensores y tarjeta sin desmontar el equipo de tu casa." },
+        { "titulo": "Repuesto correcto", "texto": "Original o equivalente certificado, según disponibilidad y modelo. Te mostramos la referencia." },
+        { "titulo": "Prueba completa", "texto": "Corremos los ciclos contigo delante: llenado, lavado, enjuague, centrífuga y desagüe." },
+        { "titulo": "Garantía escrita", "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp." }
+      ],
+      "marcas": ["LG", "Samsung", "Haceb", "Whirlpool", "Mabe", "Electrolux", "Challenger", "Frigidaire", "Centrales", "Kenmore"],
+      "faq": [
+        { "pregunta": "¿Reparan lavadoras de carga superior y frontal?", "respuesta": "Sí. Trabajamos ambos tipos, automáticas y semiautomáticas, en todas las marcas de la lista." },
+        { "pregunta": "¿Cuánto tarda una reparación de lavadora?", "respuesta": "La mayoría se resuelve en la misma visita. Si el repuesto hay que pedirlo, te damos el plazo exacto antes de cobrar nada." },
+        { "pregunta": "¿Vale la pena reparar o es mejor comprar otra?", "respuesta": "Te lo decimos con el diagnóstico en la mano. Si el costo supera la mitad de un equipo nuevo, te lo advertimos antes de intervenir." }
+      ],
+      "meta": {
+        "titulo": "Reparación de lavadoras en Ibagué · Servicio a domicilio",
+        "descripcion": "Técnicos en reparación de lavadoras LG, Samsung, Haceb, Whirlpool y Mabe a domicilio en Ibagué. Diagnóstico, repuestos originales y garantía de 6 meses."
+      }
+    },
+    {
+      "slug": "reparacion-de-neveras",
+      "nombre": "Neveras y nevecones",
+      "titulo": "Reparación de neveras y nevecones en Ibagué",
+      "subtitulo": "Frío, escarcha, fugas y compresor. Recuperamos la cadena de frío de tu equipo.",
+      "icono": "fridge",
+      "imagen": "/img/servicios/neveras.webp",
+      "imagenAlt": "Nevera de acero inoxidable en una cocina moderna",
+      "resumen": "No enfría, congela de más, gotea o el compresor no arranca. Revisamos el sistema completo y te explicamos qué falla.",
+      "intro": [
+        "Una nevera que no enfría pone en riesgo la comida y, muchas veces, termina en una compra que no era necesaria. Antes de reemplazarla, revisamos el sistema de refrigeración, el control y las conexiones.",
+        "Atendemos neveras de una y dos puertas, nevecones, exhibidores y equipos comerciales pequeños. Cada intervención termina con medición de temperatura y prueba de estabilidad."
+      ],
+      "fallas": [
+        "No enfría o enfría solo una parte del equipo",
+        "Congela de más y forma escarcha o hielo",
+        "Compresor que no arranca, se calienta o hace ruido",
+        "Fuga de agua al piso o acumulación en el fondo",
+        "Empaques vencidos: la puerta no sella y se pierde el frío",
+        "Termostato, timer o resistencia dañados"
+      ],
+      "incluye": [
+        { "titulo": "Diagnóstico de refrigeración", "texto": "Medimos presión, temperatura y consumo para ubicar la falla real, no solo el síntoma." },
+        { "titulo": "Repuesto correcto", "texto": "Compresor, termostato, resistencia o empaque original o equivalente certificado." },
+        { "titulo": "Prueba de frío", "texto": "Dejamos el equipo midiendo temperatura y verificando que recupere el ciclo normal." },
+        { "titulo": "Garantía escrita", "texto": "6 meses sobre la reparación y el repuesto instalado, con seguimiento por WhatsApp." }
+      ],
+      "marcas": ["LG", "Samsung", "Haceb", "Whirlpool", "Mabe", "Electrolux", "Frigidaire", "Challenger", "General Electric", "KitchenAid"],
+      "faq": [
+        { "pregunta": "¿Reparan nevecones y exhibidores?", "respuesta": "Sí. Atendemos nevecones, congeladores horizontales y vitrinas de uso comercial pequeño." },
+        { "pregunta": "¿Cada cuánto se debe hacer mantenimiento a una nevera?", "respuesta": "Recomendamos una revisión anual: limpieza de condensador, revisión de empaques y control de temperatura. Alarga la vida del compresor." },
+        { "pregunta": "Mi nevera enfría pero gotea, ¿es grave?", "respuesta": "Casi siempre es el desagüe tapado o un empaque vencido. Se corrige en la misma visita y evita daños mayores en el piso y en el aislamiento." }
+      ],
+      "meta": {
+        "titulo": "Reparación de neveras y nevecones en Ibagué · A domicilio",
+        "descripcion": "Reparación de neveras LG, Samsung, Haceb, Whirlpool, Mabe y Frigidaire a domicilio en Ibagué. Compresor, termostato, fugas y mantenimiento. Garantía de 6 meses."
+      }
+    },
+    {
+      "slug": "reparacion-de-calentadores",
+      "nombre": "Calentadores",
+      "titulo": "Reparación de calentadores en Ibagué",
+      "subtitulo": "Agua caliente estable, encendido confiable y revisión de gas sin riesgos.",
+      "icono": "flame",
+      "imagen": "/img/servicios/calentadores.webp",
+      "imagenAlt": "Calentador de agua instalado en un baño moderno",
+      "resumen": "No calienta, se apaga solo o gotea. Revisamos encendido, presión y conexiones de gas con protocolo de seguridad.",
+      "intro": [
+        "Un calentador que falla no es solo una incomodidad: puede ser un riesgo. Trabajamos con protocolo de revisión de gas, ventilación y presión antes de tocar cualquier componente.",
+        "Atendemos calentadores a gas y eléctricos, de paso y de acumulación. Si el equipo ya no tiene repuestos seguros, te lo decimos con claridad."
+      ],
+      "fallas": [
+        "No calienta o el agua sale fría de un momento a otro",
+        "Se apaga a los pocos segundos de encender",
+        "Fuga de agua en conexiones, válvula o cuerpo",
+        "No enciende: chispa, batería o encendido electrónico",
+        "Presión inestable o agua que sale muy caliente",
+        "Mantenimiento, purga y revisión de ventilación"
+      ],
+      "incluye": [
+        { "titulo": "Revisión de seguridad", "texto": "Verificamos gas, ventilación y presión antes y después de la intervención." },
+        { "titulo": "Repuesto correcto", "texto": "Válvula, encendedor, sensor o resistencia original o equivalente certificado." },
+        { "titulo": "Prueba de estabilidad", "texto": "Encendemos, medimos temperatura y confirmamos que se mantiene sin apagarse." },
+        { "titulo": "Garantía escrita", "texto": "6 meses sobre la reparación y el repuesto instalado." }
+      ],
+      "marcas": ["Bosch", "Challenger", "Haceb", "Sueco", "Cimsa", "Clasic", "Mabe", "Abba", "Rheem", "Ariston"],
+      "faq": [
+        { "pregunta": "¿Revisan la instalación de gas?", "respuesta": "Sí. Comprobamos conexiones, ventilación y ausencia de fugas. Si detectamos una condición insegura, no dejamos el equipo en funcionamiento." },
+        { "pregunta": "¿Reparan calentadores eléctricos?", "respuesta": "Sí, de paso y de acumulación. Cambiamos resistencia, termostato y válvulas según el modelo." },
+        { "pregunta": "¿Cada cuánto se hace mantenimiento?", "respuesta": "Una vez al año en uso residencial. En zonas con agua dura, cada seis meses para evitar sedimentos y pérdida de eficiencia." }
+      ],
+      "meta": {
+        "titulo": "Reparación de calentadores en Ibagué · A domicilio",
+        "descripcion": "Reparación y mantenimiento de calentadores a gas y eléctricos en Ibagué. Bosch, Challenger, Haceb, Sueco y más. Revisión de gas y garantía de 6 meses."
+      }
+    },
+    {
+      "slug": "reparacion-de-estufas",
+      "nombre": "Estufas",
+      "titulo": "Reparación de estufas en Ibagué",
+      "subtitulo": "Quemadores, chispa, válvulas y conexión a gas. La cocina vuelve a encender parejo.",
+      "icono": "stove",
+      "imagen": "/img/servicios/estufas.webp",
+      "imagenAlt": "Estufa a gas moderna con quemadores y utensilios de cocina",
+      "resumen": "Un quemador no prende, la llama es amarilla o hay olor a gas. Revisamos y corregimos con prueba de combustión.",
+      "intro": [
+        "La llama dice mucho del estado de una estufa. Una llama amarilla, un quemador que no prende o un olor extraño se revisan el mismo día: son señales de combustión incompleta o fuga.",
+        "Trabajamos estufas a gas, mixtas y de inducción. También hacemos instalación, conversión de gas natural y mantenimiento preventivo."
+      ],
+      "fallas": [
+        "Un quemador no enciende o la chispa es débil",
+        "Llama amarilla, desprendida o con hollín",
+        "Olor a gas o fuga en la conexión",
+        "Perillas duras, válvulas que no cierran bien",
+        "Parrillas y quemadores obstruidos",
+        "Instalación a gas y conversión de gas natural"
+      ],
+      "incluye": [
+        { "titulo": "Revisión de combustión", "texto": "Medimos la llama y revisamos inyectores, aireación y conexión antes de intervenir." },
+        { "titulo": "Repuesto correcto", "texto": "Chispero, válvula, inyector o perilla original o equivalente certificado." },
+        { "titulo": "Prueba de encendido", "texto": "Encendemos cada quemador y verificamos estabilidad y ausencia de olor." },
+        { "titulo": "Garantía escrita", "texto": "6 meses sobre la reparación y el repuesto instalado." }
+      ],
+      "marcas": ["Haceb", "Challenger", "Whirlpool", "Samsung", "Mabe", "KitchenAid", "General Electric", "Bosch", "Tramontina", "Oster"],
+      "faq": [
+        { "pregunta": "Huele a gas, ¿qué hago primero?", "respuesta": "Cierra la llave general, ventila y no accione interruptores. Escríbenos o llama de inmediato; atendemos la revisión como prioridad." },
+        { "pregunta": "¿Convierten estufas a gas natural?", "respuesta": "Sí, con cambio de inyectores y prueba de combustión. La conversión debe quedar certificada, no improvisada." },
+        { "pregunta": "¿Reparan estufas de inducción?", "respuesta": "Sí. Diagnosticamos placa, sensores y circuito de potencia; cuando el repuesto no existe, te lo decimos antes de cobrar." }
+      ],
+      "meta": {
+        "titulo": "Reparación de estufas en Ibagué · Servicio a domicilio",
+        "descripcion": "Reparación de estufas a gas, mixtas y de inducción en Ibagué. Quemadores, chispa, válvulas y fugas. Instalación y conversión a gas natural. Garantía de 6 meses."
+      }
+    },
+    {
+      "slug": "reparacion-de-hornos",
+      "nombre": "Hornos",
+      "titulo": "Reparación de hornos en Ibagué",
+      "subtitulo": "Resistencias, termostato, convección y tablero. Temperatura pareja para volver a cocinar.",
+      "icono": "oven",
+      "imagen": "/img/servicios/hornos.webp",
+      "imagenAlt": "Panel de control de un horno de acero inoxidable",
+      "resumen": "No calienta, calienta de más o la puerta no sella. Revisamos resistencia, termostato y control de temperatura.",
+      "intro": [
+        "Un horno que no mantiene la temperatura arruina cualquier receta y puede volverse un riesgo eléctrico. Medimos el ciclo de calentamiento y verificamos el corte del termostato.",
+        "Atendemos hornos empotrados, de mesa y de estufa. Cambiamos resistencias, termostatos, ventiladores y empaques de puerta."
+      ],
+      "fallas": [
+        "No calienta o tarda demasiado en llegar a temperatura",
+        "Calienta de más y quema la comida",
+        "Resistencia partida o con puntos calientes",
+        "La puerta no sella y se escapa el calor",
+        "Ventilador de convección ruidoso o detenido",
+        "Tablero, perillas o selector de funciones sin respuesta"
+      ],
+      "incluye": [
+        { "titulo": "Diagnóstico eléctrico", "texto": "Medimos resistencia, termostato y control de potencia con el equipo aislado." },
+        { "titulo": "Repuesto correcto", "texto": "Resistencia, termostato, empaque o ventilador original o equivalente certificado." },
+        { "titulo": "Prueba de temperatura", "texto": "Calentamos y verificamos estabilidad y corte antes de entregar." },
+        { "titulo": "Garantía escrita", "texto": "6 meses sobre la reparación y el repuesto instalado." }
+      ],
+      "marcas": ["Electrolux", "Haceb", "Challenger", "General Electric", "Bosch", "Whirlpool", "Black+Decker", "Oster", "Samsung", "LG"],
+      "faq": [
+        { "pregunta": "¿Reparan hornos empotrados de cualquier marca?", "respuesta": "Trabajamos las marcas de la lista y varias referencias importadas. Si no tenemos el repuesto, te decimos si es posible conseguirlo." },
+        { "pregunta": "¿Cambian el vidrio de la puerta?", "respuesta": "Sí, cuando la referencia está disponible. Es una reparación de seguridad: un vidrio trizado no debe usarse." },
+        { "pregunta": "¿Vale la pena reparar un horno viejo?", "respuesta": "Depende del costo del repuesto frente al equipo nuevo. El diagnóstico incluye esa comparación para que decidas con datos." }
+      ],
+      "meta": {
+        "titulo": "Reparación de hornos en Ibagué · Servicio a domicilio",
+        "descripcion": "Reparación de hornos eléctricos y a gas en Ibagué. Resistencias, termostato, convección y puertas. Electrolux, Haceb, Challenger y más. Garantía de 6 meses."
+      }
+    },
+    {
+      "slug": "reparacion-de-secadoras",
+      "nombre": "Secadoras",
+      "titulo": "Reparación de secadoras en Ibagué",
+      "subtitulo": "Calor, tambor y sensores. Ropa seca sin esperar dos ciclos.",
+      "icono": "dryer",
+      "imagen": "/img/servicios/secadoras.webp",
+      "imagenAlt": "Secadora apilada sobre una lavadora en un cuarto de ropa moderno",
+      "resumen": "No seca, no calienta o el tambor no gira. Revisamos resistencia, sensor de humedad, correa y ducto de ventilación.",
+      "intro": [
+        "Una secadora que no seca casi siempre tiene una causa concreta: resistencia, sensor de humedad, obstrucción del ducto o correa. Lo revisamos antes de cambiar piezas al azar.",
+        "Atendemos secadoras a gas y eléctricas, de carga frontal y superior. La limpieza del ducto también es parte del trabajo: es la causa más común de bajo rendimiento."
+      ],
+      "fallas": [
+        "La ropa sale húmeda después de un ciclo completo",
+        "No calienta o calienta solo al principio",
+        "El tambor no gira o gira con ruido",
+        "Se detiene sola a mitad del ciclo",
+        "Tarda el doble de lo normal",
+        "Ducto o filtro obstruido y olor a quemado"
+      ],
+      "incluye": [
+        { "titulo": "Diagnóstico de calor", "texto": "Medimos resistencia, termostato y flujo de aire para ubicar la causa real." },
+        { "titulo": "Repuesto correcto", "texto": "Correa, resistencia, sensor o termostato original o equivalente certificado." },
+        { "titulo": "Limpieza de ducto", "texto": "Despejamos la salida de aire, que además reduce el riesgo de sobrecalentamiento." },
+        { "titulo": "Garantía escrita", "texto": "6 meses sobre la reparación y el repuesto instalado." }
+      ],
+      "marcas": ["LG", "Samsung", "Whirlpool", "Electrolux", "Haceb", "Mabe", "Frigidaire", "Challenger", "General Electric", "Bosch"],
+      "faq": [
+        { "pregunta": "¿Por qué la secadora demora tanto?", "respuesta": "Casi siempre es un ducto obstruido o un sensor de humedad descalibrado. Ambas cosas se corrigen en la misma visita." },
+        { "pregunta": "¿Reparan secadoras a gas?", "respuesta": "Sí, con revisión de combustión y ventilación igual que en estufas y calentadores." },
+        { "pregunta": "¿Puedo usar la secadora mientras espero la visita?", "respuesta": "Si hay olor a quemado o ruido fuerte, no. Desconéctala y espera al técnico." }
+      ],
+      "meta": {
+        "titulo": "Reparación de secadoras en Ibagué · Servicio a domicilio",
+        "descripcion": "Reparación de secadoras eléctricas y a gas en Ibagué. No seca, no calienta, tambor quieto o ruidoso. LG, Samsung, Whirlpool, Haceb. Garantía de 6 meses."
+      }
+    },
+    {
+      "slug": "reparacion-de-lavavajillas",
+      "nombre": "Lavavajillas",
+      "titulo": "Reparación de lavavajillas en Ibagué",
+      "subtitulo": "Lavado, desagüe, temperatura y fugas. Vajilla limpia sin repetir el ciclo.",
+      "icono": "dishwasher",
+      "imagen": "/img/servicios/lavavajillas.webp",
+      "imagenAlt": "Lavavajillas de acero inoxidable abierto en una cocina",
+      "resumen": "Deja residuos, no desagua o gotea. Revisamos bomba, válvulas, resistencia y dosificación.",
+      "intro": [
+        "Cuando el lavavajillas deja de lavar bien, mucha gente cambia el detergente y sigue igual. La causa suele ser el brazo aspersor, la bomba o el sensor de temperatura.",
+        "Revisamos el ciclo completo y también la instalación: una manguera mal conectada o un desagüe sin pendiente produce fugas y olores."
+      ],
+      "fallas": [
+        "Deja residuos o la vajilla sale grasosa",
+        "No desagua o deja agua en el fondo",
+        "No calienta el agua del ciclo",
+        "Fuga por la puerta o por debajo del equipo",
+        "Brazo aspersor tapado o sin presión",
+        "Errores de tablero y ciclos que no inician"
+      ],
+      "incluye": [
+        { "titulo": "Diagnóstico de ciclo", "texto": "Revisamos llenado, presión, temperatura y desagüe con el equipo en marcha." },
+        { "titulo": "Repuesto correcto", "texto": "Bomba, válvula, resistencia o sensor original o equivalente certificado." },
+        { "titulo": "Revisión de instalación", "texto": "Verificamos mangueras, sifón y pendientes para evitar fugas y olores." },
+        { "titulo": "Garantía escrita", "texto": "6 meses sobre la reparación y el repuesto instalado." }
+      ],
+      "marcas": ["Whirlpool", "Bosch", "LG", "Samsung", "Electrolux", "Mabe", "Haceb", "Challenger", "General Electric", "KitchenAid"],
+      "faq": [
+        { "pregunta": "¿Reparan lavavajillas importados?", "respuesta": "Trabajamos las marcas de la lista. Si el repuesto es importado, te damos el tiempo estimado antes de pedirlo." },
+        { "pregunta": "¿Por qué huele mal el lavavajillas?", "respuesta": "Normalmente es grasa acumulada en el filtro o desagüe sin sifón. Hacemos limpieza técnica y corregimos la instalación." },
+        { "pregunta": "¿Se puede instalar debajo del mesón?", "respuesta": "Sí, siempre que haya espacio, ventilación y conexiones accesibles. Lo revisamos antes de instalar." }
+      ],
+      "meta": {
+        "titulo": "Reparación de lavavajillas en Ibagué · Servicio a domicilio",
+        "descripcion": "Reparación de lavavajillas Whirlpool, Bosch, LG, Samsung, Electrolux y Mabe en Ibagué. Fugas, desagüe, bomba y temperatura. Garantía de 6 meses."
+      }
+    },
+    {
+      "slug": "servicio-de-instalacion",
+      "nombre": "Instalación",
+      "titulo": "Instalación de electrodomésticos en Ibagué",
+      "subtitulo": "Lavadoras, neveras, estufas, hornos, calentadores y lavavajillas bien instalados desde el primer día.",
+      "icono": "wrench",
+      "imagen": "/img/servicios/instalacion.webp",
+      "imagenAlt": "Lavadora instalada y conectada en un baño de una vivienda",
+      "resumen": "Nivelación, conexiones, prueba y recomendaciones de uso. Una instalación mal hecha es la causa de la mitad de las fallas.",
+      "intro": [
+        "Una lavadora que vibra, una nevera que no enfría o un calentador que se apaga pueden ser problemas de instalación, no del equipo. Nivelar, conectar y probar bien evita la mayoría.",
+        "Instalamos equipos nuevos y reubicamos los existentes. También retiramos el equipo viejo si lo necesitas."
+      ],
+      "fallas": [
+        "Lavadoras y secadoras: nivelación, mangueras y desagüe",
+        "Neveras y nevecones: espacio, nivelación y calibración",
+        "Estufas y hornos: conexión a gas y prueba de llama",
+        "Calentadores: montaje, purga y prueba de presión",
+        "Lavavajillas: conexión hidráulica y desagüe",
+        "Retiro del equipo anterior y aseo del espacio"
+      ],
+      "incluye": [
+        { "titulo": "Revisión del espacio", "texto": "Medidas, ventilación, tomas y desagües antes de mover el equipo." },
+        { "titulo": "Conexión y nivelación", "texto": "Dejamos el equipo estable, sin vibraciones y con conexiones sin fugas." },
+        { "titulo": "Prueba de funcionamiento", "texto": "Encendemos y probamos el ciclo o la combustión según el equipo." },
+        { "titulo": "Recomendaciones de uso", "texto": "Te explicamos cuidados básicos y cuándo hacer el primer mantenimiento." }
+      ],
+      "marcas": ["LG", "Samsung", "Haceb", "Whirlpool", "Mabe", "Electrolux", "Challenger", "Bosch", "Frigidaire", "KitchenAid"],
+      "faq": [
+        { "pregunta": "¿Instalan equipos comprados en otra tienda?", "respuesta": "Sí. Instalamos el equipo que ya tengas, sin importar dónde lo compraste." },
+        { "pregunta": "¿Se llevan el equipo viejo?", "respuesta": "Sí, si lo solicitas al agendar. Se cotiza aparte según el equipo y el acceso al lugar." },
+        { "pregunta": "¿Cuánto tarda una instalación?", "respuesta": "Entre 40 y 90 minutos según el equipo. Las conexiones de gas y calentadores requieren prueba adicional." }
+      ],
+      "meta": {
+        "titulo": "Instalación de electrodomésticos en Ibagué · A domicilio",
+        "descripcion": "Instalación de lavadoras, neveras, estufas, hornos, calentadores y lavavajillas en Ibagué. Nivelación, conexiones, prueba y recomendaciones."
+      }
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "_comentario": "Contenido de la página de inicio. Una entrada por sección, en el orden en que aparecen. El diseño no se toca para cambiar textos.",
+
+  "meta": {
+    "titulo": "Arreglo de Lavadoras · Servicio técnico a domicilio en Ibagué",
+    "descripcion": "Reparación de lavadoras, neveras, calentadores, estufas, hornos, secadoras y lavavajillas a domicilio en Ibagué y 6 ciudades. Garantía de 6 meses."
+  },
+
+  "hero": {
+    "eyebrow": "Servicio técnico autorizado · Ibagué y 6 ciudades",
+    "titulo": "Tu electrodoméstico,",
+    "acento": "funcionando hoy.",
+    "texto": "Reparamos lavadoras, neveras, calentadores, estufas, hornos, secadoras y lavavajillas a domicilio. Diagnóstico claro, repuestos originales y garantía de 6 meses por escrito.",
+    "botones": [
+      { "texto": "Agendar por WhatsApp", "href": "#agendar", "estilo": "btn-primary", "icono": "whatsapp" },
+      { "texto": "Ver servicios", "href": "#servicios", "estilo": "btn-ghost", "icono": "arrow-right" }
+    ],
+    "bullets": ["Atención a domicilio", "Repuestos originales", "Garantía de 6 meses"],
+    "imagen": "/img/hero-lavadora.webp",
+    "imagenAlt": "Tambor metálico de una lavadora visto de cerca",
+    "sello": "12 años reparando",
+    "tarjetas": [
+      { "etiqueta": "Garantía", "valor": "6 meses", "nota": "por escrito", "icono": "shield" },
+      { "etiqueta": "Cobertura", "valor": "7 ciudades", "nota": "Ibagué y más", "icono": "map-pin" }
+    ]
+  },
+
+  "cinta": {
+    "items": [
+      { "texto": "Diagnóstico antes de reparar", "icono": "search" },
+      { "texto": "Técnicos especializados por marca", "icono": "badge-check" },
+      { "texto": "Repuestos originales", "icono": "package" },
+      { "texto": "Garantía escrita de 6 meses", "icono": "shield" }
+    ]
+  },
+
+  "marcas": {
+    "texto": "Trabajamos con las marcas que ya tienes en casa",
+    "items": ["LG", "Samsung", "Haceb", "Whirlpool", "Mabe", "Electrolux", "Challenger", "Bosch", "Frigidaire", "General Electric", "KitchenAid", "Kenmore"]
+  },
+
+  "servicios": {
+    "eyebrow": "Servicios",
+    "titulo": "Ocho equipos. Un mismo estándar.",
+    "texto": "Cada electrodoméstico tiene su diagnóstico. Lo que no cambia es el proceso: revisar, explicar, cotizar y reparar con garantía.",
+    "cta": { "texto": "Ver todos los servicios", "href": "/servicios/" },
+    "ctaTarjeta": "Ver servicio"
+  },
+
+  "proceso": {
+    "eyebrow": "Cómo funciona",
+    "titulo": "Sin sorpresas, de principio a fin",
+    "texto": "Cuatro pasos claros. Tú decides en cada uno y no se cobra nada que no hayas aprobado.",
+    "pasos": [
+      {
+        "numero": "01",
+        "titulo": "Escríbenos",
+        "texto": "Cuéntanos el equipo, la marca y qué está pasando. Si tienes una foto o el código de error, mejor."
+      },
+      {
+        "numero": "02",
+        "titulo": "Agendamos la visita",
+        "texto": "Confirmamos día, franja y valor del diagnóstico. Te avisamos cuando el técnico va en camino."
+      },
+      {
+        "numero": "03",
+        "titulo": "Diagnóstico y cotización",
+        "texto": "El técnico revisa, te explica la falla y te da el valor. Solo reparamos si tú lo autorizas."
+      },
+      {
+        "numero": "04",
+        "titulo": "Reparación y garantía",
+        "texto": "Instalamos el repuesto, probamos el equipo contigo y dejamos la garantía de 6 meses por escrito."
+      }
+    ]
+  },
+
+  "diferenciales": {
+    "eyebrow": "Por qué elegirnos",
+    "titulo": "Lo que cambia cuando el servicio es serio",
+    "texto": "No es solo reparar: es dejar el equipo estable, explicar qué pasó y responder después.",
+    "items": [
+      {
+        "icono": "shield",
+        "titulo": "Garantía de 6 meses",
+        "texto": "Cubrimos la reparación y el repuesto instalado. Queda por escrito y con soporte directo por WhatsApp."
+      },
+      {
+        "icono": "package",
+        "titulo": "Repuestos originales",
+        "texto": "Originales o equivalentes certificados. Te mostramos la referencia y explicamos por qué es la correcta."
+      },
+      {
+        "icono": "home",
+        "titulo": "A domicilio",
+        "texto": "No cargas el equipo ni lo dejas en un taller. Trabajamos en tu casa con herramientas y protección."
+      },
+      {
+        "icono": "clock",
+        "titulo": "Franja confirmada",
+        "texto": "Acordamos el día y la franja antes de la visita. Si hay un cambio, te avisamos, no te dejamos esperando."
+      },
+      {
+        "icono": "receipt",
+        "titulo": "Precio antes de empezar",
+        "texto": "Diagnóstico, repuesto y mano de obra se explican antes de intervenir. Sin cargos que aparezcan al final."
+      },
+      {
+        "icono": "award",
+        "titulo": "12 años de oficio",
+        "texto": "Más de una década reparando línea blanca en Ibagué nos enseñó qué falla en cada modelo y cómo evitarlo."
+      }
+    ]
+  },
+
+  "cifras": {
+    "titulo": "La experiencia también es un repuesto",
+    "items": [
+      { "numero": 12, "sufijo": "+", "texto": "Años reparando electrodomésticos", "icono": "award" },
+      { "numero": 6, "sufijo": "", "texto": "Meses de garantía por escrito", "icono": "shield" },
+      { "numero": 7, "sufijo": "", "texto": "Ciudades con servicio a domicilio", "icono": "map-pin" },
+      { "numero": 8, "sufijo": "", "texto": "Líneas de equipo atendidas", "icono": "wrench" }
+    ]
+  },
+
+  "cobertura": {
+    "eyebrow": "Cobertura",
+    "titulo": "Ibagué es la base. Siete ciudades, un mismo equipo.",
+    "texto": "Nuestro taller y equipo principal están en Ibagué. Agendamos visitas en las demás ciudades según disponibilidad de la ruta: al escribirte confirmamos la fecha más próxima.",
+    "nota": "¿Estás en otra ciudad? Te decimos si hay ruta disponible.",
+    "sede": "Sede",
+    "enlace": "Escríbenos"
+  },
+
+  "testimonios": {
+    "eyebrow": "Testimonios",
+    "titulo": "Clientes que ya volvieron a lavar tranquilos",
+    "texto": "Estos son comentarios reales de clientes del servicio. Sin fotos de banco de imágenes ni historias inventadas.",
+    "items": [
+      {
+        "nombre": "Andrea Angarita",
+        "ciudad": "Ibagué",
+        "equipo": "Calentador",
+        "texto": "El calentador de mi hogar no funcionaba. Llamé y me agendaron muy rápido la visita. El arreglo fue excelente: lleva más de seis meses funcionando correctamente."
+      },
+      {
+        "nombre": "Carlos Manosalva",
+        "ciudad": "Bogotá",
+        "equipo": "Lavadora",
+        "texto": "Arreglaron mi lavadora y quedó como nueva. Ya no se le escucha el ruido que tenía al lavar. Los recomiendo."
+      },
+      {
+        "nombre": "Claudia Martínez",
+        "ciudad": "Ibagué",
+        "equipo": "Nevera",
+        "texto": "Mi nevera no congelaba y varios técnicos no dieron con la falla. Ellos la revisaron bien y hoy funciona al 100 %. Gracias por la ayuda."
+      }
+    ]
+  },
+
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "titulo": "Lo que casi todos preguntan antes de agendar",
+    "ayudaTexto": "¿Tu duda no está aquí? Escríbenos por WhatsApp y la resolvemos antes de agendar.",
+    "ayudaBoton": "Preguntar por WhatsApp",
+    "items": [
+      {
+        "pregunta": "¿Cuánto cuesta el diagnóstico?",
+        "respuesta": "El valor se confirma al agendar, antes de la visita, y depende del equipo y la ciudad. No se cobra ningún trabajo adicional sin tu autorización."
+      },
+      {
+        "pregunta": "¿La reparación tiene garantía?",
+        "respuesta": "Sí: 6 meses sobre la reparación y el repuesto instalado, por escrito. Si el mismo problema vuelve en ese tiempo, regresamos."
+      },
+      {
+        "pregunta": "¿Usan repuestos originales?",
+        "respuesta": "Trabajamos con repuestos originales o equivalentes certificados. Te mostramos la referencia y explicamos la diferencia antes de instalarlo."
+      },
+      {
+        "pregunta": "¿Atienden el mismo día?",
+        "respuesta": "Según disponibilidad y zona. Al escribir por WhatsApp te confirmamos la franja más próxima; si no alcanza para hoy, queda agendado para el siguiente día hábil."
+      },
+      {
+        "pregunta": "¿Qué marcas reparan?",
+        "respuesta": "LG, Samsung, Haceb, Whirlpool, Mabe, Electrolux, Challenger, Bosch, Frigidaire, General Electric, KitchenAid, Kenmore y otras referencias. Si no aparece la tuya, pregúntanos."
+      },
+      {
+        "pregunta": "¿Reparan nevecones, centrales y equipos comerciales?",
+        "respuesta": "Sí. Atendemos nevecones, congeladores horizontales, lavadoras centrales y vitrinas de uso comercial pequeño."
+      },
+      {
+        "pregunta": "¿Cómo pago el servicio?",
+        "respuesta": "Al finalizar, cuando el equipo queda probado. Confirmamos los medios de pago disponibles al agendar la visita."
+      },
+      {
+        "pregunta": "¿Qué pasa si el equipo no tiene arreglo?",
+        "respuesta": "Te lo decimos con el diagnóstico en la mano y sin rodeos. No cobramos una reparación que no va a resolver el problema."
+      }
+    ]
+  },
+
+  "agendar": {
+    "eyebrow": "Agenda tu visita",
+    "titulo": "Cuéntanos qué está pasando",
+    "texto": "Completa los datos y el formulario abre WhatsApp con el mensaje listo. Te respondemos con la disponibilidad más próxima y el valor del diagnóstico.",
+    "nota": "Si prefieres hablar, llámanos al 312 344 4325.",
+    "prefieres": "¿Prefieres hablar?"
+  },
+
+  "cierre": {
+    "titulo": "Hoy puede ser el último día con la lavadora quieta.",
+    "texto": "Escríbenos, cuéntanos la falla y agenda la visita. El diagnóstico se explica antes de tocar el equipo.",
+    "boton": "Agendar por WhatsApp"
+  }
+}

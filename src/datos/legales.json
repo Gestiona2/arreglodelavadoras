@@ -1,0 +1,133 @@
+{
+  "_comentario": "Textos legales. Son plantillas base: deben ser revisadas por el dueño antes de publicar. No incluyen NIT porque todavía no se confirmó.",
+  "_pendiente": "Confirmar NIT, correo de habeas data y responsable del tratamiento.",
+
+  "encabezado": "Legal",
+  "indice": "Contenido",
+  "actualizado": "Actualizado",
+  "pie": "Si tienes dudas sobre este documento, escríbenos a",
+
+  "paginas": [
+    {
+      "slug": "politica-privacidad",
+      "titulo": "Política de privacidad",
+      "descripcion": "Cómo se tratan los datos personales que llegan por el sitio y por WhatsApp.",
+      "actualizado": "Noviembre de 2026",
+      "bloques": [
+        {
+          "titulo": "Quién trata tus datos",
+          "parrafos": [
+            "Arreglo de Lavadoras, servicio técnico de electrodomésticos con base en Ibagué, Tolima, es el responsable del tratamiento de los datos que recibimos por este sitio web, por WhatsApp y por teléfono.",
+            "Para cualquier consulta sobre tus datos puedes escribir a contacto@arreglodelavadoras.com.co."
+          ]
+        },
+        {
+          "titulo": "Qué datos recibimos",
+          "parrafos": [
+            "Cuando usas el formulario de agendamiento, los datos que escribes no se guardan en este sitio: se envían a nuestro WhatsApp cuando tú pulsas enviar. Recibimos nombre, teléfono, ciudad, equipo, marca, franja preferida y la descripción de la falla.",
+            "También podemos recibir fotos o documentos que decidas enviar por el chat para facilitar el diagnóstico."
+          ]
+        },
+        {
+          "titulo": "Para qué los usamos",
+          "parrafos": [
+            "Usamos los datos únicamente para agendar la visita, contactarte, elaborar la cotización y hacer seguimiento a la garantía. No los usamos para publicidad de terceros."
+          ]
+        },
+        {
+          "titulo": "Con quién se comparten",
+          "parrafos": [
+            "No vendemos ni cedemos tus datos. Solo los comparte el personal del servicio técnico que atiende tu caso y, cuando la ley lo exige, las autoridades competentes.",
+            "El canal de WhatsApp es operado por Meta Platforms. Su uso se rige también por las políticas de esa plataforma."
+          ]
+        },
+        {
+          "titulo": "Tus derechos",
+          "parrafos": [
+            "Puedes conocer, actualizar, rectificar y solicitar la supresión de tus datos, así como revocar la autorización, escribiendo a contacto@arreglodelavadoras.com.co. Responderemos en los términos de la Ley 1581 de 2012 y el Decreto 1377 de 2013."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tratamiento-datos",
+      "titulo": "Autorización de tratamiento de datos",
+      "descripcion": "Autorización para el tratamiento de datos personales conforme a la Ley 1581 de 2012.",
+      "actualizado": "Noviembre de 2026",
+      "bloques": [
+        {
+          "titulo": "Autorización",
+          "parrafos": [
+            "Al enviar el formulario de agendamiento y continuar la conversación por WhatsApp, autorizas de manera previa, expresa e informada a Arreglo de Lavadoras para tratar tus datos personales con la finalidad de atender tu solicitud de servicio, agendar la visita, cotizar, ejecutar la reparación y hacer seguimiento a la garantía."
+          ]
+        },
+        {
+          "titulo": "Datos autorizados",
+          "parrafos": [
+            "Nombre, número de contacto, ciudad, dirección de servicio cuando sea necesaria para la visita, equipo, marca y descripción de la falla."
+          ]
+        },
+        {
+          "titulo": "Vigencia y revocatoria",
+          "parrafos": [
+            "La autorización permanece vigente mientras exista la relación de servicio y durante el tiempo necesario para atender obligaciones legales o de garantía. Puedes revocarla en cualquier momento escribiendo a contacto@arreglodelavadoras.com.co, salvo cuando exista un deber legal de conservar la información."
+          ]
+        },
+        {
+          "titulo": "Canales de atención",
+          "parrafos": [
+            "Consultas, reclamos y solicitudes sobre datos personales: contacto@arreglodelavadoras.com.co. Teléfono: 312 344 4325, en horario de atención."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "terminos",
+      "titulo": "Términos y condiciones del servicio",
+      "descripcion": "Alcance del servicio, diagnóstico, garantía y responsabilidades.",
+      "actualizado": "Noviembre de 2026",
+      "bloques": [
+        {
+          "titulo": "Alcance del servicio",
+          "parrafos": [
+            "Arreglo de Lavadoras presta servicio técnico de diagnóstico, reparación, mantenimiento e instalación de electrodomésticos a domicilio en Ibagué y en las ciudades publicadas en el sitio, sujeto a disponibilidad de ruta.",
+            "El servicio se presta sobre equipos de línea blanca: lavadoras, neveras, nevecones, calentadores, estufas, hornos, secadoras y lavavajillas."
+          ]
+        },
+        {
+          "titulo": "Diagnóstico y cotización",
+          "parrafos": [
+            "El valor del diagnóstico se informa antes de la visita. La reparación se ejecuta únicamente con autorización del cliente y por el valor cotizado previamente.",
+            "Si durante la intervención aparece una falla adicional, el técnico se detiene y cotiza antes de continuar."
+          ]
+        },
+        {
+          "titulo": "Garantía",
+          "parrafos": [
+            "Las reparaciones tienen garantía de 6 meses sobre la mano de obra y el repuesto instalado, contados desde la fecha de entrega. La garantía no cubre daños por mal uso, variaciones de voltaje, humedad, intervención de terceros o fallas distintas a la reparada.",
+            "Para hacer efectiva la garantía se debe presentar el soporte entregado y permitir la revisión del equipo."
+          ]
+        },
+        {
+          "titulo": "Responsabilidad del cliente",
+          "parrafos": [
+            "El cliente debe informar con veracidad la falla, el modelo y las condiciones del equipo, y garantizar el acceso al lugar y a las conexiones necesarias para la revisión.",
+            "Los equipos con intervenciones previas de terceros pueden requerir una revisión adicional antes de aceptar la reparación."
+          ]
+        },
+        {
+          "titulo": "Pagos",
+          "parrafos": [
+            "El pago se realiza al finalizar el servicio, una vez probado el equipo. Los medios de pago disponibles se confirman al agendar la visita."
+          ]
+        },
+        {
+          "titulo": "Aceptación",
+          "parrafos": [
+            "El uso del sitio y la solicitud de servicio implican la aceptación de estos términos y de la política de privacidad."
+          ]
+        }
+      ]
+    }
+  ]
+}

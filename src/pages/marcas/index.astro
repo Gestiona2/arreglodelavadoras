@@ -1,0 +1,61 @@
+---
+/**
+ * Listado de marcas. Las que tienen pagina:true llevan a /marcas/<slug>/.
+ * El texto vive en src/datos/marcas.json.
+ */
+import Layout from "../../layouts/Layout.astro";
+import Icon from "../../components/Icon.astro";
+import marcas from "../../datos/marcas.json";
+import servicios from "../../datos/servicios.json";
+import sitio from "../../datos/sitio.json";
+import { ruta } from "../../lib/ruta.js";
+
+const nombreServicio = (slug) => servicios.items.find((s) => s.slug === slug)?.nombre ?? slug;
+const wa = `https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(sitio.mensajes.general)}`;
+---
+
+<Layout titulo={marcas.meta.titulo} descripcion={marcas.meta.descripcion} activa="marcas">
+  <header class="pagina-hero">
+    <div class="container">
+      <span class="eyebrow"><span class="dot"></span> {marcas.encabezado}</span>
+      <h1>{marcas.titulo}</h1>
+      <p class="lead">{marcas.texto}</p>
+    </div>
+  </header>
+
+  <section class="pad">
+    <div class="container">
+      <div class="marcas-grid">
+        {marcas.items.map((m) =>
+          m.pagina ? (
+            <a href={ruta(`/marcas/${m.slug}/`)} class="marca-card reveal-up">
+              <h2>{m.nombre}</h2>
+              <p>{m.nota}</p>
+              <span class="marca-card-tipos">
+                {m.tipos.slice(0, 3).map((t) => nombreServicio(t)).join(" · ")}
+              </span>
+              <span class="marca-card-flecha">
+                {marcas.verPagina}
+                <Icon nombre="arrow-right" tamano={14} />
+              </span>
+            </a>
+          ) : (
+            <article class="marca-card marca-card--simple reveal-up">
+              <h2>{m.nombre}</h2>
+              <p>{m.nota}</p>
+              <span class="marca-card-tipos">
+                {m.tipos.map((t) => nombreServicio(t)).join(" · ")}
+              </span>
+            </article>
+          )
+        )}
+      </div>
+
+      <p class="lead" style="margin-top:2rem">{marcas.nota}</p>
+      <a href={wa} class="btn btn-wa" style="margin-top:1.2rem" target="_blank" rel="noopener">
+        <Icon nombre="whatsapp" tamano={18} />
+        {marcas.preguntar}
+      </a>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,247 @@
+---
+/**
+ * Formulario de agendamiento.
+ * No envía a ningún servidor: valida en el navegador y abre WhatsApp con el
+ * mensaje armado. Sin backend no hay dato guardado ni API key expuesta.
+ */
+import sitio from "../datos/sitio.json";
+import contacto from "../datos/contacto.json";
+import servicios from "../datos/servicios.json";
+import { ruta } from "../lib/ruta.js";
+import Icon from "./Icon.astro";
+
+interface Props {
+  compacto?: boolean;
+  id?: string;
+}
+const { compacto = false, id = "agendar" } = Astro.props;
+const f = contacto.formulario;
+---
+
+<form
+  class="formulario"
+  id={id}
+  novalidate
+  data-wa={sitio.whatsapp}
+  data-mensaje={sitio.mensajes.general}
+  data-errores={JSON.stringify(f.errores)}
+  data-etiquetas={JSON.stringify(f.mensaje)}
+>
+  <div class="form-grid">
+    <div class="campo">
+      <label for="f-nombre">{f.campos.nombre.etiqueta} <span aria-hidden="true">*</span></label>
+      <input
+        id="f-nombre"
+        name="nombre"
+        type="text"
+        autocomplete="name"
+        placeholder={f.campos.nombre.placeholder}
+        required
+        minlength="3"
+      />
+      <p class="campo-error" data-error-for="f-nombre"></p>
+    </div>
+
+    <div class="campo">
+      <label for="f-telefono">{f.campos.telefono.etiqueta} <span aria-hidden="true">*</span></label>
+      <input
+        id="f-telefono"
+        name="telefono"
+        type="tel"
+        inputmode="tel"
+        autocomplete="tel"
+        placeholder={f.campos.telefono.placeholder}
+        required
+        pattern="[0-9+()\s-]{7,}"
+      />
+      <p class="campo-error" data-error-for="f-telefono"></p>
+    </div>
+
+    <div class="campo">
+      <label for="f-ciudad">{f.campos.ciudad.etiqueta} <span aria-hidden="true">*</span></label>
+      <div class="select-envoltura">
+        <select id="f-ciudad" name="ciudad" required>
+          <option value="">{f.campos.ciudad.placeholder}</option>
+          {sitio.cobertura.map((c) => <option value={c}>{c}</option>)}
+          <option value="Otra ciudad">Otra ciudad</option>
+        </select>
+        <Icon nombre="chevron-down" tamano={18} />
+      </div>
+      <p class="campo-error" data-error-for="f-ciudad"></p>
+    </div>
+
+    <div class="campo">
+      <label for="f-servicio">{f.campos.servicio.etiqueta} <span aria-hidden="true">*</span></label>
+      <div class="select-envoltura">
+        <select id="f-servicio" name="servicio" required>
+          <option value="">{f.campos.servicio.placeholder}</option>
+          {servicios.items.map((s) => <option value={s.nombre}>{s.nombre}</option>)}
+          <option value="Otro equipo">Otro equipo</option>
+        </select>
+        <Icon nombre="chevron-down" tamano={18} />
+      </div>
+      <p class="campo-error" data-error-for="f-servicio"></p>
+    </div>
+
+    <div class="campo">
+      <label for="f-marca">{f.campos.marca.etiqueta}</label>
+      <input
+        id="f-marca"
+        name="marca"
+        type="text"
+        placeholder={f.campos.marca.placeholder}
+        list="lista-marcas"
+      />
+      <datalist id="lista-marcas">
+        <option value="LG"></option>
+        <option value="Samsung"></option>
+        <option value="Haceb"></option>
+        <option value="Whirlpool"></option>
+        <option value="Mabe"></option>
+        <option value="Electrolux"></option>
+        <option value="Challenger"></option>
+        <option value="Bosch"></option>
+        <option value="Frigidaire"></option>
+        <option value="General Electric"></option>
+      </datalist>
+    </div>
+
+    <div class="campo">
+      <label for="f-franja">{f.campos.franja.etiqueta}</label>
+      <div class="select-envoltura">
+        <select id="f-franja" name="franja">
+          <option value="">{f.campos.franja.placeholder}</option>
+          {f.franjas.map((x) => <option value={x}>{x}</option>)}
+        </select>
+        <Icon nombre="chevron-down" tamano={18} />
+      </div>
+    </div>
+
+    <div class="campo campo-ancho">
+      <label for="f-problema">{f.campos.problema.etiqueta} <span aria-hidden="true">*</span></label>
+      <textarea
+        id="f-problema"
+        name="problema"
+        rows={compacto ? 3 : 4}
+        placeholder={f.campos.problema.placeholder}
+        required
+        minlength="5"
+      ></textarea>
+      <p class="campo-error" data-error-for="f-problema"></p>
+    </div>
+  </div>
+
+  <label class="consentimiento">
+    <input type="checkbox" id="f-consentimiento" required />
+    <span>
+      Autorizo el tratamiento de mis datos para atender esta solicitud.{" "}
+      <a href={ruta("/tratamiento-datos/")} target="_blank" rel="noopener">Ver autorización</a>.
+    </span>
+  </label>
+  <p class="campo-error" data-error-for="f-consentimiento"></p>
+
+  <button type="submit" class="btn btn-primary btn-form">
+    <Icon nombre="whatsapp" tamano={20} />
+    {f.boton}
+  </button>
+
+  <p class="form-aviso">{f.aviso}</p>
+
+  <div class="form-exito" hidden role="status" aria-live="polite">
+    <Icon nombre="check-circle" tamano={22} />
+    <p>
+      {f.exito}
+      <a data-enlace-wa href="#" target="_blank" rel="noopener">{f.enlaceManual}</a>
+    </p>
+  </div>
+</form>
+
+<script is:inline>
+  (function () {
+    const form = document.currentScript.previousElementSibling;
+    if (!form || !form.classList.contains("formulario")) return;
+
+    const wa = form.dataset.wa;
+    const saludo = form.dataset.mensaje || "Hola, quiero agendar un servicio técnico.";
+    const errores = JSON.parse(form.dataset.errores || "{}");
+    const t = JSON.parse(form.dataset.etiquetas || "{}");
+    const campos = {
+      nombre: { el: form.querySelector("#f-nombre"), min: 3, msg: errores.nombre },
+      telefono: { el: form.querySelector("#f-telefono"), min: 7, msg: errores.telefono },
+      ciudad: { el: form.querySelector("#f-ciudad"), msg: errores.ciudad },
+      servicio: { el: form.querySelector("#f-servicio"), msg: errores.servicio },
+      problema: { el: form.querySelector("#f-problema"), min: 5, msg: errores.problema },
+    };
+
+    // Los mensajes y el foco viven en los ids del DOM (f-nombre, f-telefono…).
+    const marcar = (id, texto) => {
+      const idc = id.startsWith("f-") ? id : "f-" + id;
+      const p = form.querySelector(`[data-error-for="${idc}"]`);
+      const campo = form.querySelector(`#${idc}`);
+      if (p) p.textContent = texto || "";
+      if (campo) campo.setAttribute("aria-invalid", texto ? "true" : "false");
+    };
+
+    const limpiar = () => Object.keys(campos).concat("f-consentimiento").forEach((k) => marcar(k, ""));
+
+    form.addEventListener("input", (e) => {
+      const id = e.target.id;
+      if (id) marcar(id, "");
+    });
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      limpiar();
+      let valido = true;
+      let primero = null;
+
+      for (const [nombre, cfg] of Object.entries(campos)) {
+        const valor = (cfg.el?.value || "").trim();
+        const vacio = !valor;
+        const corto = cfg.min && valor.length < cfg.min;
+        const telMal = nombre === "telefono" && valor.replace(/\D/g, "").length < 7;
+        if (vacio || corto || telMal) {
+          marcar(nombre, cfg.msg);
+          if (!primero) primero = cfg.el;
+          valido = false;
+        }
+      }
+
+      const cons = form.querySelector("#f-consentimiento");
+      if (!cons.checked) {
+        marcar("consentimiento", errores.consentimiento);
+        if (!primero) primero = cons;
+        valido = false;
+      }
+
+      if (!valido) {
+        primero?.focus();
+        return;
+      }
+
+      const v = (sel) => (form.querySelector(sel)?.value || "").trim();
+      const lineas = [
+        saludo,
+        "",
+        t.nombre + ": " + v("#f-nombre"),
+        t.telefono + ": " + v("#f-telefono"),
+        t.ciudad + ": " + v("#f-ciudad"),
+        t.equipo + ": " + v("#f-servicio"),
+        v("#f-marca") ? t.marca + ": " + v("#f-marca") : "",
+        v("#f-franja") ? t.franja + ": " + v("#f-franja") : "",
+        t.falla + ": " + v("#f-problema"),
+      ].filter(Boolean);
+
+      const url = "https://wa.me/" + wa + "?text=" + encodeURIComponent(lineas.join("\n"));
+      const exito = form.querySelector(".form-exito");
+      const enlace = form.querySelector("[data-enlace-wa]");
+      if (enlace) enlace.href = url;
+
+      window.open(url, "_blank", "noopener");
+      if (exito) {
+        exito.hidden = false;
+        exito.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    });
+  })();
+</script>

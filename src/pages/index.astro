@@ -1,0 +1,324 @@
+---
+/**
+ * Página de inicio.
+ * REGLA: aquí NO se escribe texto. Todo sale de src/datos/inicio.json.
+ * Esta página define CÓMO se ve; el JSON define QUÉ dice.
+ */
+import Layout from "../layouts/Layout.astro";
+import Icon from "../components/Icon.astro";
+import Formulario from "../components/Formulario.astro";
+import inicio from "../datos/inicio.json";
+import servicios from "../datos/servicios.json";
+import contacto from "../datos/contacto.json";
+import sitio from "../datos/sitio.json";
+import { ruta } from "../lib/ruta.js";
+
+const { hero, cinta, marcas, servicios: bloqueServicios, proceso, diferenciales, cifras, cobertura, testimonios, faq, agendar, cierre, meta } = inicio;
+
+const iniciales = (nombre) =>
+  nombre
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((p) => p[0])
+    .join("")
+    .toUpperCase();
+---
+
+<Layout titulo={meta.titulo} descripcion={meta.descripcion} activa="inicio">
+  {/* ==================== HERO ==================== */}
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow hero-eyebrow reveal"><span class="dot"></span> {hero.eyebrow}</span>
+        <h1 class="hero-titulo reveal">{hero.titulo}<br /><span class="marca-text">{hero.acento}</span></h1>
+        <p class="hero-texto reveal">{hero.texto}</p>
+
+        <div class="hero-botones reveal">
+          {hero.botones.map((b) => (
+            <a href={b.href} class={`btn ${b.estilo}`}>
+              {b.icono && <Icon nombre={b.icono} tamano={19} />}
+              {b.texto}
+            </a>
+          ))}
+        </div>
+
+        <ul class="hero-bullets reveal">
+          {hero.bullets.map((b) => (
+            <li><Icon nombre="check" tamano={14} trazo={2.4} /> {b}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal-right">
+        <figure class="hero-foto">
+          <img src={ruta(hero.imagen)} alt={hero.imagenAlt} width="1800" height="1100" loading="eager" fetchpriority="high" />
+        </figure>
+
+        {hero.tarjetas.map((t) => (
+          <div class="hero-tarjeta">
+            <Icon nombre={t.icono} tamano={22} />
+            <div>
+              <span class="etiqueta">{t.etiqueta}</span>
+              <span class="valor">{t.valor}</span>
+              <span class="nota">{t.nota}</span>
+            </div>
+          </div>
+        ))}
+
+        <div class="hero-sello">{hero.sello}</div>
+      </div>
+    </div>
+  </section>
+
+  {/* ==================== CINTA ==================== */}
+  <div class="cinta" aria-hidden="true">
+    <div class="cinta-track">
+      {[0, 1].map(() => (
+        <div class="cinta-grupo">
+          {cinta.items.map((item) => (
+            <span class="cinta-item">
+              <Icon nombre={item.icono} tamano={16} />
+              {item.texto}
+            </span>
+          ))}
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* ==================== MARCAS ==================== */}
+  <div class="marcas-tira">
+    <div class="container">
+      <p>{marcas.texto}</p>
+      <div class="marcas-lista">
+        {marcas.items.map((m) => <span>{m}</span>)}
+      </div>
+    </div>
+  </div>
+
+  {/* ==================== SERVICIOS ==================== */}
+  <section class="pad" id="servicios">
+    <div class="container">
+      <div class="cabecera">
+        <div class="cabecera-texto">
+          <span class="eyebrow reveal"><span class="dot"></span> {bloqueServicios.eyebrow}</span>
+          <h2 class="titulo-seccion reveal" style="margin-top:1rem">{bloqueServicios.titulo}</h2>
+          <p class="lead reveal">{bloqueServicios.texto}</p>
+        </div>
+        <div class="cabecera-accion reveal">
+          <a href={ruta(bloqueServicios.cta.href)}>
+            {bloqueServicios.cta.texto}
+            <Icon nombre="arrow-right" tamano={16} />
+          </a>
+        </div>
+      </div>
+
+      <div class="servicios-grid" data-stagger>
+        {servicios.items.map((s) => (
+          <a href={ruta(`/${s.slug}/`)} class="servicio-card reveal-up">
+            <div class="servicio-card-img">
+              <img src={ruta(s.imagen)} alt={s.imagenAlt} width="1200" height="900" loading="lazy" />
+              <span class="servicio-card-icono"><Icon nombre={s.icono} tamano={20} /></span>
+            </div>
+            <div class="servicio-card-cuerpo">
+              <h3>{s.nombre}</h3>
+              <p>{s.resumen}</p>
+              <span class="servicio-card-link">
+                {bloqueServicios.ctaTarjeta}
+                <Icon nombre="arrow-right" tamano={15} />
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ==================== PROCESO ==================== */}
+  <section class="pad oscuro proceso">
+    <div class="container">
+      <div class="cabecera">
+        <div class="cabecera-texto">
+          <span class="eyebrow reveal"><span class="dot"></span> {proceso.eyebrow}</span>
+          <h2 class="titulo-seccion reveal" style="margin-top:1rem">{proceso.titulo}</h2>
+          <p class="lead reveal">{proceso.texto}</p>
+        </div>
+      </div>
+
+      <div class="pasos">
+        {proceso.pasos.map((p) => (
+          <div class="paso reveal-up">
+            <span class="paso-numero">{p.numero}</span>
+            <h3>{p.titulo}</h3>
+            <p>{p.texto}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ==================== DIFERENCIALES ==================== */}
+  <section class="pad">
+    <div class="container">
+      <div class="cabecera">
+        <div class="cabecera-texto">
+          <span class="eyebrow reveal"><span class="dot"></span> {diferenciales.eyebrow}</span>
+          <h2 class="titulo-seccion reveal" style="margin-top:1rem">{diferenciales.titulo}</h2>
+          <p class="lead reveal">{diferenciales.texto}</p>
+        </div>
+      </div>
+
+      <div class="bento">
+        {diferenciales.items.map((d, i) => (
+          <article class:list={["bento-item", "reveal-up", { "bento-item--ancho": i === 0 || i === diferenciales.items.length - 1, "bento-item--marca": i === 0 }]}>
+            <span class="bento-icono"><Icon nombre={d.icono} tamano={22} /></span>
+            <h3>{d.titulo}</h3>
+            <p>{d.texto}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ==================== CIFRAS ==================== */}
+  <section class="cifras">
+    <div class="container">
+      <div class="cifras-grid">
+        {cifras.items.map((c) => (
+          <div class="cifra reveal-up">
+            <Icon nombre={c.icono} tamano={20} clase="cifra-icono" />
+            <span class="cifra-numero" data-contar={c.numero} data-sufijo={c.sufijo}>{c.numero}{c.sufijo}</span>
+            <p class="cifra-texto">{c.texto}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ==================== COBERTURA ==================== */}
+  <section class="pad">
+    <div class="container cobertura-grid">
+      <div>
+        <span class="eyebrow reveal"><span class="dot"></span> {cobertura.eyebrow}</span>
+        <h2 class="titulo-seccion reveal" style="margin-top:1rem">{cobertura.titulo}</h2>
+        <p class="lead reveal" style="margin-top:1rem">{cobertura.texto}</p>
+        <p class="cobertura-nota reveal">
+          {cobertura.nota}{" "}
+          <a href={ruta("/contacto/")}>{cobertura.enlace}</a>.
+        </p>
+      </div>
+
+      <div class="ciudades reveal-up">
+        {sitio.cobertura.map((c) => (
+          <div class:list={["ciudad", { "ciudad--base": c === sitio.ciudad }]}>
+            <Icon nombre="map-pin" tamano={17} />
+            {c}
+            {c === sitio.ciudad && <small>{cobertura.sede}</small>}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ==================== TESTIMONIOS ==================== */}
+  <section class="pad testimonios">
+    <div class="container">
+      <div class="cabecera">
+        <div class="cabecera-texto">
+          <span class="eyebrow reveal"><span class="dot"></span> {testimonios.eyebrow}</span>
+          <h2 class="titulo-seccion reveal" style="margin-top:1rem">{testimonios.titulo}</h2>
+          <p class="lead reveal">{testimonios.texto}</p>
+        </div>
+      </div>
+
+      <div class="testimonios-grid">
+        {testimonios.items.map((t) => (
+          <figure class="testimonio reveal-up">
+            <Icon nombre="quote" tamano={26} clase="testimonio-icono" />
+            <blockquote class="testimonio-texto">{t.texto}</blockquote>
+            <figcaption class="testimonio-autor">
+              <span class="testimonio-avatar">{iniciales(t.nombre)}</span>
+              <div>
+                <div class="testimonio-nombre">{t.nombre}</div>
+                <div class="testimonio-datos">{t.ciudad} · {t.equipo}</div>
+              </div>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ==================== FAQ ==================== */}
+  <section class="pad">
+    <div class="container faq-grid">
+      <div>
+        <span class="eyebrow reveal"><span class="dot"></span> {faq.eyebrow}</span>
+        <h2 class="titulo-seccion reveal" style="margin-top:1rem">{faq.titulo}</h2>
+        <p class="lead reveal" style="margin-top:1rem">
+          {faq.ayudaTexto}
+        </p>
+        <a href={`https://wa.me/${sitio.whatsapp}`} class="btn btn-borde reveal" style="margin-top:1.5rem" target="_blank" rel="noopener">
+          <Icon nombre="whatsapp" tamano={18} />
+          {faq.ayudaBoton}
+        </a>
+      </div>
+
+      <div class="faq-lista">
+        {faq.items.map((f) => (
+          <details class="faq-item reveal-up">
+            <summary class="faq-pregunta">
+              {f.pregunta}
+              <Icon nombre="plus" tamano={18} />
+            </summary>
+            <p class="faq-respuesta">{f.respuesta}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ==================== AGENDAR ==================== */}
+  <section class="pad agendar" id="agendar">
+    <div class="container agendar-grid">
+      <div class="agendar-copy">
+        <span class="eyebrow reveal"><span class="dot"></span> {agendar.eyebrow}</span>
+        <h2 class="reveal" style="margin-top:1rem">{agendar.titulo}</h2>
+        <p class="lead reveal">{agendar.texto}</p>
+
+        <ul class="agendar-lista reveal">
+          {cinta.items.slice(0, 3).map((i) => (
+            <li><Icon nombre={i.icono} tamano={17} /> {i.texto}</li>
+          ))}
+        </ul>
+
+        <div class="agendar-directo reveal">
+          <p>{agendar.prefieres}</p>
+          <a href={`tel:+${sitio.whatsapp}`}>
+            <Icon nombre="phone" tamano={19} />
+            {sitio.telefono}
+          </a>
+        </div>
+      </div>
+
+      <div class="agendar-panel reveal-up">
+        <h3 class="agendar-panel-titulo">{contacto.formulario.titulo}</h3>
+        <p class="agendar-panel-texto">{contacto.formulario.texto}</p>
+        <Formulario compacto={true} />
+      </div>
+    </div>
+  </section>
+
+  {/* ==================== CIERRE ==================== */}
+  <section class="cierre">
+    <div class="container cierre-interior">
+      <h2 class="reveal">{cierre.titulo}</h2>
+      <p class="reveal">{cierre.texto}</p>
+      <a href={`https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent("Hola, quiero agendar un servicio técnico.")}`} class="btn btn-claro reveal" target="_blank" rel="noopener">
+        <Icon nombre="whatsapp" tamano={19} />
+        {cierre.boton}
+      </a>
+    </div>
+  </section>
+</Layout>
