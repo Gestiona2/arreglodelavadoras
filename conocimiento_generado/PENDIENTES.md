@@ -91,3 +91,11 @@ bien redactadas, pero **no han sido revisadas por un abogado**. Antes de producc
 - No hay analítica. Si el dueño la quiere, se decide entre una herramienta sin cookies o
   nada; no se instala por iniciativa propia.
 - No hay blog ni Telegram: son módulos opcionales que no se activaron.
+
+## Logos de marcas (franja del inicio)
+
+Los 12 logos están en `public/brand/marcas/`. LG, Samsung, Bosch y General Electric salen de
+Simple Icons; Whirlpool, Electrolux, KitchenAid, Mabe, Frigidaire y Kenmore, de Wikimedia
+Commons (SVG); Haceb y Challenger son JPG de Commons. Son marcas registradas de sus dueños y
+se usan solo para indicar qué marcas se reparan. Conviene que el cliente confirme que está
+de acuerdo y, si tiene versiones oficiales, reemplazarlas con el mismo nombre de archivo.

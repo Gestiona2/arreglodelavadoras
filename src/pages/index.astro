@@ -88,7 +88,7 @@ const [principal, ...lateral] = testimonios.items;
     <div class="container">
       <p>{marcas.texto}</p>
       <div class="marcas-lista">
-        {marcas.items.map((m) => <span>{m}</span>)}
+        {marcas.items.map((m) => <span><img src={ruta(m.logo)} alt={m.nombre} loading="lazy" /></span>)}
       </div>
     </div>
   </div>

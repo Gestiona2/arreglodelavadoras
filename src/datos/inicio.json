@@ -1,17 +1,21 @@
 {
   "_comentario": "Contenido de la página de inicio. Una entrada por sección, en el orden en que aparecen. El diseño no se toca para cambiar textos.",
-
   "meta": {
     "titulo": "Arreglo de Lavadoras · Reparación de electrodomésticos a domicilio",
     "descripcion": "Reparación de lavadoras, neveras, estufas, hornos, calentadores y más a domicilio en Bogotá, Chía, Cajicá, Mosquera, Barranquilla e Ibagué. Garantía de 6 meses por escrito."
   },
-
   "hero": {
     "titulo": "Tu electrodoméstico, reparado en casa.",
     "texto": "Técnicos a domicilio en Bogotá, municipios cercanos, Barranquilla e Ibagué. Diagnóstico claro y garantía de 6 meses por escrito.",
     "botones": [
-      { "texto": "Escribir por WhatsApp", "tipo": "whatsapp" },
-      { "texto": "Llamar ahora", "tipo": "llamar" }
+      {
+        "texto": "Escribir por WhatsApp",
+        "tipo": "whatsapp"
+      },
+      {
+        "texto": "Llamar ahora",
+        "tipo": "llamar"
+      }
     ],
     "placa": {
       "titulo": "Llama o escribe",
@@ -20,17 +24,73 @@
     "imagen": "/img/nosotros-tecnico.webp",
     "imagenAlt": "Técnico revisando un electrodoméstico",
     "hechos": [
-      { "valor": "12+", "texto": "años reparando" },
-      { "valor": "6 meses", "texto": "de garantía escrita" },
-      { "valor": "10", "texto": "ciudades" }
+      {
+        "valor": "12+",
+        "texto": "años reparando"
+      },
+      {
+        "valor": "6 meses",
+        "texto": "de garantía escrita"
+      },
+      {
+        "valor": "10",
+        "texto": "ciudades"
+      }
     ]
   },
-
   "marcas": {
     "texto": "Marcas que reparamos",
-    "items": ["LG", "Samsung", "Haceb", "Whirlpool", "Mabe", "Electrolux", "Challenger", "Bosch", "Frigidaire", "General Electric", "KitchenAid", "Kenmore"]
+    "items": [
+      {
+        "nombre": "LG",
+        "logo": "/brand/marcas/lg.svg"
+      },
+      {
+        "nombre": "Samsung",
+        "logo": "/brand/marcas/samsung.svg"
+      },
+      {
+        "nombre": "Haceb",
+        "logo": "/brand/marcas/haceb.jpg"
+      },
+      {
+        "nombre": "Whirlpool",
+        "logo": "/brand/marcas/whirlpool.svg"
+      },
+      {
+        "nombre": "Mabe",
+        "logo": "/brand/marcas/mabe.svg"
+      },
+      {
+        "nombre": "Electrolux",
+        "logo": "/brand/marcas/electrolux.svg"
+      },
+      {
+        "nombre": "Challenger",
+        "logo": "/brand/marcas/challenger.jpg"
+      },
+      {
+        "nombre": "Bosch",
+        "logo": "/brand/marcas/bosch.svg"
+      },
+      {
+        "nombre": "Frigidaire",
+        "logo": "/brand/marcas/frigidaire.svg"
+      },
+      {
+        "nombre": "General Electric",
+        "logo": "/brand/marcas/general-electric.svg"
+      },
+      {
+        "nombre": "KitchenAid",
+        "logo": "/brand/marcas/kitchenaid.svg"
+      },
+      {
+        "nombre": "Kenmore",
+        "logo": "/brand/marcas/kenmore.svg"
+      }
+    ]
   },
-
   "donde": {
     "titulo": "¿En qué ciudad estás?",
     "texto": "Lo que reparamos cambia según la ciudad. Elige la tuya y mira qué atendemos allí.",
@@ -40,13 +100,14 @@
     "nota": "¿Tu ciudad no aparece? Escríbenos y te decimos si hay ruta.",
     "notaEnlace": "Preguntar por WhatsApp"
   },
-
   "servicios": {
     "titulo": "Todo lo que reparamos",
     "texto": "Cada equipo tiene su diagnóstico. El proceso es el mismo: revisar, explicar, cotizar y reparar con garantía.",
-    "cta": { "texto": "Ver todos los servicios", "href": "/servicios/" }
+    "cta": {
+      "texto": "Ver todos los servicios",
+      "href": "/servicios/"
+    }
   },
-
   "proceso": {
     "titulo": "Una visita, sin sorpresas",
     "texto": "Cuatro pasos. Tú decides en cada uno y no se cobra nada que no hayas aprobado.",
@@ -69,7 +130,6 @@
       }
     ]
   },
-
   "garantia": {
     "cifra": "6",
     "unidad": "meses de garantía por escrito",
@@ -98,7 +158,6 @@
       }
     ]
   },
-
   "testimonios": {
     "titulo": "Clientes que ya volvieron a la normalidad",
     "texto": "Comentarios reales de clientes del servicio.",
@@ -123,7 +182,6 @@
       }
     ]
   },
-
   "faq": {
     "titulo": "Lo que casi todos preguntan antes de agendar",
     "ayudaTexto": "¿Tu duda no está aquí? Escríbenos por WhatsApp y la resolvemos antes de agendar.",
@@ -167,7 +225,6 @@
       }
     ]
   },
-
   "agendar": {
     "titulo": "Cuéntanos qué está pasando",
     "texto": "Completa los datos y el formulario abre WhatsApp con el mensaje listo. Te respondemos con la disponibilidad más próxima y el valor del diagnóstico.",
@@ -178,7 +235,6 @@
       "Garantía escrita de 6 meses"
     ]
   },
-
   "cierre": {
     "titulo": "¿Algo en casa dejó de funcionar?",
     "texto": "Escríbenos, cuéntanos la falla y la ciudad. El diagnóstico se explica antes de tocar el equipo.",

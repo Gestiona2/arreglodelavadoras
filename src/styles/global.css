@@ -265,12 +265,12 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .marcas-tira p { font-weight: 600; font-size: 0.95rem; color: var(--texto-suave); margin-bottom: 1rem; }
 .marcas-lista { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.7rem; }
 .marcas-lista span {
-  display: grid; place-items: center; min-height: 3.4rem; padding: 0 0.6rem; text-align: center;
-  background: var(--superficie); border: 1px solid var(--linea); border-radius: var(--radio);
-  font-family: var(--display); font-weight: 600; font-size: 1.02rem; color: var(--texto); letter-spacing: -0.01em;
+  display: block; height: 4.2rem; padding: 0.8rem 1rem;
+  background: #fff; border: 1px solid var(--linea); border-radius: var(--radio);
 }
+.marcas-lista img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
 @media (max-width: 900px) { .marcas-lista { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
-@media (max-width: 560px) { .marcas-lista { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; } .marcas-lista span { font-size: 0.92rem; min-height: 3rem; } }
+@media (max-width: 560px) { .marcas-lista { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; } .marcas-lista span { height: 3.4rem; padding: 0.5rem 0.7rem; } }
 
 /* ---------- Dónde atendemos (selector por ciudad) ---------- */
 .donde-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }
