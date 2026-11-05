@@ -57,5 +57,14 @@ De oficio, no de agencia. Frases cortas. No promete de más. No usa «autorizado
 
 ## Movimiento
 
-Aparición suave al bajar (≤ 600 ms) y un cambio corto al elegir ciudad. Nada continuo.
-Se respeta `prefers-reduced-motion`; si el JavaScript falla, todo se ve igual.
+- **Firma:** el ojo de buey se abre. La foto de la portada aparece desde el centro del
+  círculo y el anillo exterior gira al entrar. Al bajar, la foto se acerca muy despacio
+  (solo en navegadores que lo permiten).
+- **Entrada por partes:** cada sección sube 26 px con aparición, una sola vez, y sus
+  elementos (filas del catálogo, preguntas, logos, pasos) entran escalonados cada 80 ms.
+- **Respuesta de controles:** los botones se hunden al pulsar; las filas del catálogo
+  desplazan el nombre; los pasos y principios agrandan su círculo; al elegir ciudad, los
+  servicios entran uno tras otro.
+- Tokens en `global.css`: `--dur-rapida`, `--dur-media`, `--dur-entrada`, `--dur-firma`.
+- Solo `transform` y `opacity` (más `clip-path` en la firma). Se respeta
+  `prefers-reduced-motion` y, si el JavaScript falla, todo se ve igual.

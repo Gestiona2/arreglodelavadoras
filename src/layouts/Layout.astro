@@ -314,8 +314,13 @@ const datosEstructurados = {
         alBajar();
 
         /* ---------- Apariciones al bajar ---------- */
-        $$("[data-stagger]").forEach((grupo) => {
-          Array.from(grupo.children).forEach((hijo, i) => hijo.style.setProperty("--i", i));
+        // Entrada por partes: los hijos de cada grupo aparecen uno tras otro.
+        const GRUPOS = ".hero-copy, .hero-hechos, .marcas-lista, .ciudades-lista, .cat-lista, .faq-lista, .fallas-lista, .incluye-grid, .testimonios-lado, .chips, .relacionados, .agendar-lista, .compromiso-lista, .cifras-grid, .marcas-grid, .pasos, .principios, .garantia-items, .canales, [data-stagger]";
+        $$(GRUPOS).forEach((grupo) => {
+          Array.from(grupo.children).forEach((hijo, i) => {
+            hijo.classList.add("reveal");
+            hijo.style.setProperty("--i", Math.min(i, 9));
+          });
         });
         const apariciones = $$(".reveal");
         if (menosMovimiento || !("IntersectionObserver" in window)) {
@@ -325,8 +330,17 @@ const datosEstructurados = {
             (entradas) => {
               entradas.forEach((entrada) => {
                 if (entrada.isIntersecting) {
-                  entrada.target.classList.add("seen");
-                  observador.unobserve(entrada.target);
+                  const el = entrada.target;
+                  el.classList.add("seen");
+                  observador.unobserve(el);
+                  // Terminada la entrada, el elemento vuelve a su estilo normal
+                  // (así el retraso escalonado no frena los efectos al pasar el ratón).
+                  el.addEventListener("transitionend", function fin(e) {
+                    if (e.target !== el || e.propertyName !== "opacity") return;
+                    el.removeEventListener("transitionend", fin);
+                    el.classList.remove("reveal", "seen");
+                    el.style.removeProperty("--i");
+                  });
                 }
               });
             },

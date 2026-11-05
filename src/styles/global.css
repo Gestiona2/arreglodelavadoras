@@ -40,6 +40,10 @@
   --cuerpo: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
 
   --salida: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-rapida: 160ms;
+  --dur-media: 360ms;
+  --dur-entrada: 700ms;
+  --dur-firma: 1100ms;
   --ancho: 1200px;
   --nav-alto: 72px;
 }
@@ -97,7 +101,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .fondo-alt { background: var(--fondo-alt); }
 
 /* Apariciones: solo con JS, nunca dejan contenido oculto si falla */
-.js .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.6s var(--salida), transform 0.6s var(--salida); transition-delay: calc(var(--i, 0) * 70ms); }
+.js .reveal { opacity: 0; transform: translateY(26px); transition: opacity var(--dur-entrada) var(--salida), transform var(--dur-entrada) var(--salida); transition-delay: calc(var(--i, 0) * 80ms); }
 .js .reveal.seen { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -120,10 +124,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
   display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
   min-height: 3rem; padding: 0 1.35rem; border-radius: var(--radio);
   font-weight: 600; font-size: 1rem; line-height: 1; border: 1.5px solid transparent;
-  transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.2s var(--salida);
+  transition: background-color var(--dur-rapida), color var(--dur-rapida), border-color var(--dur-rapida), transform var(--dur-rapida) var(--salida);
   cursor: pointer; white-space: nowrap;
 }
-.btn:active { transform: translateY(1px); }
+.btn:active { transform: scale(0.97); }
 .btn-wa { background: var(--wa); color: #fff; }
 .btn-wa:hover { background: var(--wa-hover); }
 .btn-primary { background: var(--marca); color: #fff; }
@@ -601,6 +605,61 @@ a.marca-card:hover { border-color: var(--texto); transform: translateY(-3px); }
   .barra-movil-item { display: flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 3rem; border-radius: var(--radio); font-weight: 600; background: var(--texto); color: var(--fondo-alt); }
   .barra-movil-wa { background: var(--wa); color: #fff; }
   body { padding-bottom: 4.6rem; }
+}
+
+/* ---------- Movimiento ---------- */
+/* Firma: el ojo de buey se abre. La foto aparece desde el centro del círculo. */
+@keyframes abrir {
+  from { clip-path: circle(0% at 50% 50%); transform: scale(1.18); }
+  to { clip-path: circle(72% at 50% 50%); transform: scale(1); }
+}
+@keyframes girar-anillo {
+  from { transform: scale(0.86) rotate(-40deg); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+.hero-visual::before { animation: girar-anillo var(--dur-firma) var(--salida) 0.1s both; }
+.ojo-buey img { animation: abrir var(--dur-firma) var(--salida) 0.25s both; }
+
+/* La foto avanza muy despacio al bajar (solo si el navegador lo permite) */
+@supports (animation-timeline: view()) {
+  .ojo-buey img { animation: abrir var(--dur-firma) var(--salida) 0.25s both, acercar linear both; animation-timeline: auto, view(); animation-range: normal, exit 0% exit 100%; }
+  @keyframes acercar { to { scale: 1.1; } }
+}
+
+/* Panel de ciudad: los servicios entran uno tras otro */
+.panel-ciudad.entra .panel-servicios a { animation: sube var(--dur-media) var(--salida) both; }
+.panel-ciudad.entra .panel-servicios a:nth-child(2) { animation-delay: 30ms; }
+.panel-ciudad.entra .panel-servicios a:nth-child(3) { animation-delay: 60ms; }
+.panel-ciudad.entra .panel-servicios a:nth-child(4) { animation-delay: 90ms; }
+.panel-ciudad.entra .panel-servicios a:nth-child(5) { animation-delay: 120ms; }
+.panel-ciudad.entra .panel-servicios a:nth-child(6) { animation-delay: 150ms; }
+.panel-ciudad.entra .panel-servicios a:nth-child(7) { animation-delay: 180ms; }
+.panel-ciudad.entra .panel-servicios a:nth-child(n+8) { animation-delay: 210ms; }
+@keyframes sube { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+/* Respuesta de los controles */
+.ciudad-boton { transition: background-color var(--dur-rapida), border-color var(--dur-rapida), color var(--dur-rapida), transform var(--dur-rapida) var(--salida); }
+.ciudad-boton:active { transform: scale(0.96); }
+.cat-nombre { transition: color var(--dur-rapida), transform var(--dur-media) var(--salida); display: inline-block; }
+.cat-lista a:hover .cat-nombre { transform: translateX(4px); }
+.cat-icono { transition: background-color var(--dur-rapida), color var(--dur-rapida); }
+.cat-lista a:hover .cat-icono { background: var(--marca); color: #fff; }
+.marcas-lista span { transition: border-color var(--dur-rapida), transform var(--dur-media) var(--salida); }
+.marcas-lista span:hover { border-color: var(--linea-fuerte); transform: scale(1.04); }
+.paso-icono, .principio-icono { transition: transform var(--dur-media) var(--salida), background-color var(--dur-rapida); }
+.paso:hover .paso-icono, .principio:hover .principio-icono { transform: scale(1.08); background: var(--marca); }
+.relacionado:active, .chip:active { transform: scale(0.97); }
+.faq-item[open] .faq-respuesta { animation: sube var(--dur-media) var(--salida) both; }
+.form-exito:not([hidden]) { animation: sube var(--dur-media) var(--salida) both; }
+.flota-wa { animation: sube var(--dur-entrada) var(--salida) 1.2s both; }
+
+/* El número de la garantía entra con más fuerza que el resto */
+.js .garantia-cifra { transform-origin: left bottom; }
+.js .reveal .garantia-cifra { transition: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-visual::before, .ojo-buey img, .flota-wa { animation: none !important; }
+  .ojo-buey img { clip-path: none; scale: none; }
 }
 
 @media print {
