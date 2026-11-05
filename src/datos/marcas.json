@@ -1,18 +1,17 @@
 {
   "_comentario": "Marcas que atendemos. Las que tienen pagina:true generan su propia página en /marcas/<slug>/. Las demás aparecen como fichas en el listado.",
   "meta": {
-    "titulo": "Marcas que reparamos · Arreglo de Lavadoras Ibagué",
-    "descripcion": "Reparación de electrodomésticos LG, Samsung, Haceb, Whirlpool, Mabe, Electrolux, Challenger, Bosch, Frigidaire y más, a domicilio en Ibagué."
+    "titulo": "Marcas que reparamos · Arreglo de Lavadoras",
+    "descripcion": "Reparación de electrodomésticos LG, Samsung, Haceb, Whirlpool, Mabe, Electrolux, Challenger, Bosch, Frigidaire y más, a domicilio."
   },
   "encabezado": "Marcas",
   "titulo": "Reparamos la marca que tienes en casa",
-  "texto": "No todas las marcas fallan igual ni usan los mismos repuestos. Conocemos los modelos que más se ven en Ibagué y trabajamos con el repuesto correcto para cada una.",
+  "texto": "No todas las marcas fallan igual ni usan los mismos repuestos. Conocemos los modelos más comunes y trabajamos con el repuesto correcto para cada una.",
   "nota": "Trabajamos con repuestos originales o equivalentes certificados. Si una referencia no se consigue, te lo decimos antes de intervenir el equipo.",
   "verPagina": "Ver marca",
   "preguntar": "Preguntar por mi marca",
   "detalle": {
-    "eyebrow": "Marca",
-    "titulo": "Reparación de equipos {marca} a domicilio en Ibagué",
+    "titulo": "Reparación de equipos {marca} a domicilio",
     "focosTitulo": "Lo que más revisamos en equipos {marca}",
     "serviciosTitulo": "Servicios disponibles para {marca}",
     "otrasTitulo": "Otras marcas que atendemos",

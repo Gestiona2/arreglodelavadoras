@@ -8,28 +8,26 @@ import Icon from "../components/Icon.astro";
 import Formulario from "../components/Formulario.astro";
 import datos from "../datos/contacto.json";
 import sitio from "../datos/sitio.json";
-import { ruta } from "../lib/ruta.js";
 
-const { meta, hero, canales, oficina, formulario, faq } = datos;
+const { meta, hero, canales, cobertura, formulario, faq } = datos;
 ---
 
 <Layout titulo={meta.titulo} descripcion={meta.descripcion} activa="contacto">
   <header class="pagina-hero">
     <div class="container">
-      <span class="eyebrow"><span class="dot"></span> {hero.eyebrow}</span>
-      <h1>{hero.titulo}</h1>
-      <p class="lead">{hero.texto}</p>
+      <h1 class="reveal">{hero.titulo}</h1>
+      <p class="lead reveal">{hero.texto}</p>
     </div>
   </header>
 
   <section class="pad" id="agendar">
     <div class="container contacto-grid">
       <div>
-        <h2 class="titulo-seccion" style="font-size:clamp(1.6rem,2.6vw,2.1rem)">{canales.titulo}</h2>
-        <div class="canales" style="margin-top:1.2rem">
+        <h2 class="titulo-seccion" style="font-size:clamp(1.5rem,1.1rem + 1.4vw,2.1rem)">{canales.titulo}</h2>
+        <div class="canales">
           {canales.items.map((c) => (
-            <a href={c.href} class="canal reveal-up" target={c.href.startsWith("http") ? "_blank" : undefined} rel={c.href.startsWith("http") ? "noopener" : undefined}>
-              <span class="canal-icono"><Icon nombre={c.icono} tamano={20} /></span>
+            <a href={c.href} class="canal reveal" target={c.href.startsWith("http") ? "_blank" : undefined} rel={c.href.startsWith("http") ? "noopener" : undefined}>
+              <span class="canal-icono"><Icon nombre={c.icono} tamano={22} /></span>
               <span>
                 <span class="canal-titulo">{c.titulo}</span>
                 <span class="canal-texto">{c.texto}</span>
@@ -39,20 +37,17 @@ const { meta, hero, canales, oficina, formulario, faq } = datos;
           ))}
         </div>
 
-        <div class="oficina reveal-up">
-          <h3>{oficina.titulo}</h3>
-          <p>{oficina.direccion}</p>
-          <p style="margin-top:0.5rem">{oficina.nota}</p>
-          <a href={oficina.mapa} target="_blank" rel="noopener">
-            <Icon nombre="map-pin" tamano={15} />
-            {oficina.mapaTexto}
-          </a>
+        <div class="cobertura-contacto reveal">
+          <h3>{cobertura.titulo}</h3>
+          <p>{cobertura.texto}</p>
+          <div class="chips">
+            {sitio.ciudades.map((c) => <span class="chip">{c.nombre}</span>)}
+          </div>
         </div>
       </div>
 
-      <div class="panel-form reveal-up">
-        <span class="eyebrow"><span class="dot"></span> {hero.eyebrow}</span>
-        <h2 class="agendar-panel-titulo" style="margin-top:0.7rem;font-size:1.35rem">{formulario.titulo}</h2>
+      <div class="panel-form reveal">
+        <h2 class="agendar-panel-titulo">{formulario.titulo}</h2>
         <p class="agendar-panel-texto">{formulario.texto}</p>
         <Formulario />
       </div>
@@ -60,18 +55,17 @@ const { meta, hero, canales, oficina, formulario, faq } = datos;
   </section>
 
   {faq.items.length > 0 && (
-    <section class="pad">
+    <section class="pad fondo-alt">
       <div class="container faq-grid">
-        <div>
-          <span class="eyebrow reveal"><span class="dot"></span> {faq.eyebrow}</span>
-          <h2 class="titulo-seccion reveal" style="margin-top:1rem">{faq.titulo}</h2>
+        <div class="faq-intro">
+          <h2 class="titulo-seccion reveal">{faq.titulo}</h2>
         </div>
         <div class="faq-lista">
           {faq.items.map((f) => (
-            <details class="faq-item reveal-up">
+            <details class="faq-item">
               <summary class="faq-pregunta">
                 {f.pregunta}
-                <Icon nombre="plus" tamano={18} />
+                <Icon nombre="plus" tamano={20} />
               </summary>
               <p class="faq-respuesta">{f.respuesta}</p>
             </details>

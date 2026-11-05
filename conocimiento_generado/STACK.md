@@ -13,7 +13,7 @@ ni API keys.**
   - el formulario que valida y abre WhatsApp.
 - **Animaciones:** CSS + `IntersectionObserver`. No hay GSAP, ni Framer, ni Lenis.
 - **Iconos:** SVG dibujados dentro del sitio en `src/components/Icon.astro`. Sin CDN.
-- **Fuentes:** Sora, Instrument Sans y JetBrains Mono, auto-hospedadas en `public/fonts/`.
+- **Fuentes:** Sora e Instrument Sans, auto-hospedadas en `public/fonts/`.
 
 ## Arrancar
 
@@ -37,7 +37,7 @@ src/
     servicios-pagina.json← textos del listado y etiquetas del detalle
     marcas.json          ← 22 marcas; 12 con página propia
     nosotros.json
-    contacto.json        ← canales, oficina, formulario y sus errores
+    contacto.json        ← canales, cobertura, formulario y sus errores
     legales.json         ← 3 documentos legales
     404.json
   styles/global.css      ← tokens, base, todas las secciones, tema oscuro

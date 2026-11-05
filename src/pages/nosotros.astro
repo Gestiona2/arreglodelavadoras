@@ -15,37 +15,34 @@ const wa = `https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(sitio.mens
 <Layout titulo={meta.titulo} descripcion={meta.descripcion} activa="nosotros">
   <header class="pagina-hero">
     <div class="container">
-      <span class="eyebrow"><span class="dot"></span> {hero.eyebrow}</span>
-      <h1>{hero.titulo}</h1>
-      <p class="lead">{hero.texto}</p>
+      <h1 class="reveal">{hero.titulo}</h1>
+      <p class="lead reveal">{hero.texto}</p>
     </div>
   </header>
 
   <section class="pad">
     <div class="container historia-grid">
-      <figure class="reveal-left">
+      <figure class="reveal">
         <img src={ruta(hero.imagen)} alt={hero.imagenAlt} width="1200" height="1400" loading="lazy" />
       </figure>
       <div class="historia-texto">
-        <span class="eyebrow reveal"><span class="dot"></span> {historia.eyebrow}</span>
-        <h2 class="titulo-seccion reveal" style="margin-top:1rem">{historia.titulo}</h2>
+        <h2 class="titulo-seccion reveal">{historia.titulo}</h2>
         {historia.parrafos.map((p) => <p class="reveal">{p}</p>)}
       </div>
     </div>
   </section>
 
-  <section class="pad">
+  <section class="pad fondo-alt">
     <div class="container">
       <div class="cabecera">
         <div class="cabecera-texto">
-          <span class="eyebrow reveal"><span class="dot"></span> {principios.eyebrow}</span>
-          <h2 class="titulo-seccion reveal" style="margin-top:1rem">{principios.titulo}</h2>
+          <h2 class="titulo-seccion reveal">{principios.titulo}</h2>
         </div>
       </div>
-      <div class="principios">
+      <div class="principios" data-stagger>
         {principios.items.map((p) => (
-          <article class="principio reveal-up">
-            <span class="principio-icono"><Icon nombre={p.icono} tamano={21} /></span>
+          <article class="principio reveal">
+            <span class="principio-icono"><Icon nombre={p.icono} tamano={24} /></span>
             <h3>{p.titulo}</h3>
             <p>{p.texto}</p>
           </article>
@@ -57,42 +54,42 @@ const wa = `https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(sitio.mens
   <section class="pad oscuro">
     <div class="container equipo-grid">
       <div>
-        <span class="eyebrow reveal"><span class="dot"></span> {equipo.eyebrow}</span>
-        <h2 class="titulo-seccion reveal" style="margin-top:1rem">{equipo.titulo}</h2>
-        <p class="lead reveal" style="margin-top:1rem">{equipo.texto}</p>
-        <p class="lead reveal" style="margin-top:0.8rem;font-size:0.92rem">{equipo.nota}</p>
+        <h2 class="titulo-seccion reveal">{equipo.titulo}</h2>
+        <p class="lead reveal">{equipo.texto}</p>
+        <p class="lead reveal" style="margin-top:0.8rem;font-size:1rem">{equipo.nota}</p>
       </div>
 
-      <div>
-        <h3 style="font-size:1.15rem;color:#fff">{compromiso.titulo}</h3>
+      <div class="reveal">
+        <h3 style="font-size:1.3rem">{compromiso.titulo}</h3>
         <ul class="compromiso-lista">
           {compromiso.items.map((c) => (
-            <li><Icon nombre="check" tamano={16} trazo={2.4} /> {c}</li>
+            <li><Icon nombre="check" tamano={18} trazo={2.4} /> {c}</li>
           ))}
         </ul>
       </div>
     </div>
   </section>
 
-  <section class="cifras">
+  <section class="pad">
     <div class="container">
-      <div class="cifras-grid">
+      <dl class="cifras-grid">
         {cifras.items.map((c) => (
-          <div class="cifra reveal-up">
-            <Icon nombre={c.icono} tamano={20} clase="cifra-icono" />
-            <span class="cifra-numero" data-contar={c.numero} data-sufijo={c.sufijo}>{c.numero}{c.sufijo}</span>
-            <p class="cifra-texto">{c.texto}</p>
+          <div class="reveal">
+            <dd class="cifra-numero" style="margin:0">{c.numero}{c.sufijo}</dd>
+            <dt class="cifra-texto">{c.texto}</dt>
           </div>
         ))}
-      </div>
+      </dl>
     </div>
   </section>
 
-  <section class="cierre">
+  <section class="cierre fondo-alt">
     <div class="container cierre-interior">
-      <h2 class="reveal">{cierre.titulo}</h2>
-      <p class="reveal">{cierre.texto}</p>
-      <a href={wa} class="btn btn-claro reveal" target="_blank" rel="noopener">
+      <div>
+        <h2 class="reveal">{cierre.titulo}</h2>
+        <p class="reveal">{cierre.texto}</p>
+      </div>
+      <a href={wa} class="btn btn-wa btn-lg reveal" target="_blank" rel="noopener">
         <Icon nombre="whatsapp" tamano={19} />
         {cierre.boton}
       </a>

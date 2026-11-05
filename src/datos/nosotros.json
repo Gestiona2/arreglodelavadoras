@@ -1,30 +1,23 @@
 {
   "_comentario": "Contenido de /nosotros/. Solo hechos verificables: los que ya estaban publicados en el sitio anterior.",
-
   "meta": {
-    "titulo": "Nosotros · Arreglo de Lavadoras, servicio técnico en Ibagué",
-    "descripcion": "Más de 12 años reparando electrodomésticos a domicilio en Ibagué y otras seis ciudades. Técnicos especializados, repuestos originales y garantía de 6 meses."
+    "titulo": "Nosotros · Arreglo de Lavadoras, servicio técnico a domicilio",
+    "descripcion": "Más de 12 años reparando electrodomésticos a domicilio en Bogotá norte, municipios cercanos, Barranquilla e Ibagué. Técnicos por línea de equipo, repuestos originales y garantía de 6 meses."
   },
-
   "hero": {
-    "eyebrow": "Nosotros",
     "titulo": "Oficio, no improvisación",
-    "texto": "Llevamos más de 12 años reparando electrodomésticos en Ibagué. En ese tiempo aprendimos que el cliente no quiere un discurso técnico: quiere saber qué tiene, cuánto cuesta y cuándo queda listo.",
+    "texto": "Llevamos más de 12 años reparando electrodomésticos. En ese tiempo aprendimos que el cliente no quiere un discurso técnico: quiere saber qué tiene, cuánto cuesta y cuándo queda listo.",
     "imagen": "/img/nosotros-tecnico.webp",
     "imagenAlt": "Técnico revisando el panel de una lavadora"
   },
-
   "historia": {
-    "eyebrow": "Nuestra historia",
     "titulo": "Empezamos con una lavadora y una caja de herramientas",
     "parrafos": [
-      "El servicio nació en Ibagué atendiendo lavadoras y neveras de vecinos y conocidos. La recomendación fue el primer canal y sigue siendo el principal: la mayoría de los clientes llega porque alguien le contó cómo quedó su equipo.",
-      "Con los años el taller creció hacia calentadores, estufas, hornos, secadoras y lavavajillas, y el servicio se extendió a otras ciudades con rutas programadas. La lógica no cambió: diagnosticar bien antes de cambiar piezas y dejar constancia de lo que se hizo."
+      "El servicio nació atendiendo lavadoras y neveras de vecinos y conocidos. La recomendación fue el primer canal y sigue siendo el principal: la mayoría de los clientes llega porque alguien le contó cómo quedó su equipo.",
+      "Con los años crecimos hacia calentadores, estufas, hornos, secadoras, lavavajillas y más equipos, y el servicio llegó a otras ciudades. La lógica no cambió: diagnosticar bien antes de cambiar piezas y dejar constancia de lo que se hizo."
     ]
   },
-
   "principios": {
-    "eyebrow": "Cómo trabajamos",
     "titulo": "Tres cosas que no negociamos",
     "items": [
       {
@@ -44,23 +37,39 @@
       }
     ]
   },
-
   "equipo": {
-    "eyebrow": "El equipo",
     "titulo": "Técnicos especializados por línea",
     "texto": "No todos los equipos se diagnostican igual. El equipo se organiza por línea —refrigeración, lavado, gas y cocción— para que quien llega a tu casa conozca el modelo y sus fallas típicas.",
     "nota": "Trabajamos con herramientas de diagnóstico, multímetro, manómetros y equipo de protección. Cada intervención se documenta con el modelo, el repuesto y la prueba realizada."
   },
-
   "cifras": {
     "items": [
-      { "numero": 12, "sufijo": "+", "texto": "Años de experiencia", "icono": "award" },
-      { "numero": 7, "sufijo": "", "texto": "Ciudades atendidas", "icono": "map-pin" },
-      { "numero": 8, "sufijo": "", "texto": "Líneas de equipo", "icono": "wrench" },
-      { "numero": 6, "sufijo": "", "texto": "Meses de garantía", "icono": "shield" }
+      {
+        "numero": 12,
+        "sufijo": "+",
+        "texto": "Años de experiencia",
+        "icono": "award"
+      },
+      {
+        "numero": 10,
+        "sufijo": "",
+        "texto": "Ciudades atendidas",
+        "icono": "map-pin"
+      },
+      {
+        "numero": 14,
+        "sufijo": "",
+        "texto": "Servicios y equipos",
+        "icono": "wrench"
+      },
+      {
+        "numero": 6,
+        "sufijo": "",
+        "texto": "Meses de garantía",
+        "icono": "shield"
+      }
     ]
   },
-
   "compromiso": {
     "titulo": "Lo que puedes esperar de una visita",
     "items": [
@@ -71,7 +80,6 @@
       "Garantía escrita y canal directo de soporte."
     ]
   },
-
   "cierre": {
     "titulo": "¿Le damos una segunda vida a tu equipo?",
     "texto": "Escríbenos con el tipo de electrodoméstico y la falla. Te decimos si se puede revisar y cuándo podemos llegar.",

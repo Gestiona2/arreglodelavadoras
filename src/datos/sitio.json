@@ -1,91 +1,207 @@
 {
   "_comentario": "Datos que se repiten en todas las páginas: contacto, menú, cobertura y pie. El contenido de cada página vive en su propio archivo.",
-  "_pendiente": "Correo, NIT, horario y redes sociales por confirmar con el dueño (ver PENDIENTES.md).",
-
+  "_pendiente": "Correo, NIT, horario y redes sociales por confirmar con el dueño (ver PENDIENTES.md). El cliente pidió mostrar solo celular y WhatsApp: sin sede, sin direcciones, sin fijo.",
   "nombre": "Arreglo de Lavadoras",
-  "razonSocial": "Arreglo de Lavadoras · Servicio Técnico Autorizado",
+  "razonSocial": "Arreglo de Lavadoras",
   "nit": "",
   "tagline": "Servicio técnico de electrodomésticos a domicilio",
-  "descripcion": "Reparación de lavadoras, neveras, calentadores, estufas, hornos, secadoras y lavavajillas a domicilio en Ibagué y otras seis ciudades. Garantía de 6 meses por escrito.",
-
+  "descripcion": "Reparación, mantenimiento e instalación de electrodomésticos a domicilio en Bogotá norte, Chía, Cajicá, Cota, La Calera, Funza, Madrid, Mosquera, Barranquilla e Ibagué. Garantía de 6 meses por escrito.",
   "whatsapp": "573123444325",
   "telefono": "312 344 4325",
-  "fijo": "608 277 9514",
   "correo": "contacto@arreglodelavadoras.com.co",
-  "direccion": "Cra. 23 #64-33",
-  "ciudad": "Ibagué",
-  "departamento": "Tolima",
   "pais": "Colombia",
   "horario": "Lunes a sábado · 8:00 a 18:00",
   "dominio": "https://www.arreglodelavadoras.com.co",
-
-  "cobertura": [
-    "Ibagué",
-    "Bogotá",
-    "Medellín",
-    "Cali",
-    "Barranquilla",
-    "Cartagena",
-    "Santa Marta"
+  "_ciudades": "Cada ciudad pertenece a un grupo (ver 'grupos'). El grupo decide qué servicios se ofrecen allí. Para agregar una ciudad: una línea aquí con el grupo que le corresponde.",
+  "ciudades": [
+    {
+      "nombre": "Bogotá norte",
+      "grupo": "bogota"
+    },
+    {
+      "nombre": "Chía",
+      "grupo": "cercanos"
+    },
+    {
+      "nombre": "Cajicá",
+      "grupo": "cercanos"
+    },
+    {
+      "nombre": "Cota",
+      "grupo": "cercanos"
+    },
+    {
+      "nombre": "La Calera",
+      "grupo": "cercanos"
+    },
+    {
+      "nombre": "Funza",
+      "grupo": "cercanos"
+    },
+    {
+      "nombre": "Madrid",
+      "grupo": "cercanos"
+    },
+    {
+      "nombre": "Mosquera",
+      "grupo": "cercanos"
+    },
+    {
+      "nombre": "Barranquilla",
+      "grupo": "barranquilla"
+    },
+    {
+      "nombre": "Ibagué",
+      "grupo": "ibague"
+    }
   ],
-
+  "_grupos": "Qué se repara en cada grupo de ciudades. Los servicios son los 'slug' de servicios.json. Lo confirmó el cliente por WhatsApp el 3 de noviembre.",
+  "grupos": {
+    "bogota": {
+      "titulo": "Bogotá norte",
+      "acciones": "Reparación, mantenimiento, instalación y arreglo, siempre a domicilio.",
+      "servicios": [
+        "reparacion-de-lavadoras",
+        "reparacion-de-neveras",
+        "reparacion-de-secadoras",
+        "reparacion-de-lavavajillas",
+        "reparacion-de-estufas",
+        "reparacion-de-hornos",
+        "reparacion-de-microondas",
+        "reparacion-de-campanas-extractoras",
+        "reparacion-de-freidoras",
+        "reparacion-de-calentadores",
+        "reparacion-de-cafeteras",
+        "reparacion-de-aspiradoras",
+        "reparacion-de-televisores",
+        "servicio-de-instalacion"
+      ]
+    },
+    "cercanos": {
+      "titulo": "Municipios cerca de Bogotá",
+      "acciones": "Reparación a domicilio.",
+      "servicios": [
+        "reparacion-de-lavadoras",
+        "reparacion-de-neveras",
+        "reparacion-de-lavavajillas",
+        "reparacion-de-calentadores"
+      ]
+    },
+    "barranquilla": {
+      "titulo": "Barranquilla",
+      "acciones": "Reparación a domicilio.",
+      "servicios": [
+        "reparacion-de-lavadoras",
+        "reparacion-de-neveras",
+        "reparacion-de-secadoras",
+        "reparacion-de-lavavajillas",
+        "reparacion-de-estufas",
+        "reparacion-de-calentadores",
+        "reparacion-de-televisores"
+      ]
+    },
+    "ibague": {
+      "titulo": "Ibagué",
+      "acciones": "Reparación a domicilio.",
+      "servicios": [
+        "reparacion-de-lavadoras",
+        "reparacion-de-neveras",
+        "reparacion-de-secadoras"
+      ]
+    }
+  },
   "claveTema": "arreglodelavadoras-tema",
-
   "mensajes": {
     "general": "Hola, quiero agendar un servicio técnico.",
     "ayuda": "Hola, no sé qué servicio necesito. Les cuento la falla:",
     "servicio": "Hola, quiero agendar el servicio de",
-    "marca": "Hola, quiero agendar una revisión de mi equipo marca"
+    "marca": "Hola, quiero agendar una revisión de mi equipo marca",
+    "ciudad": "Hola, estoy en {ciudad} y necesito servicio técnico para:"
   },
-
   "menu": [
-    { "id": "inicio", "texto": "Inicio", "href": "/" },
+    {
+      "id": "inicio",
+      "texto": "Inicio",
+      "href": "/"
+    },
     {
       "id": "servicios",
       "texto": "Servicios",
       "href": "/servicios/",
-      "hijos": [
-        { "texto": "Lavadoras", "href": "/reparacion-de-lavadoras/", "icono": "washer" },
-        { "texto": "Neveras y nevecones", "href": "/reparacion-de-neveras/", "icono": "fridge" },
-        { "texto": "Calentadores", "href": "/reparacion-de-calentadores/", "icono": "flame" },
-        { "texto": "Estufas", "href": "/reparacion-de-estufas/", "icono": "stove" },
-        { "texto": "Hornos", "href": "/reparacion-de-hornos/", "icono": "oven" },
-        { "texto": "Secadoras", "href": "/reparacion-de-secadoras/", "icono": "dryer" },
-        { "texto": "Lavavajillas", "href": "/reparacion-de-lavavajillas/", "icono": "dishwasher" },
-        { "texto": "Instalación", "href": "/servicio-de-instalacion/", "icono": "wrench" }
-      ]
+      "desplegable": true
     },
-    { "id": "marcas", "texto": "Marcas", "href": "/marcas/" },
-    { "id": "nosotros", "texto": "Nosotros", "href": "/nosotros/" },
-    { "id": "contacto", "texto": "Contacto", "href": "/contacto/" }
+    {
+      "id": "marcas",
+      "texto": "Marcas",
+      "href": "/marcas/"
+    },
+    {
+      "id": "nosotros",
+      "texto": "Nosotros",
+      "href": "/nosotros/"
+    },
+    {
+      "id": "contacto",
+      "texto": "Contacto",
+      "href": "/contacto/"
+    }
   ],
-
   "ctaPrincipal": {
     "texto": "Agendar servicio",
     "href": "/contacto/#agendar"
   },
-
   "pie": {
-    "descripcion": "Más de 12 años reparando electrodomésticos a domicilio. Repuestos originales, diagnóstico claro y garantía de 6 meses por escrito.",
+    "descripcion": "Más de 12 años reparando electrodomésticos a domicilio. Diagnóstico claro, repuestos originales y garantía de 6 meses por escrito.",
     "tituloServicios": "Servicios",
     "tituloContacto": "Contacto",
-    "tituloCobertura": "Cobertura",
+    "tituloCobertura": "Dónde atendemos",
     "aviso": "Servicio técnico independiente. Trabajamos con repuestos originales y equivalentes certificados de cada marca.",
     "derechos": "Todos los derechos reservados.",
     "flotante": "Agendar",
     "llamar": "Llamar",
-    "waAria": "Escribir por WhatsApp"
+    "waAria": "Escribir por WhatsApp",
+    "escribir": "WhatsApp",
+    "verTodos": "Ver todos los servicios",
+    "tema": {
+      "aClaro": "Cambiar a tema claro",
+      "aOscuro": "Cambiar a tema oscuro"
+    },
+    "menuAbrir": "Abrir menú",
+    "menuCerrar": "Cerrar menú",
+    "contactoRapido": "Contacto rápido",
+    "saltar": "Saltar al contenido",
+    "principal": "Navegación principal",
+    "horarioEtiqueta": "Horario"
   },
-
   "redes": [
-    { "nombre": "Facebook", "icono": "facebook", "href": "" },
-    { "nombre": "Instagram", "icono": "instagram", "href": "" },
-    { "nombre": "TikTok", "icono": "tiktok", "href": "" }
+    {
+      "nombre": "Facebook",
+      "icono": "facebook",
+      "href": ""
+    },
+    {
+      "nombre": "Instagram",
+      "icono": "instagram",
+      "href": ""
+    },
+    {
+      "nombre": "TikTok",
+      "icono": "tiktok",
+      "href": ""
+    }
   ],
-
   "legales": [
-    { "texto": "Política de privacidad", "href": "/politica-privacidad/" },
-    { "texto": "Tratamiento de datos", "href": "/tratamiento-datos/" },
-    { "texto": "Términos y condiciones", "href": "/terminos/" }
+    {
+      "texto": "Política de privacidad",
+      "href": "/politica-privacidad/"
+    },
+    {
+      "texto": "Tratamiento de datos",
+      "href": "/tratamiento-datos/"
+    },
+    {
+      "texto": "Términos y condiciones",
+      "href": "/terminos/"
+    }
   ]
 }

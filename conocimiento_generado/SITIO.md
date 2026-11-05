@@ -1,88 +1,39 @@
-# El sitio — Arreglo de Lavadoras
+# Sitio — Arreglo de Lavadoras
 
-## El negocio
+## Qué es
 
-**Arreglo de Lavadoras** es un servicio técnico de electrodomésticos a domicilio con base
-en **Ibagué, Tolima** (Cra. 23 #64-33). Lleva **más de 12 años** reparando línea blanca y
-atiende visitas en **siete ciudades**: Ibagué, Bogotá, Medellín, Cali, Barranquilla,
-Cartagena y Santa Marta.
+Servicio técnico de electrodomésticos **a domicilio**, con más de 12 años de oficio. **No tiene
+sede ni dirección pública** (el cliente lo pidió así el 3 de noviembre de 2026). Todo el
+contacto es por **celular y WhatsApp: 312 344 4325** (`573123444325`). Sin teléfono fijo.
 
-Repara ocho líneas de equipos: lavadoras, neveras y nevecones, calentadores, estufas,
-hornos, secadoras, lavavajillas e instalación de equipos.
+## Dónde atiende y qué repara en cada lugar
 
-**Lo que promete y está comprobado en el sitio anterior:**
+Lo confirmó el cliente por WhatsApp. Vive en `src/datos/sitio.json` (`ciudades` y `grupos`).
 
-- Diagnóstico antes de cobrar; el cliente decide con el valor en la mano.
-- Repuestos originales o equivalentes certificados.
-- Garantía de **6 meses por escrito** sobre la reparación y el repuesto.
-- Atención a domicilio y soporte por WhatsApp.
-
-**Cómo entra el cliente:** casi todo por WhatsApp. El teléfono es **312 344 4325**
-(WhatsApp `573123444325`). Hay también fijo **608 277 9514** y correo
-`contacto@arreglodelavadoras.com.co` (sin confirmar, ver `PENDIENTES.md`).
-
-## Qué es este sitio
-
-Reemplazo completo del sitio anterior, con la misma información de negocio pero una
-presentación nueva. **No es una tienda ni un portal de reservas:** el formulario de
-agendamiento arma un mensaje y abre WhatsApp. No hay pagos, cuentas ni base de datos.
-
-## Páginas (29 en total)
-
-### Principales
-
-| Dirección | Página | Qué hace |
+| Grupo | Ciudades | Qué se repara |
 |---|---|---|
-| `/` | Inicio | Portada, servicios, proceso, diferenciales, cifras, cobertura, testimonios, preguntas y formulario |
-| `/servicios/` | Servicios | Listado de las ocho líneas, con enlace a cada detalle |
-| `/marcas/` | Marcas | Las 22 marcas que atiende; 12 llevan a su página |
-| `/nosotros/` | Nosotros | Historia, principios, equipo y compromiso |
-| `/contacto/` | Contacto | Canales, oficina y formulario de agendamiento |
-| `/404.html` | No encontrada | Salida amable con enlaces de vuelta |
+| Bogotá norte | Bogotá (solo norte) | Todo: lavadoras (incl. frontales y torres), neveras y nevecones, secadoras, lavavajillas (domésticos e industriales), estufas (gas, eléctricas, inducción), hornos (eléctricos y gas), microondas, campanas extractoras (cocina y restaurante), freidoras (domésticas e industriales), calentadores (paso y acumulación), cafeteras, aspiradoras (no robóticas), televisores. Además mantenimiento e instalación |
+| Municipios cerca de Bogotá | Chía, Cajicá, Cota, La Calera, Funza, Madrid, Mosquera | Lavadoras, neveras y nevecones, calentadores, lavavajillas |
+| Barranquilla | Barranquilla | Televisores, lavadoras, lavavajillas, secadoras, estufas, calentadores, neveras |
+| Ibagué | Ibagué | Lavadoras, secadoras, neveras y nevecones |
 
-### Servicios (una página por equipo)
+## Páginas
 
-| Dirección | Equipo |
+| Dirección | Página |
 |---|---|
-| `/reparacion-de-lavadoras/` | Lavadoras |
-| `/reparacion-de-neveras/` | Neveras y nevecones |
-| `/reparacion-de-calentadores/` | Calentadores |
-| `/reparacion-de-estufas/` | Estufas |
-| `/reparacion-de-hornos/` | Hornos |
-| `/reparacion-de-secadoras/` | Secadoras |
-| `/reparacion-de-lavavajillas/` | Lavavajillas |
-| `/servicio-de-instalacion/` | Instalación |
+| `/` | Inicio: portada, marcas, selector por ciudad, catálogo, proceso, garantía, testimonios, preguntas, formulario |
+| `/servicios/` | Catálogo agrupado por categoría |
+| `/reparacion-de-…/`, `/servicio-de-instalacion/` | 14 páginas de servicio, cada una con «Dónde lo atendemos» calculado |
+| `/marcas/` y `/marcas/<marca>/` | Marcas que se reparan |
+| `/nosotros/`, `/contacto/` | Historia y contacto |
+| `/politica-privacidad/`, `/tratamiento-datos/`, `/terminos/` | Legales |
 
-> Estas direcciones son **las mismas del sitio anterior**. No se cambian sin un plan de
-> redirecciones: son las que sostienen el posicionamiento en Google.
+Las direcciones de los servicios viejos se conservan (posicionamiento en Google). Las seis
+páginas nuevas (microondas, campanas, freidoras, cafeteras, aspiradoras, televisores) no
+existían antes.
 
-### Marcas con página propia (12)
+## Cómo convierte
 
-`/marcas/lg/`, `/marcas/samsung/`, `/marcas/haceb/`, `/marcas/whirlpool/`,
-`/marcas/mabe/`, `/marcas/electrolux/`, `/marcas/challenger/`, `/marcas/bosch/`,
-`/marcas/frigidaire/`, `/marcas/general-electric/`, `/marcas/kitchenaid/`,
-`/marcas/kenmore/`
-
-Las otras diez marcas (Centrales, Oster, Black+Decker, Sueco, Cimsa, Clasic, Abba,
-Tramontina, Rheem y Ariston) solo aparecen en la lista de `/marcas/`. Ver `SECCIONES.md`.
-
-### Legales
-
-`/politica-privacidad/`, `/tratamiento-datos/`, `/terminos/`
-
-> Son plantillas base. **Deben revisarse con el dueño o un abogado** antes de publicar en
-> el dominio definitivo. Ver `PENDIENTES.md`.
-
-### Archivos técnicos
-
-`/sitemap.xml`, `/robots.txt` — se generan solos en cada compilación.
-
-## Tono del sitio
-
-Directo, de oficio, sin adornos de agencia. Frases cortas. Se habla de "tu equipo", no de
-"soluciones integrales". No se promete lo que no está comprobado: nada de "los mejores",
-"número uno" ni marcas "autorizadas" si no hay certificación del fabricante.
-
-> Ojo con la palabra **"autorizado"**. Aparece en el nombre comercial que usaba el sitio
-> anterior (`Servicio Técnico Autorizado`), pero **no hay certificado de fábrica** que lo
-> respalde. Ver `PENDIENTES.md` y `LIMITES.md`.
+El formulario **no guarda nada**: abre WhatsApp con el mensaje armado. El selector de ciudad
+del inicio también abre WhatsApp, con la ciudad escrita. En celular hay una barra fija
+«Llamar / WhatsApp».

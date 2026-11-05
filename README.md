@@ -1,8 +1,9 @@
 # Arreglo de Lavadoras — sitio web
 
 Sitio estático para **Arreglo de Lavadoras**, servicio técnico de electrodomésticos a
-domicilio con base en Ibagué y atención en seis ciudades más. Reparación de lavadoras,
-neveras, calentadores, estufas, hornos, secadoras y lavavajillas.
+domicilio en Bogotá norte, municipios cercanos, Barranquilla e Ibagué (sin sede pública).
+Reparación de lavadoras, neveras, calentadores, estufas, hornos, microondas, secadoras,
+lavavajillas, campanas, freidoras, cafeteras, aspiradoras y televisores.
 
 Construido con **Astro 7**, CSS propio (Tailwind 4 como base), tipografías auto-hospedadas y
 cero librerías de JavaScript. Sin base de datos y sin backend: el agendamiento se completa
@@ -80,7 +81,7 @@ src/
   pages/          una ruta por página
 public/
   brand/          logos, favicons y og.jpg
-  fonts/          Sora, Instrument Sans, JetBrains Mono (.woff2)
+  fonts/          Sora, Instrument Sans (.woff2)
   img/            fotos en .webp
 scripts/          publicar-demo.sh
 ```

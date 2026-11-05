@@ -1,12 +1,11 @@
 {
-  "_comentario": "Un objeto por servicio. De aquí salen las tarjetas del inicio, la página /servicios/ y cada página de detalle (/reparacion-de-lavadoras/, etc.). Si se agrega un servicio, su página se crea sola.",
+  "_comentario": "Un objeto por servicio. De aquí salen el catálogo del inicio, la página /servicios/ y cada página de detalle. Dónde se ofrece cada servicio NO está aquí: sale de sitio.json (grupos). 'imagen' puede ir vacía: la página se arma sin foto.",
   "_limite": "Entre 6 y 8 fallas por servicio: más de 8 saturan la lista en celular.",
-
   "items": [
     {
       "slug": "reparacion-de-lavadoras",
       "nombre": "Lavadoras",
-      "titulo": "Reparación de lavadoras en Ibagué",
+      "titulo": "Reparación de lavadoras a domicilio",
       "subtitulo": "Carga, centrífuga, drenaje y tablero. Diagnóstico a domicilio y garantía de 6 meses.",
       "icono": "washer",
       "imagen": "/img/servicios/lavadoras.webp",
@@ -14,7 +13,7 @@
       "resumen": "No centrifuga, no carga, vibra o deja la ropa mojada. Revisamos motor, bomba, sensores y tablero en tu casa.",
       "intro": [
         "Tu lavadora trabaja todos los días y, cuando falla, la casa entera se detiene. Por eso atendemos el mismo día según disponibilidad y llegamos con las herramientas y los repuestos más comunes para el equipo.",
-        "Revisamos el ciclo completo antes de entregar: llenado, lavado, enjuague, centrífuga y drenaje. Si algo no queda probado, no lo damos por reparado."
+        "Revisamos el ciclo completo antes de entregar: llenado, lavado, enjuague, centrífuga y drenaje. Si algo no queda probado, no lo damos por reparado. Atendemos lavadoras de carga superior, lavadoras frontales y torres lavadora-secadora."
       ],
       "fallas": [
         "No centrifuga o deja la ropa escurriendo agua",
@@ -25,26 +24,59 @@
         "Se detiene a mitad del ciclo o reinicia sola"
       ],
       "incluye": [
-        { "titulo": "Diagnóstico en sitio", "texto": "Revisamos motor, bomba, válvulas, sensores y tarjeta sin desmontar el equipo de tu casa." },
-        { "titulo": "Repuesto correcto", "texto": "Original o equivalente certificado, según disponibilidad y modelo. Te mostramos la referencia." },
-        { "titulo": "Prueba completa", "texto": "Corremos los ciclos contigo delante: llenado, lavado, enjuague, centrífuga y desagüe." },
-        { "titulo": "Garantía escrita", "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp." }
+        {
+          "titulo": "Diagnóstico en sitio",
+          "texto": "Revisamos motor, bomba, válvulas, sensores y tarjeta sin desmontar el equipo de tu casa."
+        },
+        {
+          "titulo": "Repuesto correcto",
+          "texto": "Original o equivalente certificado, según disponibilidad y modelo. Te mostramos la referencia."
+        },
+        {
+          "titulo": "Prueba completa",
+          "texto": "Corremos los ciclos contigo delante: llenado, lavado, enjuague, centrífuga y desagüe."
+        },
+        {
+          "titulo": "Garantía escrita",
+          "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
+        }
       ],
-      "marcas": ["LG", "Samsung", "Haceb", "Whirlpool", "Mabe", "Electrolux", "Challenger", "Frigidaire", "Centrales", "Kenmore"],
+      "marcas": [
+        "LG",
+        "Samsung",
+        "Haceb",
+        "Whirlpool",
+        "Mabe",
+        "Electrolux",
+        "Challenger",
+        "Frigidaire",
+        "Centrales",
+        "Kenmore"
+      ],
       "faq": [
-        { "pregunta": "¿Reparan lavadoras de carga superior y frontal?", "respuesta": "Sí. Trabajamos ambos tipos, automáticas y semiautomáticas, en todas las marcas de la lista." },
-        { "pregunta": "¿Cuánto tarda una reparación de lavadora?", "respuesta": "La mayoría se resuelve en la misma visita. Si el repuesto hay que pedirlo, te damos el plazo exacto antes de cobrar nada." },
-        { "pregunta": "¿Vale la pena reparar o es mejor comprar otra?", "respuesta": "Te lo decimos con el diagnóstico en la mano. Si el costo supera la mitad de un equipo nuevo, te lo advertimos antes de intervenir." }
+        {
+          "pregunta": "¿Reparan lavadoras frontales y torres lavadora-secadora?",
+          "respuesta": "Sí. Trabajamos lavadoras de carga superior y frontales, automáticas y semiautomáticas, y torres lavadora-secadora, en todas las marcas de la lista."
+        },
+        {
+          "pregunta": "¿Cuánto tarda una reparación de lavadora?",
+          "respuesta": "La mayoría se resuelve en la misma visita. Si el repuesto hay que pedirlo, te damos el plazo exacto antes de cobrar nada."
+        },
+        {
+          "pregunta": "¿Vale la pena reparar o es mejor comprar otra?",
+          "respuesta": "Te lo decimos con el diagnóstico en la mano. Si el costo supera la mitad de un equipo nuevo, te lo advertimos antes de intervenir."
+        }
       ],
       "meta": {
-        "titulo": "Reparación de lavadoras en Ibagué · Servicio a domicilio",
-        "descripcion": "Técnicos en reparación de lavadoras LG, Samsung, Haceb, Whirlpool y Mabe a domicilio en Ibagué. Diagnóstico, repuestos originales y garantía de 6 meses."
-      }
+        "titulo": "Reparación de lavadoras · A domicilio",
+        "descripcion": "Técnicos en reparación de lavadoras LG, Samsung, Haceb, Whirlpool y Mabe a domicilio. Diagnóstico, repuestos originales y garantía de 6 meses."
+      },
+      "categoria": "lavado"
     },
     {
       "slug": "reparacion-de-neveras",
       "nombre": "Neveras y nevecones",
-      "titulo": "Reparación de neveras y nevecones en Ibagué",
+      "titulo": "Reparación de neveras y nevecones a domicilio",
       "subtitulo": "Frío, escarcha, fugas y compresor. Recuperamos la cadena de frío de tu equipo.",
       "icono": "fridge",
       "imagen": "/img/servicios/neveras.webp",
@@ -63,140 +95,59 @@
         "Termostato, timer o resistencia dañados"
       ],
       "incluye": [
-        { "titulo": "Diagnóstico de refrigeración", "texto": "Medimos presión, temperatura y consumo para ubicar la falla real, no solo el síntoma." },
-        { "titulo": "Repuesto correcto", "texto": "Compresor, termostato, resistencia o empaque original o equivalente certificado." },
-        { "titulo": "Prueba de frío", "texto": "Dejamos el equipo midiendo temperatura y verificando que recupere el ciclo normal." },
-        { "titulo": "Garantía escrita", "texto": "6 meses sobre la reparación y el repuesto instalado, con seguimiento por WhatsApp." }
+        {
+          "titulo": "Diagnóstico de refrigeración",
+          "texto": "Medimos presión, temperatura y consumo para ubicar la falla real, no solo el síntoma."
+        },
+        {
+          "titulo": "Repuesto correcto",
+          "texto": "Compresor, termostato, resistencia o empaque original o equivalente certificado."
+        },
+        {
+          "titulo": "Prueba de frío",
+          "texto": "Dejamos el equipo midiendo temperatura y verificando que recupere el ciclo normal."
+        },
+        {
+          "titulo": "Garantía escrita",
+          "texto": "6 meses sobre la reparación y el repuesto instalado, con seguimiento por WhatsApp."
+        }
       ],
-      "marcas": ["LG", "Samsung", "Haceb", "Whirlpool", "Mabe", "Electrolux", "Frigidaire", "Challenger", "General Electric", "KitchenAid"],
+      "marcas": [
+        "LG",
+        "Samsung",
+        "Haceb",
+        "Whirlpool",
+        "Mabe",
+        "Electrolux",
+        "Frigidaire",
+        "Challenger",
+        "General Electric",
+        "KitchenAid"
+      ],
       "faq": [
-        { "pregunta": "¿Reparan nevecones y exhibidores?", "respuesta": "Sí. Atendemos nevecones, congeladores horizontales y vitrinas de uso comercial pequeño." },
-        { "pregunta": "¿Cada cuánto se debe hacer mantenimiento a una nevera?", "respuesta": "Recomendamos una revisión anual: limpieza de condensador, revisión de empaques y control de temperatura. Alarga la vida del compresor." },
-        { "pregunta": "Mi nevera enfría pero gotea, ¿es grave?", "respuesta": "Casi siempre es el desagüe tapado o un empaque vencido. Se corrige en la misma visita y evita daños mayores en el piso y en el aislamiento." }
+        {
+          "pregunta": "¿Reparan nevecones y exhibidores?",
+          "respuesta": "Sí. Atendemos nevecones, congeladores horizontales y vitrinas de uso comercial pequeño."
+        },
+        {
+          "pregunta": "¿Cada cuánto se debe hacer mantenimiento a una nevera?",
+          "respuesta": "Recomendamos una revisión anual: limpieza de condensador, revisión de empaques y control de temperatura. Alarga la vida del compresor."
+        },
+        {
+          "pregunta": "Mi nevera enfría pero gotea, ¿es grave?",
+          "respuesta": "Casi siempre es el desagüe tapado o un empaque vencido. Se corrige en la misma visita y evita daños mayores en el piso y en el aislamiento."
+        }
       ],
       "meta": {
-        "titulo": "Reparación de neveras y nevecones en Ibagué · A domicilio",
-        "descripcion": "Reparación de neveras LG, Samsung, Haceb, Whirlpool, Mabe y Frigidaire a domicilio en Ibagué. Compresor, termostato, fugas y mantenimiento. Garantía de 6 meses."
-      }
-    },
-    {
-      "slug": "reparacion-de-calentadores",
-      "nombre": "Calentadores",
-      "titulo": "Reparación de calentadores en Ibagué",
-      "subtitulo": "Agua caliente estable, encendido confiable y revisión de gas sin riesgos.",
-      "icono": "flame",
-      "imagen": "/img/servicios/calentadores.webp",
-      "imagenAlt": "Calentador de agua instalado en un baño moderno",
-      "resumen": "No calienta, se apaga solo o gotea. Revisamos encendido, presión y conexiones de gas con protocolo de seguridad.",
-      "intro": [
-        "Un calentador que falla no es solo una incomodidad: puede ser un riesgo. Trabajamos con protocolo de revisión de gas, ventilación y presión antes de tocar cualquier componente.",
-        "Atendemos calentadores a gas y eléctricos, de paso y de acumulación. Si el equipo ya no tiene repuestos seguros, te lo decimos con claridad."
-      ],
-      "fallas": [
-        "No calienta o el agua sale fría de un momento a otro",
-        "Se apaga a los pocos segundos de encender",
-        "Fuga de agua en conexiones, válvula o cuerpo",
-        "No enciende: chispa, batería o encendido electrónico",
-        "Presión inestable o agua que sale muy caliente",
-        "Mantenimiento, purga y revisión de ventilación"
-      ],
-      "incluye": [
-        { "titulo": "Revisión de seguridad", "texto": "Verificamos gas, ventilación y presión antes y después de la intervención." },
-        { "titulo": "Repuesto correcto", "texto": "Válvula, encendedor, sensor o resistencia original o equivalente certificado." },
-        { "titulo": "Prueba de estabilidad", "texto": "Encendemos, medimos temperatura y confirmamos que se mantiene sin apagarse." },
-        { "titulo": "Garantía escrita", "texto": "6 meses sobre la reparación y el repuesto instalado." }
-      ],
-      "marcas": ["Bosch", "Challenger", "Haceb", "Sueco", "Cimsa", "Clasic", "Mabe", "Abba", "Rheem", "Ariston"],
-      "faq": [
-        { "pregunta": "¿Revisan la instalación de gas?", "respuesta": "Sí. Comprobamos conexiones, ventilación y ausencia de fugas. Si detectamos una condición insegura, no dejamos el equipo en funcionamiento." },
-        { "pregunta": "¿Reparan calentadores eléctricos?", "respuesta": "Sí, de paso y de acumulación. Cambiamos resistencia, termostato y válvulas según el modelo." },
-        { "pregunta": "¿Cada cuánto se hace mantenimiento?", "respuesta": "Una vez al año en uso residencial. En zonas con agua dura, cada seis meses para evitar sedimentos y pérdida de eficiencia." }
-      ],
-      "meta": {
-        "titulo": "Reparación de calentadores en Ibagué · A domicilio",
-        "descripcion": "Reparación y mantenimiento de calentadores a gas y eléctricos en Ibagué. Bosch, Challenger, Haceb, Sueco y más. Revisión de gas y garantía de 6 meses."
-      }
-    },
-    {
-      "slug": "reparacion-de-estufas",
-      "nombre": "Estufas",
-      "titulo": "Reparación de estufas en Ibagué",
-      "subtitulo": "Quemadores, chispa, válvulas y conexión a gas. La cocina vuelve a encender parejo.",
-      "icono": "stove",
-      "imagen": "/img/servicios/estufas.webp",
-      "imagenAlt": "Estufa a gas moderna con quemadores y utensilios de cocina",
-      "resumen": "Un quemador no prende, la llama es amarilla o hay olor a gas. Revisamos y corregimos con prueba de combustión.",
-      "intro": [
-        "La llama dice mucho del estado de una estufa. Una llama amarilla, un quemador que no prende o un olor extraño se revisan el mismo día: son señales de combustión incompleta o fuga.",
-        "Trabajamos estufas a gas, mixtas y de inducción. También hacemos instalación, conversión de gas natural y mantenimiento preventivo."
-      ],
-      "fallas": [
-        "Un quemador no enciende o la chispa es débil",
-        "Llama amarilla, desprendida o con hollín",
-        "Olor a gas o fuga en la conexión",
-        "Perillas duras, válvulas que no cierran bien",
-        "Parrillas y quemadores obstruidos",
-        "Instalación a gas y conversión de gas natural"
-      ],
-      "incluye": [
-        { "titulo": "Revisión de combustión", "texto": "Medimos la llama y revisamos inyectores, aireación y conexión antes de intervenir." },
-        { "titulo": "Repuesto correcto", "texto": "Chispero, válvula, inyector o perilla original o equivalente certificado." },
-        { "titulo": "Prueba de encendido", "texto": "Encendemos cada quemador y verificamos estabilidad y ausencia de olor." },
-        { "titulo": "Garantía escrita", "texto": "6 meses sobre la reparación y el repuesto instalado." }
-      ],
-      "marcas": ["Haceb", "Challenger", "Whirlpool", "Samsung", "Mabe", "KitchenAid", "General Electric", "Bosch", "Tramontina", "Oster"],
-      "faq": [
-        { "pregunta": "Huele a gas, ¿qué hago primero?", "respuesta": "Cierra la llave general, ventila y no accione interruptores. Escríbenos o llama de inmediato; atendemos la revisión como prioridad." },
-        { "pregunta": "¿Convierten estufas a gas natural?", "respuesta": "Sí, con cambio de inyectores y prueba de combustión. La conversión debe quedar certificada, no improvisada." },
-        { "pregunta": "¿Reparan estufas de inducción?", "respuesta": "Sí. Diagnosticamos placa, sensores y circuito de potencia; cuando el repuesto no existe, te lo decimos antes de cobrar." }
-      ],
-      "meta": {
-        "titulo": "Reparación de estufas en Ibagué · Servicio a domicilio",
-        "descripcion": "Reparación de estufas a gas, mixtas y de inducción en Ibagué. Quemadores, chispa, válvulas y fugas. Instalación y conversión a gas natural. Garantía de 6 meses."
-      }
-    },
-    {
-      "slug": "reparacion-de-hornos",
-      "nombre": "Hornos",
-      "titulo": "Reparación de hornos en Ibagué",
-      "subtitulo": "Resistencias, termostato, convección y tablero. Temperatura pareja para volver a cocinar.",
-      "icono": "oven",
-      "imagen": "/img/servicios/hornos.webp",
-      "imagenAlt": "Panel de control de un horno de acero inoxidable",
-      "resumen": "No calienta, calienta de más o la puerta no sella. Revisamos resistencia, termostato y control de temperatura.",
-      "intro": [
-        "Un horno que no mantiene la temperatura arruina cualquier receta y puede volverse un riesgo eléctrico. Medimos el ciclo de calentamiento y verificamos el corte del termostato.",
-        "Atendemos hornos empotrados, de mesa y de estufa. Cambiamos resistencias, termostatos, ventiladores y empaques de puerta."
-      ],
-      "fallas": [
-        "No calienta o tarda demasiado en llegar a temperatura",
-        "Calienta de más y quema la comida",
-        "Resistencia partida o con puntos calientes",
-        "La puerta no sella y se escapa el calor",
-        "Ventilador de convección ruidoso o detenido",
-        "Tablero, perillas o selector de funciones sin respuesta"
-      ],
-      "incluye": [
-        { "titulo": "Diagnóstico eléctrico", "texto": "Medimos resistencia, termostato y control de potencia con el equipo aislado." },
-        { "titulo": "Repuesto correcto", "texto": "Resistencia, termostato, empaque o ventilador original o equivalente certificado." },
-        { "titulo": "Prueba de temperatura", "texto": "Calentamos y verificamos estabilidad y corte antes de entregar." },
-        { "titulo": "Garantía escrita", "texto": "6 meses sobre la reparación y el repuesto instalado." }
-      ],
-      "marcas": ["Electrolux", "Haceb", "Challenger", "General Electric", "Bosch", "Whirlpool", "Black+Decker", "Oster", "Samsung", "LG"],
-      "faq": [
-        { "pregunta": "¿Reparan hornos empotrados de cualquier marca?", "respuesta": "Trabajamos las marcas de la lista y varias referencias importadas. Si no tenemos el repuesto, te decimos si es posible conseguirlo." },
-        { "pregunta": "¿Cambian el vidrio de la puerta?", "respuesta": "Sí, cuando la referencia está disponible. Es una reparación de seguridad: un vidrio trizado no debe usarse." },
-        { "pregunta": "¿Vale la pena reparar un horno viejo?", "respuesta": "Depende del costo del repuesto frente al equipo nuevo. El diagnóstico incluye esa comparación para que decidas con datos." }
-      ],
-      "meta": {
-        "titulo": "Reparación de hornos en Ibagué · Servicio a domicilio",
-        "descripcion": "Reparación de hornos eléctricos y a gas en Ibagué. Resistencias, termostato, convección y puertas. Electrolux, Haceb, Challenger y más. Garantía de 6 meses."
-      }
+        "titulo": "Reparación de neveras y nevecones · A domicilio",
+        "descripcion": "Reparación de neveras LG, Samsung, Haceb, Whirlpool, Mabe y Frigidaire a domicilio. Compresor, termostato, fugas y mantenimiento. Garantía de 6 meses."
+      },
+      "categoria": "frio"
     },
     {
       "slug": "reparacion-de-secadoras",
       "nombre": "Secadoras",
-      "titulo": "Reparación de secadoras en Ibagué",
+      "titulo": "Reparación de secadoras a domicilio",
       "subtitulo": "Calor, tambor y sensores. Ropa seca sin esperar dos ciclos.",
       "icono": "dryer",
       "imagen": "/img/servicios/secadoras.webp",
@@ -215,26 +166,59 @@
         "Ducto o filtro obstruido y olor a quemado"
       ],
       "incluye": [
-        { "titulo": "Diagnóstico de calor", "texto": "Medimos resistencia, termostato y flujo de aire para ubicar la causa real." },
-        { "titulo": "Repuesto correcto", "texto": "Correa, resistencia, sensor o termostato original o equivalente certificado." },
-        { "titulo": "Limpieza de ducto", "texto": "Despejamos la salida de aire, que además reduce el riesgo de sobrecalentamiento." },
-        { "titulo": "Garantía escrita", "texto": "6 meses sobre la reparación y el repuesto instalado." }
+        {
+          "titulo": "Diagnóstico de calor",
+          "texto": "Medimos resistencia, termostato y flujo de aire para ubicar la causa real."
+        },
+        {
+          "titulo": "Repuesto correcto",
+          "texto": "Correa, resistencia, sensor o termostato original o equivalente certificado."
+        },
+        {
+          "titulo": "Limpieza de ducto",
+          "texto": "Despejamos la salida de aire, que además reduce el riesgo de sobrecalentamiento."
+        },
+        {
+          "titulo": "Garantía escrita",
+          "texto": "6 meses sobre la reparación y el repuesto instalado."
+        }
       ],
-      "marcas": ["LG", "Samsung", "Whirlpool", "Electrolux", "Haceb", "Mabe", "Frigidaire", "Challenger", "General Electric", "Bosch"],
+      "marcas": [
+        "LG",
+        "Samsung",
+        "Whirlpool",
+        "Electrolux",
+        "Haceb",
+        "Mabe",
+        "Frigidaire",
+        "Challenger",
+        "General Electric",
+        "Bosch"
+      ],
       "faq": [
-        { "pregunta": "¿Por qué la secadora demora tanto?", "respuesta": "Casi siempre es un ducto obstruido o un sensor de humedad descalibrado. Ambas cosas se corrigen en la misma visita." },
-        { "pregunta": "¿Reparan secadoras a gas?", "respuesta": "Sí, con revisión de combustión y ventilación igual que en estufas y calentadores." },
-        { "pregunta": "¿Puedo usar la secadora mientras espero la visita?", "respuesta": "Si hay olor a quemado o ruido fuerte, no. Desconéctala y espera al técnico." }
+        {
+          "pregunta": "¿Por qué la secadora demora tanto?",
+          "respuesta": "Casi siempre es un ducto obstruido o un sensor de humedad descalibrado. Ambas cosas se corrigen en la misma visita."
+        },
+        {
+          "pregunta": "¿Reparan secadoras a gas?",
+          "respuesta": "Sí, con revisión de combustión y ventilación igual que en estufas y calentadores."
+        },
+        {
+          "pregunta": "¿Puedo usar la secadora mientras espero la visita?",
+          "respuesta": "Si hay olor a quemado o ruido fuerte, no. Desconéctala y espera al técnico."
+        }
       ],
       "meta": {
-        "titulo": "Reparación de secadoras en Ibagué · Servicio a domicilio",
-        "descripcion": "Reparación de secadoras eléctricas y a gas en Ibagué. No seca, no calienta, tambor quieto o ruidoso. LG, Samsung, Whirlpool, Haceb. Garantía de 6 meses."
-      }
+        "titulo": "Reparación de secadoras · A domicilio",
+        "descripcion": "Reparación de secadoras eléctricas y a gas a domicilio. No seca, no calienta, tambor quieto o ruidoso. LG, Samsung, Whirlpool, Haceb. Garantía de 6 meses."
+      },
+      "categoria": "lavado"
     },
     {
       "slug": "reparacion-de-lavavajillas",
       "nombre": "Lavavajillas",
-      "titulo": "Reparación de lavavajillas en Ibagué",
+      "titulo": "Reparación de lavavajillas a domicilio",
       "subtitulo": "Lavado, desagüe, temperatura y fugas. Vajilla limpia sin repetir el ciclo.",
       "icono": "dishwasher",
       "imagen": "/img/servicios/lavavajillas.webp",
@@ -242,7 +226,7 @@
       "resumen": "Deja residuos, no desagua o gotea. Revisamos bomba, válvulas, resistencia y dosificación.",
       "intro": [
         "Cuando el lavavajillas deja de lavar bien, mucha gente cambia el detergente y sigue igual. La causa suele ser el brazo aspersor, la bomba o el sensor de temperatura.",
-        "Revisamos el ciclo completo y también la instalación: una manguera mal conectada o un desagüe sin pendiente produce fugas y olores."
+        "Revisamos el ciclo completo y también la instalación: una manguera mal conectada o un desagüe sin pendiente produce fugas y olores. Atendemos lavavajillas domésticos e industriales."
       ],
       "fallas": [
         "Deja residuos o la vajilla sale grasosa",
@@ -253,31 +237,641 @@
         "Errores de tablero y ciclos que no inician"
       ],
       "incluye": [
-        { "titulo": "Diagnóstico de ciclo", "texto": "Revisamos llenado, presión, temperatura y desagüe con el equipo en marcha." },
-        { "titulo": "Repuesto correcto", "texto": "Bomba, válvula, resistencia o sensor original o equivalente certificado." },
-        { "titulo": "Revisión de instalación", "texto": "Verificamos mangueras, sifón y pendientes para evitar fugas y olores." },
-        { "titulo": "Garantía escrita", "texto": "6 meses sobre la reparación y el repuesto instalado." }
+        {
+          "titulo": "Diagnóstico de ciclo",
+          "texto": "Revisamos llenado, presión, temperatura y desagüe con el equipo en marcha."
+        },
+        {
+          "titulo": "Repuesto correcto",
+          "texto": "Bomba, válvula, resistencia o sensor original o equivalente certificado."
+        },
+        {
+          "titulo": "Revisión de instalación",
+          "texto": "Verificamos mangueras, sifón y pendientes para evitar fugas y olores."
+        },
+        {
+          "titulo": "Garantía escrita",
+          "texto": "6 meses sobre la reparación y el repuesto instalado."
+        }
       ],
-      "marcas": ["Whirlpool", "Bosch", "LG", "Samsung", "Electrolux", "Mabe", "Haceb", "Challenger", "General Electric", "KitchenAid"],
+      "marcas": [
+        "Whirlpool",
+        "Bosch",
+        "LG",
+        "Samsung",
+        "Electrolux",
+        "Mabe",
+        "Haceb",
+        "Challenger",
+        "General Electric",
+        "KitchenAid"
+      ],
       "faq": [
-        { "pregunta": "¿Reparan lavavajillas importados?", "respuesta": "Trabajamos las marcas de la lista. Si el repuesto es importado, te damos el tiempo estimado antes de pedirlo." },
-        { "pregunta": "¿Por qué huele mal el lavavajillas?", "respuesta": "Normalmente es grasa acumulada en el filtro o desagüe sin sifón. Hacemos limpieza técnica y corregimos la instalación." },
-        { "pregunta": "¿Se puede instalar debajo del mesón?", "respuesta": "Sí, siempre que haya espacio, ventilación y conexiones accesibles. Lo revisamos antes de instalar." }
+        {
+          "pregunta": "¿Reparan lavavajillas importados?",
+          "respuesta": "Trabajamos las marcas de la lista. Si el repuesto es importado, te damos el tiempo estimado antes de pedirlo."
+        },
+        {
+          "pregunta": "¿Por qué huele mal el lavavajillas?",
+          "respuesta": "Normalmente es grasa acumulada en el filtro o desagüe sin sifón. Hacemos limpieza técnica y corregimos la instalación."
+        },
+        {
+          "pregunta": "¿Se puede instalar debajo del mesón?",
+          "respuesta": "Sí, siempre que haya espacio, ventilación y conexiones accesibles. Lo revisamos antes de instalar."
+        }
       ],
       "meta": {
-        "titulo": "Reparación de lavavajillas en Ibagué · Servicio a domicilio",
-        "descripcion": "Reparación de lavavajillas Whirlpool, Bosch, LG, Samsung, Electrolux y Mabe en Ibagué. Fugas, desagüe, bomba y temperatura. Garantía de 6 meses."
-      }
+        "titulo": "Reparación de lavavajillas · A domicilio",
+        "descripcion": "Reparación de lavavajillas Whirlpool, Bosch, LG, Samsung, Electrolux y Mabe a domicilio. Fugas, desagüe, bomba y temperatura. Garantía de 6 meses."
+      },
+      "categoria": "lavado"
+    },
+    {
+      "slug": "reparacion-de-estufas",
+      "nombre": "Estufas",
+      "titulo": "Reparación de estufas a domicilio",
+      "subtitulo": "Quemadores, chispa, válvulas y conexión a gas. La cocina vuelve a encender parejo.",
+      "icono": "stove",
+      "imagen": "/img/servicios/estufas.webp",
+      "imagenAlt": "Estufa a gas moderna con quemadores y utensilios de cocina",
+      "resumen": "Un quemador no prende, la llama es amarilla o hay olor a gas. Revisamos y corregimos con prueba de combustión.",
+      "intro": [
+        "La llama dice mucho del estado de una estufa. Una llama amarilla, un quemador que no prende o un olor extraño se revisan el mismo día: son señales de combustión incompleta o fuga.",
+        "Trabajamos estufas a gas, eléctricas y de inducción. También hacemos instalación, conversión de gas natural y mantenimiento preventivo."
+      ],
+      "fallas": [
+        "Un quemador no enciende o la chispa es débil",
+        "Llama amarilla, desprendida o con hollín",
+        "Olor a gas o fuga en la conexión",
+        "Perillas duras, válvulas que no cierran bien",
+        "Parrillas y quemadores obstruidos",
+        "Instalación a gas y conversión de gas natural"
+      ],
+      "incluye": [
+        {
+          "titulo": "Revisión de combustión",
+          "texto": "Medimos la llama y revisamos inyectores, aireación y conexión antes de intervenir."
+        },
+        {
+          "titulo": "Repuesto correcto",
+          "texto": "Chispero, válvula, inyector o perilla original o equivalente certificado."
+        },
+        {
+          "titulo": "Prueba de encendido",
+          "texto": "Encendemos cada quemador y verificamos estabilidad y ausencia de olor."
+        },
+        {
+          "titulo": "Garantía escrita",
+          "texto": "6 meses sobre la reparación y el repuesto instalado."
+        }
+      ],
+      "marcas": [
+        "Haceb",
+        "Challenger",
+        "Whirlpool",
+        "Samsung",
+        "Mabe",
+        "KitchenAid",
+        "General Electric",
+        "Bosch",
+        "Tramontina",
+        "Oster"
+      ],
+      "faq": [
+        {
+          "pregunta": "Huele a gas, ¿qué hago primero?",
+          "respuesta": "Cierra la llave general, ventila y no accione interruptores. Escríbenos o llama de inmediato; atendemos la revisión como prioridad."
+        },
+        {
+          "pregunta": "¿Convierten estufas a gas natural?",
+          "respuesta": "Sí, con cambio de inyectores y prueba de combustión. La conversión debe quedar certificada, no improvisada."
+        },
+        {
+          "pregunta": "¿Reparan estufas de inducción?",
+          "respuesta": "Sí. Diagnosticamos placa, sensores y circuito de potencia; cuando el repuesto no existe, te lo decimos antes de cobrar."
+        }
+      ],
+      "meta": {
+        "titulo": "Reparación de estufas · A domicilio",
+        "descripcion": "Reparación de estufas a gas, mixtas y de inducción a domicilio. Quemadores, chispa, válvulas y fugas. Instalación y conversión a gas natural. Garantía de 6 meses."
+      },
+      "categoria": "coccion"
+    },
+    {
+      "slug": "reparacion-de-hornos",
+      "nombre": "Hornos",
+      "titulo": "Reparación de hornos a domicilio",
+      "subtitulo": "Resistencias, termostato, convección y tablero. Temperatura pareja para volver a cocinar.",
+      "icono": "oven",
+      "imagen": "/img/servicios/hornos.webp",
+      "imagenAlt": "Panel de control de un horno de acero inoxidable",
+      "resumen": "No calienta, calienta de más o la puerta no sella. Revisamos resistencia, termostato y control de temperatura.",
+      "intro": [
+        "Un horno que no mantiene la temperatura arruina cualquier receta y puede volverse un riesgo eléctrico. Medimos el ciclo de calentamiento y verificamos el corte del termostato.",
+        "Atendemos hornos eléctricos y a gas, empotrados, de mesa y de estufa. Cambiamos resistencias, termostatos, ventiladores y empaques de puerta."
+      ],
+      "fallas": [
+        "No calienta o tarda demasiado en llegar a temperatura",
+        "Calienta de más y quema la comida",
+        "Resistencia partida o con puntos calientes",
+        "La puerta no sella y se escapa el calor",
+        "Ventilador de convección ruidoso o detenido",
+        "Tablero, perillas o selector de funciones sin respuesta"
+      ],
+      "incluye": [
+        {
+          "titulo": "Diagnóstico eléctrico",
+          "texto": "Medimos resistencia, termostato y control de potencia con el equipo aislado."
+        },
+        {
+          "titulo": "Repuesto correcto",
+          "texto": "Resistencia, termostato, empaque o ventilador original o equivalente certificado."
+        },
+        {
+          "titulo": "Prueba de temperatura",
+          "texto": "Calentamos y verificamos estabilidad y corte antes de entregar."
+        },
+        {
+          "titulo": "Garantía escrita",
+          "texto": "6 meses sobre la reparación y el repuesto instalado."
+        }
+      ],
+      "marcas": [
+        "Electrolux",
+        "Haceb",
+        "Challenger",
+        "General Electric",
+        "Bosch",
+        "Whirlpool",
+        "Black+Decker",
+        "Oster",
+        "Samsung",
+        "LG"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Reparan hornos empotrados de cualquier marca?",
+          "respuesta": "Trabajamos las marcas de la lista y varias referencias importadas. Si no tenemos el repuesto, te decimos si es posible conseguirlo."
+        },
+        {
+          "pregunta": "¿Cambian el vidrio de la puerta?",
+          "respuesta": "Sí, cuando la referencia está disponible. Es una reparación de seguridad: un vidrio trizado no debe usarse."
+        },
+        {
+          "pregunta": "¿Vale la pena reparar un horno viejo?",
+          "respuesta": "Depende del costo del repuesto frente al equipo nuevo. El diagnóstico incluye esa comparación para que decidas con datos."
+        }
+      ],
+      "meta": {
+        "titulo": "Reparación de hornos · A domicilio",
+        "descripcion": "Reparación de hornos eléctricos y a gas a domicilio. Resistencias, termostato, convección y puertas. Electrolux, Haceb, Challenger y más. Garantía de 6 meses."
+      },
+      "categoria": "coccion"
+    },
+    {
+      "slug": "reparacion-de-microondas",
+      "nombre": "Microondas",
+      "icono": "microwave",
+      "titulo": "Reparación de microondas a domicilio",
+      "subtitulo": "No calienta, chispea o el plato no gira. Revisión segura de un equipo que guarda alto voltaje.",
+      "resumen": "No calienta, hace chispas o la puerta no cierra bien. Revisamos magnetrón, condensador, seguro de puerta y tablero.",
+      "intro": [
+        "Un microondas que enciende pero no calienta casi siempre tiene un componente de alto voltaje dañado. Es un trabajo que no se improvisa: el condensador conserva carga aunque el equipo esté desconectado.",
+        "Revisamos la puerta, los seguros, el motor del plato y el tablero antes de tocar piezas de potencia. Si el costo de reparar se acerca al de uno nuevo, te lo decimos antes de intervenir."
+      ],
+      "fallas": [
+        "No calienta aunque la luz enciende y el plato gira",
+        "Chispas o ruidos fuertes dentro de la cavidad",
+        "La puerta no cierra bien o no activa el seguro",
+        "El plato no gira o hace ruido al girar",
+        "El tablero no responde o los botones fallan",
+        "Se apaga solo o hace saltar el breaker"
+      ],
+      "incluye": [
+        {
+          "titulo": "Diagnóstico en sitio",
+          "texto": "Revisamos puerta, seguros, magnetrón, condensador y tablero con instrumentos de medición."
+        },
+        {
+          "titulo": "Repuesto correcto",
+          "texto": "Original o equivalente certificado, según disponibilidad y modelo. Te mostramos la referencia."
+        },
+        {
+          "titulo": "Prueba completa",
+          "texto": "Probamos que caliente de forma pareja y que la puerta selle y corte correctamente."
+        },
+        {
+          "titulo": "Garantía escrita",
+          "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
+        }
+      ],
+      "marcas": [],
+      "faq": [
+        {
+          "pregunta": "¿Puedo abrir el microondas para revisarlo yo mismo?",
+          "respuesta": "No. El condensador de alto voltaje conserva carga aunque el equipo esté desenchufado. Es una revisión para técnico."
+        },
+        {
+          "pregunta": "¿Vale la pena reparar un microondas?",
+          "respuesta": "Depende de la falla y del modelo. Con el diagnóstico en la mano te decimos si conviene reparar, antes de cobrar la reparación."
+        },
+        {
+          "pregunta": "¿Reparan microondas empotrados?",
+          "respuesta": "Escríbenos con la marca y el modelo. Te confirmamos si podemos revisarlo en tu casa."
+        }
+      ],
+      "meta": {
+        "titulo": "Reparación de microondas a domicilio",
+        "descripcion": "Reparación de microondas a domicilio: no calienta, chispas, plato que no gira, puerta y tablero. Garantía de 6 meses por escrito."
+      },
+      "imagen": "",
+      "imagenAlt": "",
+      "categoria": "coccion"
+    },
+    {
+      "slug": "reparacion-de-campanas-extractoras",
+      "nombre": "Campanas extractoras",
+      "icono": "hood",
+      "titulo": "Reparación de campanas extractoras a domicilio",
+      "subtitulo": "Cocinas de hogar y de restaurante. Extracción pareja, sin ruido y con filtros limpios.",
+      "resumen": "Motor sin fuerza, ruido, filtros saturados o luz dañada. Atendemos campanas de cocina y de restaurantes.",
+      "intro": [
+        "Una campana que no extrae deja grasa y olor en toda la cocina. Casi siempre el problema es el motor, el condensador o los filtros saturados, y se resuelve sin cambiar el equipo.",
+        "Atendemos campanas extractoras de cocina de hogar y campanas de restaurantes, con revisión del ducto y de la salida cuando hace falta."
+      ],
+      "fallas": [
+        "El motor no gira o gira sin fuerza",
+        "Ruido o vibración al encender",
+        "No extrae el humo ni el vapor",
+        "Filtros de grasa saturados: limpieza o cambio",
+        "Luz, interruptor o control sin respuesta",
+        "Instalación, ducto y reubicación"
+      ],
+      "incluye": [
+        {
+          "titulo": "Diagnóstico en sitio",
+          "texto": "Revisamos motor, condensador, control, iluminación y estado del ducto y de los filtros."
+        },
+        {
+          "titulo": "Repuesto correcto",
+          "texto": "Original o equivalente certificado, según disponibilidad y modelo. Te mostramos la referencia."
+        },
+        {
+          "titulo": "Prueba completa",
+          "texto": "Probamos todas las velocidades y verificamos que la extracción sea pareja y sin vibración."
+        },
+        {
+          "titulo": "Garantía escrita",
+          "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
+        }
+      ],
+      "marcas": [],
+      "faq": [
+        {
+          "pregunta": "¿Reparan campanas de restaurantes?",
+          "respuesta": "Sí. Atendemos campanas extractoras de cocina de hogar y de restaurantes."
+        },
+        {
+          "pregunta": "¿Cada cuánto se limpian los filtros?",
+          "respuesta": "Depende del uso. En cocinas que fríen a diario conviene revisarlos cada mes; en uso doméstico, cada dos o tres meses."
+        },
+        {
+          "pregunta": "¿También instalan campanas?",
+          "respuesta": "En Bogotá norte sí. Escríbenos con la marca, el modelo y la ubicación para coordinar la visita."
+        }
+      ],
+      "meta": {
+        "titulo": "Reparación de campanas extractoras a domicilio",
+        "descripcion": "Reparación e instalación de campanas extractoras de cocina y de restaurantes a domicilio en Bogotá norte. Garantía de 6 meses por escrito."
+      },
+      "imagen": "",
+      "imagenAlt": "",
+      "categoria": "coccion"
+    },
+    {
+      "slug": "reparacion-de-freidoras",
+      "nombre": "Freidoras",
+      "icono": "fryer",
+      "titulo": "Reparación de freidoras a domicilio",
+      "subtitulo": "Domésticas e industriales. Temperatura estable y aceite caliente a tiempo.",
+      "resumen": "No calienta, no sostiene la temperatura o pierde aceite. Reparamos freidoras domésticas e industriales.",
+      "intro": [
+        "En una freidora, la temperatura lo es todo: si el termostato falla, la comida sale cruda o quemada y el aceite se degrada. Medimos la temperatura real contra la que marca el control.",
+        "Atendemos freidoras domésticas e industriales. En equipos de uso comercial revisamos también las válvulas y los dispositivos de seguridad."
+      ],
+      "fallas": [
+        "No calienta o tarda demasiado en llegar a temperatura",
+        "La temperatura no se estabiliza",
+        "Termostato o sensor que corta antes de tiempo",
+        "Resistencia dañada o con depósitos",
+        "Fuga de aceite por la válvula o las juntas",
+        "Tablero o temporizador sin respuesta"
+      ],
+      "incluye": [
+        {
+          "titulo": "Diagnóstico en sitio",
+          "texto": "Medimos la temperatura real y revisamos resistencia, termostato, sensores y conexiones."
+        },
+        {
+          "titulo": "Repuesto correcto",
+          "texto": "Original o equivalente certificado, según disponibilidad y modelo. Te mostramos la referencia."
+        },
+        {
+          "titulo": "Prueba completa",
+          "texto": "Probamos el calentamiento y el control de temperatura hasta que se mantenga estable."
+        },
+        {
+          "titulo": "Garantía escrita",
+          "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
+        }
+      ],
+      "marcas": [],
+      "faq": [
+        {
+          "pregunta": "¿Reparan freidoras industriales?",
+          "respuesta": "Sí. Atendemos freidoras domésticas e industriales."
+        },
+        {
+          "pregunta": "¿Cada cuánto se debe hacer mantenimiento?",
+          "respuesta": "En uso comercial, conviene una revisión periódica de termostato, resistencia y válvulas. Te recomendamos la frecuencia según el uso del equipo."
+        },
+        {
+          "pregunta": "Mi freidora calienta pero el aceite no sube de temperatura, ¿qué es?",
+          "respuesta": "Casi siempre es el termostato o un sensor descalibrado. Se confirma midiendo la temperatura real en la visita."
+        }
+      ],
+      "meta": {
+        "titulo": "Reparación de freidoras domésticas e industriales a domicilio",
+        "descripcion": "Reparación de freidoras domésticas e industriales a domicilio en Bogotá norte: termostato, resistencia, fugas de aceite. Garantía de 6 meses."
+      },
+      "imagen": "",
+      "imagenAlt": "",
+      "categoria": "coccion"
+    },
+    {
+      "slug": "reparacion-de-calentadores",
+      "nombre": "Calentadores",
+      "titulo": "Reparación de calentadores a domicilio",
+      "subtitulo": "Agua caliente estable, encendido confiable y revisión de gas sin riesgos.",
+      "icono": "flame",
+      "imagen": "/img/servicios/calentadores.webp",
+      "imagenAlt": "Calentador de agua instalado en un baño moderno",
+      "resumen": "No calienta, se apaga solo o gotea. Revisamos encendido, presión y conexiones de gas con protocolo de seguridad.",
+      "intro": [
+        "Un calentador que falla no es solo una incomodidad: puede ser un riesgo. Trabajamos con protocolo de revisión de gas, ventilación y presión antes de tocar cualquier componente.",
+        "Atendemos calentadores a gas y eléctricos, de paso y de acumulación. Si el equipo ya no tiene repuestos seguros, te lo decimos con claridad."
+      ],
+      "fallas": [
+        "No calienta o el agua sale fría de un momento a otro",
+        "Se apaga a los pocos segundos de encender",
+        "Fuga de agua en conexiones, válvula o cuerpo",
+        "No enciende: chispa, batería o encendido electrónico",
+        "Presión inestable o agua que sale muy caliente",
+        "Mantenimiento, purga y revisión de ventilación"
+      ],
+      "incluye": [
+        {
+          "titulo": "Revisión de seguridad",
+          "texto": "Verificamos gas, ventilación y presión antes y después de la intervención."
+        },
+        {
+          "titulo": "Repuesto correcto",
+          "texto": "Válvula, encendedor, sensor o resistencia original o equivalente certificado."
+        },
+        {
+          "titulo": "Prueba de estabilidad",
+          "texto": "Encendemos, medimos temperatura y confirmamos que se mantiene sin apagarse."
+        },
+        {
+          "titulo": "Garantía escrita",
+          "texto": "6 meses sobre la reparación y el repuesto instalado."
+        }
+      ],
+      "marcas": [
+        "Bosch",
+        "Challenger",
+        "Haceb",
+        "Sueco",
+        "Cimsa",
+        "Clasic",
+        "Mabe",
+        "Abba",
+        "Rheem",
+        "Ariston"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Revisan la instalación de gas?",
+          "respuesta": "Sí. Comprobamos conexiones, ventilación y ausencia de fugas. Si detectamos una condición insegura, no dejamos el equipo en funcionamiento."
+        },
+        {
+          "pregunta": "¿Reparan calentadores eléctricos?",
+          "respuesta": "Sí, de paso y de acumulación. Cambiamos resistencia, termostato y válvulas según el modelo."
+        },
+        {
+          "pregunta": "¿Cada cuánto se hace mantenimiento?",
+          "respuesta": "Una vez al año en uso residencial. En zonas con agua dura, cada seis meses para evitar sedimentos y pérdida de eficiencia."
+        }
+      ],
+      "meta": {
+        "titulo": "Reparación de calentadores · A domicilio",
+        "descripcion": "Reparación y mantenimiento de calentadores a gas y eléctricos a domicilio. Bosch, Challenger, Haceb, Sueco y más. Revisión de gas y garantía de 6 meses."
+      },
+      "categoria": "agua"
+    },
+    {
+      "slug": "reparacion-de-cafeteras",
+      "nombre": "Cafeteras",
+      "icono": "coffee",
+      "titulo": "Reparación de cafeteras a domicilio",
+      "subtitulo": "De todas las marcas. Agua caliente, presión y café que vuelve a salir.",
+      "resumen": "No calienta, no bombea, gotea o sale muy lento. Reparamos cafeteras de todas las marcas.",
+      "intro": [
+        "Una cafetera que deja de calentar o de bombear casi nunca está perdida. La causa suele ser la cal acumulada, la bomba, la resistencia o el termostato.",
+        "Reparamos cafeteras de todas las marcas y en Bogotá norte también hacemos mantenimiento: limpieza interna y descalcificación para alargar la vida del equipo."
+      ],
+      "fallas": [
+        "No calienta el agua o el café sale tibio",
+        "No bombea o no sale agua por el grupo",
+        "Gotea por la base, el depósito o las mangueras",
+        "Sale muy lento por cal acumulada",
+        "Vaporizador o espumador sin presión",
+        "No enciende o el panel no responde"
+      ],
+      "incluye": [
+        {
+          "titulo": "Diagnóstico en sitio",
+          "texto": "Revisamos bomba, resistencia, termostato, mangueras y estado de la cal acumulada."
+        },
+        {
+          "titulo": "Repuesto correcto",
+          "texto": "Original o equivalente certificado, según disponibilidad y modelo. Te mostramos la referencia."
+        },
+        {
+          "titulo": "Prueba completa",
+          "texto": "Hacemos varios ciclos contigo delante y verificamos temperatura, presión y ausencia de fugas."
+        },
+        {
+          "titulo": "Garantía escrita",
+          "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
+        }
+      ],
+      "marcas": [
+        "Todas las marcas"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Reparan cafeteras de todas las marcas?",
+          "respuesta": "Sí. Atendemos cafeteras de todas las marcas. Escríbenos con la marca y el modelo para confirmar la visita."
+        },
+        {
+          "pregunta": "¿Qué incluye el mantenimiento?",
+          "respuesta": "Limpieza interna y descalcificación. Alarga la vida de la bomba y de la resistencia, y mejora la temperatura del café."
+        },
+        {
+          "pregunta": "¿Vale la pena reparar o es mejor comprar otra?",
+          "respuesta": "Te lo decimos con el diagnóstico en la mano. Si el costo se acerca al de una nueva, te lo advertimos antes de intervenir."
+        }
+      ],
+      "meta": {
+        "titulo": "Reparación de cafeteras de todas las marcas a domicilio",
+        "descripcion": "Reparación y mantenimiento de cafeteras de todas las marcas a domicilio en Bogotá norte: no calienta, no bombea, gotea. Garantía de 6 meses."
+      },
+      "imagen": "",
+      "imagenAlt": "",
+      "categoria": "hogar"
+    },
+    {
+      "slug": "reparacion-de-aspiradoras",
+      "nombre": "Aspiradoras",
+      "icono": "vacuum",
+      "titulo": "Reparación de aspiradoras a domicilio",
+      "subtitulo": "Succión, motor, cables y accesorios. No atendemos aspiradoras robóticas.",
+      "resumen": "Perdió succión, el motor se calienta o hace ruido. Atendemos aspiradoras de todas las marcas, excepto robóticas.",
+      "intro": [
+        "Una aspiradora que pierde succión no siempre necesita motor nuevo: filtros, mangueras o el depósito pueden ser la causa. Lo revisamos en orden, de lo más simple a lo más costoso.",
+        "Atendemos aspiradoras de todas las marcas. No reparamos aspiradoras robóticas."
+      ],
+      "fallas": [
+        "Perdió succión aunque el filtro está limpio",
+        "El motor no enciende o se calienta",
+        "Ruido o vibración anormal",
+        "Cable enrollable o interruptor dañado",
+        "Mangueras y accesorios rotos u obstruidos",
+        "Se apaga sola por sobrecalentamiento"
+      ],
+      "incluye": [
+        {
+          "titulo": "Diagnóstico en sitio",
+          "texto": "Revisamos motor, filtros, mangueras, cable e interruptor para ubicar la causa real de la pérdida de succión."
+        },
+        {
+          "titulo": "Repuesto correcto",
+          "texto": "Original o equivalente certificado, según disponibilidad y modelo. Te mostramos la referencia."
+        },
+        {
+          "titulo": "Prueba completa",
+          "texto": "Probamos la succión y verificamos que el motor trabaje sin sobrecalentarse."
+        },
+        {
+          "titulo": "Garantía escrita",
+          "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
+        }
+      ],
+      "marcas": [
+        "Todas las marcas"
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Reparan aspiradoras robóticas?",
+          "respuesta": "No. Atendemos aspiradoras de todas las marcas, pero no robóticas."
+        },
+        {
+          "pregunta": "Mi aspiradora hace ruido y no succiona, ¿qué puede ser?",
+          "respuesta": "Suele ser una obstrucción, un filtro saturado o un rodamiento del motor. Se confirma en la revisión."
+        },
+        {
+          "pregunta": "¿Vale la pena reparar o es mejor comprar otra?",
+          "respuesta": "Con el diagnóstico en la mano te decimos si conviene reparar, antes de cobrar la reparación."
+        }
+      ],
+      "meta": {
+        "titulo": "Reparación de aspiradoras a domicilio",
+        "descripcion": "Reparación de aspiradoras de todas las marcas (no robóticas) a domicilio en Bogotá norte. Succión, motor, cables y accesorios. Garantía de 6 meses."
+      },
+      "imagen": "",
+      "imagenAlt": "",
+      "categoria": "hogar"
+    },
+    {
+      "slug": "reparacion-de-televisores",
+      "nombre": "Televisores",
+      "icono": "tv",
+      "titulo": "Reparación de televisores a domicilio",
+      "subtitulo": "Imagen, sonido, encendido y conexiones. Diagnóstico en tu sala.",
+      "resumen": "No enciende, no hay imagen o sonido, o se apaga solo. Revisamos fuente, tarjetas y retroiluminación.",
+      "intro": [
+        "Cuando un televisor falla, la causa más frecuente está en la fuente de poder, en la retroiluminación o en una tarjeta. Se revisa en orden y, si es posible, sin llevarlo a un taller.",
+        "Escríbenos con la marca, el modelo y lo que hace el televisor para confirmar que podemos revisarlo."
+      ],
+      "fallas": [
+        "No enciende o se queda en la luz de espera",
+        "Hay sonido pero la pantalla está oscura",
+        "Imagen con líneas, manchas o sin color",
+        "Se apaga solo o se reinicia",
+        "Puertos HDMI, WiFi o control remoto sin respuesta",
+        "Retroiluminación dañada"
+      ],
+      "incluye": [
+        {
+          "titulo": "Diagnóstico en sitio",
+          "texto": "Revisamos fuente de poder, tarjetas, retroiluminación y conexiones con instrumentos de medición."
+        },
+        {
+          "titulo": "Repuesto correcto",
+          "texto": "Original o equivalente certificado, según disponibilidad y modelo. Te mostramos la referencia."
+        },
+        {
+          "titulo": "Prueba completa",
+          "texto": "Probamos imagen, sonido y entradas contigo delante antes de dar el equipo por reparado."
+        },
+        {
+          "titulo": "Garantía escrita",
+          "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
+        }
+      ],
+      "marcas": [],
+      "faq": [
+        {
+          "pregunta": "¿Qué necesito decirles antes de la visita?",
+          "respuesta": "La marca, el modelo (está en la parte trasera) y qué hace el televisor: si enciende, si hay sonido, si aparece algún código."
+        },
+        {
+          "pregunta": "¿Siempre tiene arreglo?",
+          "respuesta": "No siempre. Con el diagnóstico en la mano te decimos si conviene reparar, antes de cobrar la reparación."
+        },
+        {
+          "pregunta": "¿Dónde reparan televisores?",
+          "respuesta": "En Bogotá norte y en Barranquilla, a domicilio."
+        }
+      ],
+      "meta": {
+        "titulo": "Reparación de televisores a domicilio",
+        "descripcion": "Reparación de televisores a domicilio en Bogotá norte y Barranquilla: no enciende, sin imagen, sin sonido. Garantía de 6 meses por escrito."
+      },
+      "imagen": "",
+      "imagenAlt": "",
+      "categoria": "hogar"
     },
     {
       "slug": "servicio-de-instalacion",
       "nombre": "Instalación",
-      "titulo": "Instalación de electrodomésticos en Ibagué",
+      "titulo": "Instalación de electrodomésticos a domicilio",
       "subtitulo": "Lavadoras, neveras, estufas, hornos, calentadores y lavavajillas bien instalados desde el primer día.",
       "icono": "wrench",
       "imagen": "/img/servicios/instalacion.webp",
       "imagenAlt": "Lavadora instalada y conectada en un baño de una vivienda",
-      "resumen": "Nivelación, conexiones, prueba y recomendaciones de uso. Una instalación mal hecha es la causa de la mitad de las fallas.",
+      "resumen": "Nivelación, conexiones, prueba y recomendaciones de uso. Una buena instalación evita fallas desde el primer ciclo.",
       "intro": [
         "Una lavadora que vibra, una nevera que no enfría o un calentador que se apaga pueden ser problemas de instalación, no del equipo. Nivelar, conectar y probar bien evita la mayoría.",
         "Instalamos equipos nuevos y reubicamos los existentes. También retiramos el equipo viejo si lo necesitas."
@@ -291,21 +885,76 @@
         "Retiro del equipo anterior y aseo del espacio"
       ],
       "incluye": [
-        { "titulo": "Revisión del espacio", "texto": "Medidas, ventilación, tomas y desagües antes de mover el equipo." },
-        { "titulo": "Conexión y nivelación", "texto": "Dejamos el equipo estable, sin vibraciones y con conexiones sin fugas." },
-        { "titulo": "Prueba de funcionamiento", "texto": "Encendemos y probamos el ciclo o la combustión según el equipo." },
-        { "titulo": "Recomendaciones de uso", "texto": "Te explicamos cuidados básicos y cuándo hacer el primer mantenimiento." }
+        {
+          "titulo": "Revisión del espacio",
+          "texto": "Medidas, ventilación, tomas y desagües antes de mover el equipo."
+        },
+        {
+          "titulo": "Conexión y nivelación",
+          "texto": "Dejamos el equipo estable, sin vibraciones y con conexiones sin fugas."
+        },
+        {
+          "titulo": "Prueba de funcionamiento",
+          "texto": "Encendemos y probamos el ciclo o la combustión según el equipo."
+        },
+        {
+          "titulo": "Recomendaciones de uso",
+          "texto": "Te explicamos cuidados básicos y cuándo hacer el primer mantenimiento."
+        }
       ],
-      "marcas": ["LG", "Samsung", "Haceb", "Whirlpool", "Mabe", "Electrolux", "Challenger", "Bosch", "Frigidaire", "KitchenAid"],
+      "marcas": [
+        "LG",
+        "Samsung",
+        "Haceb",
+        "Whirlpool",
+        "Mabe",
+        "Electrolux",
+        "Challenger",
+        "Bosch",
+        "Frigidaire",
+        "KitchenAid"
+      ],
       "faq": [
-        { "pregunta": "¿Instalan equipos comprados en otra tienda?", "respuesta": "Sí. Instalamos el equipo que ya tengas, sin importar dónde lo compraste." },
-        { "pregunta": "¿Se llevan el equipo viejo?", "respuesta": "Sí, si lo solicitas al agendar. Se cotiza aparte según el equipo y el acceso al lugar." },
-        { "pregunta": "¿Cuánto tarda una instalación?", "respuesta": "Entre 40 y 90 minutos según el equipo. Las conexiones de gas y calentadores requieren prueba adicional." }
+        {
+          "pregunta": "¿Instalan equipos comprados en otra tienda?",
+          "respuesta": "Sí. Instalamos el equipo que ya tengas, sin importar dónde lo compraste."
+        },
+        {
+          "pregunta": "¿Se llevan el equipo viejo?",
+          "respuesta": "Sí, si lo solicitas al agendar. Se cotiza aparte según el equipo y el acceso al lugar."
+        },
+        {
+          "pregunta": "¿Cuánto tarda una instalación?",
+          "respuesta": "Entre 40 y 90 minutos según el equipo. Las conexiones de gas y calentadores requieren prueba adicional."
+        }
       ],
       "meta": {
-        "titulo": "Instalación de electrodomésticos en Ibagué · A domicilio",
-        "descripcion": "Instalación de lavadoras, neveras, estufas, hornos, calentadores y lavavajillas en Ibagué. Nivelación, conexiones, prueba y recomendaciones."
-      }
+        "titulo": "Instalación de electrodomésticos · A domicilio",
+        "descripcion": "Instalación de lavadoras, neveras, estufas, hornos, calentadores y lavavajillas a domicilio. Nivelación, conexiones, prueba y recomendaciones."
+      },
+      "categoria": "hogar"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "lavado",
+      "titulo": "Lavado y secado"
+    },
+    {
+      "id": "frio",
+      "titulo": "Refrigeración"
+    },
+    {
+      "id": "coccion",
+      "titulo": "Cocción y cocina"
+    },
+    {
+      "id": "agua",
+      "titulo": "Agua caliente"
+    },
+    {
+      "id": "hogar",
+      "titulo": "Hogar e instalación"
     }
   ]
 }

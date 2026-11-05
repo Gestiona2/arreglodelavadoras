@@ -35,7 +35,6 @@ const wa = `https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(`${sitio.m
         <span>/</span>
         <span class="actual">{marca.nombre}</span>
       </nav>
-      <span class="eyebrow"><span class="dot"></span> {d.eyebrow}</span>
       <h1>{texto(d.titulo)}</h1>
       <p class="lead">{marca.nota}</p>
       <a href={wa} class="btn btn-wa" target="_blank" rel="noopener">
@@ -48,8 +47,7 @@ const wa = `https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(`${sitio.m
   <section class="pad">
     <div class="container detalle-grid">
       <div>
-        <span class="eyebrow"><span class="dot"></span> {marca.nombre}</span>
-        <h2 class="titulo-seccion" style="margin-top:1rem">{texto(d.focosTitulo)}</h2>
+        <h2 class="titulo-seccion">{texto(d.focosTitulo)}</h2>
         <div class="marca-focos">
           {marca.focos.map((f) => (
             <div class="marca-foco">
@@ -73,7 +71,6 @@ const wa = `https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(`${sitio.m
       </div>
 
       <div class="panel-form">
-        <span class="eyebrow"><span class="dot"></span> {d.eyebrow}</span>
         <h2 style="margin-top:0.8rem;font-size:1.5rem">{marca.nombre}</h2>
         <p class="lead" style="margin-top:0.6rem;font-size:0.92rem">
           {listaServicios.map((s) => s.nombre).join(" · ")}

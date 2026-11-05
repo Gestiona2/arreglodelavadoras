@@ -13,8 +13,7 @@ Recetas para los cambios más pedidos. Todas se hacen en `src/datos/`, sin tocar
 
 ```json
 "whatsapp": "573123444325",
-"telefono": "312 344 4325",
-"fijo": "608 277 9514"
+"telefono": "312 344 4325"
 ```
 
 - `whatsapp` es el número que recibe los mensajes. **Sin `+`, sin espacios, con indicativo
@@ -27,10 +26,8 @@ Recetas para los cambios más pedidos. Todas se hacen en `src/datos/`, sin tocar
 
 ## Cambiar el correo o la dirección
 
-Mismas reglas: `correo`, `direccion`, `ciudad`, `departamento` en `sitio.json`.
-
-El enlace «Abrir en Google Maps» de `/contacto/` **no se actualiza solo**. Está en
-`contacto.json → oficina.mapa`; si cambia la dirección, cambia también ese enlace.
+El correo está en `sitio.json → correo` y solo se muestra en las páginas legales. **El sitio
+no muestra dirección ni sede**: el cliente pidió solo celular y WhatsApp.
 
 ## Cambiar el horario
 
@@ -58,10 +55,10 @@ viejo. Ver `PENDIENTES.md`.
 
 ## Agregar una ciudad
 
-1. Agrega el nombre a `sitio.json → cobertura`.
-2. Revisa la sección de cobertura del inicio: Ibagué ocupa dos columnas; con 8 ciudades la
-   cuadrícula queda impar y hay que ajustar el diseño (avisa al proveedor).
-3. La ciudad aparece sola en el formulario.
+1. Agrega una línea a `sitio.json → ciudades` con el `grupo` que le corresponde
+   (`bogota`, `cercanos`, `barranquilla` o `ibague`). El grupo decide qué equipos se ofrecen.
+2. Aparece sola en el selector del inicio, el formulario, el pie y contacto.
+3. Si la ciudad ofrece equipos distintos a los de cualquier grupo, pide al proveedor un grupo nuevo.
 
 **No agregues una ciudad si no hay ruta confirmada.** Es una promesa comercial.
 

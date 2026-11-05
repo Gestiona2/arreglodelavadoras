@@ -1,33 +1,25 @@
 {
   "_comentario": "Contenido de la página /servicios/ (el listado). Las páginas de detalle salen de servicios.json.",
-
   "meta": {
-    "titulo": "Servicios · Reparación de electrodomésticos en Ibagué",
-    "descripcion": "Reparación de lavadoras, neveras, calentadores, estufas, hornos, secadoras, lavavajillas e instalación a domicilio en Ibagué y 6 ciudades."
+    "titulo": "Servicios · Reparación de electrodomésticos a domicilio",
+    "descripcion": "Reparación, mantenimiento e instalación de lavadoras, neveras, estufas, hornos, microondas, calentadores y más, a domicilio en Bogotá norte, Barranquilla e Ibagué."
   },
-
   "hero": {
-    "eyebrow": "Servicios",
     "titulo": "Cada equipo tiene su diagnóstico",
-    "texto": "Atendemos ocho líneas de electrodomésticos con el mismo protocolo: revisar, explicar, cotizar y reparar con garantía escrita. Elige la tuya para ver fallas comunes, repuestos y preguntas frecuentes."
+    "texto": "Catorce servicios con el mismo protocolo: revisar, explicar, cotizar y reparar con garantía escrita. Elige el tuyo para ver fallas comunes, qué incluye la visita y en qué ciudades lo atendemos."
   },
-
   "ayuda": {
     "titulo": "¿No sabes qué equipo es o la falla no aparece?",
     "texto": "Escríbenos por WhatsApp con una foto del equipo y del código de error si lo tiene. Te orientamos antes de agendar.",
     "boton": "Preguntar por WhatsApp"
   },
-
   "cierre": {
     "titulo": "¿Revisamos tu equipo esta semana?",
     "texto": "Cuéntanos qué pasa y en qué ciudad estás. Te confirmamos disponibilidad, franja y valor del diagnóstico.",
     "boton": "Agendar por WhatsApp"
   },
-
   "enlaceDetalle": "Ver detalle",
-
   "detalle": {
-    "eyebrow": "Servicio técnico",
     "fallas": "Fallas que atendemos",
     "incluye": "Qué incluye la visita",
     "marcas": "Marcas que atendemos",
@@ -40,18 +32,31 @@
     },
     "valores": {
       "garantia": "6 meses por escrito",
-      "cobertura": "Ibagué y 6 ciudades"
-    }
+      "cobertura": "Bogotá norte y 9 ciudades más"
+    },
+    "donde": "Dónde lo atendemos",
+    "agendarTitulo": "Agenda este servicio",
+    "agendarTexto": "Escríbenos con la marca, el modelo y la falla."
   },
-
   "proceso": {
-    "eyebrow": "El protocolo",
     "titulo": "Igual para una lavadora que para un calentador",
     "pasos": [
-      { "numero": "01", "titulo": "Revisión", "texto": "Diagnóstico en sitio con herramientas de medición." },
-      { "numero": "02", "titulo": "Explicación", "texto": "Te contamos la falla y las opciones, sin tecnicismos." },
-      { "numero": "03", "titulo": "Autorización", "texto": "Apruebas el valor antes de que se toque el equipo." },
-      { "numero": "04", "titulo": "Prueba y garantía", "texto": "Probamos contigo y dejamos la garantía por escrito." }
+      {
+        "titulo": "Revisión",
+        "texto": "Diagnóstico en sitio con herramientas de medición."
+      },
+      {
+        "titulo": "Explicación",
+        "texto": "Te contamos la falla y las opciones, sin tecnicismos."
+      },
+      {
+        "titulo": "Autorización",
+        "texto": "Apruebas el valor antes de que se toque el equipo."
+      },
+      {
+        "titulo": "Prueba y garantía",
+        "texto": "Probamos contigo y dejamos la garantía por escrito."
+      }
     ]
   }
 }

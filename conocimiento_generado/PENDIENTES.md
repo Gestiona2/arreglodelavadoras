@@ -11,7 +11,11 @@ el dominio definitivo**.
 | **NIT** | vacío (`sitio.json → nit`) | Pedirlo; va en el pie si el dueño lo quiere público |
 | **Horario exacto** | «Lunes a sábado · 8:00 a 18:00» | Confirmar. Además hay que corregirlo en `Layout.astro` (ver abajo) |
 | **Redes sociales** | Facebook, Instagram y TikTok con enlace vacío | Pedir las direcciones reales; si no hay, se dejan así (no se muestran) |
-| **Ciudades con ruta** | 7 ciudades | Confirmar que se atienden las 6 fuera de Ibagué y con qué frecuencia |
+| **Ciudades con ruta** | 10 ciudades, 4 grupos (ver `SITIO.md`) | «Funza» y «La Calera» se interpretaron de «Funda» y «Calera». Confirmar con el cliente |
+| **Aspiradoras y freidoras** | Aspiradoras sin robóticas; freidoras incluidas | El mensaje del cliente traía dos «No» ambiguos. Confirmar |
+| **Foto de operarios** | Se usa una foto de banco | El cliente pidió imágenes de operarios con teléfono y WhatsApp en el encabezado |
+| **Logo** | Dibujado en código (provisional) | Pedir el vector original |
+| **Correo en legales** | `contacto@…` sigue en las páginas legales | Confirmar que existe o cambiarlo por el WhatsApp |
 
 ### El horario está en dos lugares
 
@@ -31,8 +35,7 @@ precios publicados en el sitio; se puede quitar si el dueño prefiere no declara
 Las fotos actuales son de banco de imágenes (licencia libre). Se ven bien, pero **no son
 del negocio**. Hay que pedir:
 
-- Foto real de un técnico trabajando (idealmente en Ibagué).
-- Foto del taller o de la sede.
+- Foto real de un técnico trabajando (en Bogotá o Barranquilla).
 - Tres o cuatro fotos de equipos abiertos o repuestos.
 - Retrato del dueño, si quiere aparecer en «Nosotros».
 

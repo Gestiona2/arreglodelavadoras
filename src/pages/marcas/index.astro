@@ -17,7 +17,6 @@ const wa = `https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(sitio.mens
 <Layout titulo={marcas.meta.titulo} descripcion={marcas.meta.descripcion} activa="marcas">
   <header class="pagina-hero">
     <div class="container">
-      <span class="eyebrow"><span class="dot"></span> {marcas.encabezado}</span>
       <h1>{marcas.titulo}</h1>
       <p class="lead">{marcas.texto}</p>
     </div>
@@ -28,7 +27,7 @@ const wa = `https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(sitio.mens
       <div class="marcas-grid">
         {marcas.items.map((m) =>
           m.pagina ? (
-            <a href={ruta(`/marcas/${m.slug}/`)} class="marca-card reveal-up">
+            <a href={ruta(`/marcas/${m.slug}/`)} class="marca-card reveal">
               <h2>{m.nombre}</h2>
               <p>{m.nota}</p>
               <span class="marca-card-tipos">
@@ -40,7 +39,7 @@ const wa = `https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(sitio.mens
               </span>
             </a>
           ) : (
-            <article class="marca-card marca-card--simple reveal-up">
+            <article class="marca-card marca-card--simple reveal">
               <h2>{m.nombre}</h2>
               <p>{m.nota}</p>
               <span class="marca-card-tipos">

@@ -62,7 +62,7 @@ const f = contacto.formulario;
       <div class="select-envoltura">
         <select id="f-ciudad" name="ciudad" required>
           <option value="">{f.campos.ciudad.placeholder}</option>
-          {sitio.cobertura.map((c) => <option value={c}>{c}</option>)}
+          {sitio.ciudades.map((c) => <option value={c.nombre}>{c.nombre}</option>)}
           <option value="Otra ciudad">Otra ciudad</option>
         </select>
         <Icon nombre="chevron-down" tamano={18} />

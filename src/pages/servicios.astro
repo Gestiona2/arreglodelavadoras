@@ -11,90 +11,86 @@ import sitio from "../datos/sitio.json";
 import { ruta } from "../lib/ruta.js";
 
 const wa = (texto) => `https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(texto)}`;
-const { meta, hero, ayuda, proceso, cierre, enlaceDetalle } = pagina;
+const { meta, hero, ayuda, proceso, cierre } = pagina;
+const catalogo = servicios.categorias
+  .map((c) => ({ ...c, items: servicios.items.filter((s) => s.categoria === c.id) }))
+  .filter((c) => c.items.length);
+const iconosPaso = ["search", "whatsapp", "check-circle", "shield-check"];
 ---
 
 <Layout titulo={meta.titulo} descripcion={meta.descripcion} activa="servicios">
   <header class="pagina-hero">
     <div class="container">
-      <span class="eyebrow"><span class="dot"></span> {hero.eyebrow}</span>
-      <h1>{hero.titulo}</h1>
-      <p class="lead">{hero.texto}</p>
+      <h1 class="reveal">{hero.titulo}</h1>
+      <p class="lead reveal">{hero.texto}</p>
     </div>
   </header>
 
   <section class="pad">
     <div class="container">
-      <div class="servicios-lista">
-        {servicios.items.map((s) => (
-          <a href={ruta(`/${s.slug}/`)} class="servicio-fila reveal-up">
-            <div class="servicio-fila-img">
-              <img src={ruta(s.imagen)} alt={s.imagenAlt} width="1200" height="900" loading="lazy" />
+      <div class="catalogo">
+        {catalogo.map((c) => (
+          <div class="cat-bloque reveal">
+            <h2 class="cat-titulo">{c.titulo}</h2>
+            <div class="cat-lista">
+              {c.items.map((s) => (
+                <a href={ruta(`/${s.slug}/`)}>
+                  <span class="cat-icono"><Icon nombre={s.icono} tamano={20} /></span>
+                  <span>
+                    <span class="cat-nombre">{s.nombre}</span>
+                    <span class="cat-resumen">{s.resumen}</span>
+                  </span>
+                  <Icon nombre="arrow-right" tamano={18} clase="flecha" />
+                </a>
+              ))}
             </div>
-            <div class="servicio-fila-cuerpo">
-              <div class="servicio-fila-cabecera">
-                <Icon nombre={s.icono} tamano={22} />
-                <h2>{s.nombre}</h2>
-              </div>
-              <p>{s.resumen}</p>
-              <div class="servicio-fila-pie">
-                <div class="mini-chips">
-                  {s.fallas.slice(0, 3).map((f) => <span class="mini-chip">{f}</span>)}
-                </div>
-                <span class="servicio-fila-enlace">
-                  {enlaceDetalle}
-                  <Icon nombre="arrow-right" tamano={15} />
-                </span>
-              </div>
-            </div>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="pad oscuro proceso">
-    <div class="container">
-      <div class="cabecera">
-        <div class="cabecera-texto">
-          <span class="eyebrow reveal"><span class="dot"></span> {proceso.eyebrow}</span>
-          <h2 class="titulo-seccion reveal" style="margin-top:1rem">{proceso.titulo}</h2>
-        </div>
-      </div>
-      <div class="pasos">
-        {proceso.pasos.map((p) => (
-          <div class="paso reveal-up">
-            <span class="paso-numero">{p.numero}</span>
-            <h3>{p.titulo}</h3>
-            <p>{p.texto}</p>
           </div>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="pad">
+  <section class="pad fondo-alt">
     <div class="container">
       <div class="cabecera">
+        <div class="cabecera-texto">
+          <h2 class="titulo-seccion reveal">{proceso.titulo}</h2>
+        </div>
+      </div>
+      <ol class="pasos" data-stagger>
+        {proceso.pasos.map((p, i) => (
+          <li class="paso reveal">
+            <span class="paso-icono"><Icon nombre={iconosPaso[i] ?? "check"} tamano={24} /></span>
+            <h3>{p.titulo}</h3>
+            <p>{p.texto}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="container">
+      <div class="cabecera" style="margin-bottom:0">
         <div class="cabecera-texto">
           <h2 class="titulo-seccion reveal">{ayuda.titulo}</h2>
           <p class="lead reveal">{ayuda.texto}</p>
         </div>
-        <div class="cabecera-accion reveal">
-          <a href={wa(sitio.mensajes.ayuda)} target="_blank" rel="noopener" class="btn btn-wa">
-            <Icon nombre="whatsapp" tamano={18} />
-            {ayuda.boton}
-          </a>
-        </div>
+        <a href={wa(sitio.mensajes.ayuda)} target="_blank" rel="noopener" class="btn btn-wa btn-lg reveal">
+          <Icon nombre="whatsapp" tamano={19} />
+          {ayuda.boton}
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="cierre">
+  <section class="cierre oscuro">
     <div class="container cierre-interior">
-      <h2 class="reveal">{cierre.titulo}</h2>
-      <p class="reveal">{cierre.texto}</p>
-      <a href={wa(sitio.mensajes.general)} class="btn btn-claro reveal" target="_blank" rel="noopener">
+      <div>
+        <h2 class="reveal">{cierre.titulo}</h2>
+        <p class="reveal">{cierre.texto}</p>
+      </div>
+      <a href={wa(sitio.mensajes.general)} class="btn btn-claro btn-lg reveal" target="_blank" rel="noopener">
         <Icon nombre="whatsapp" tamano={19} />
         {cierre.boton}
       </a>
