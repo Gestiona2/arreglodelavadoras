@@ -3,12 +3,12 @@
 
   "meta": {
     "titulo": "Arreglo de Lavadoras · Reparación de electrodomésticos a domicilio",
-    "descripcion": "Reparación de lavadoras, neveras, estufas, hornos, calentadores y más a domicilio en Bogotá norte, Chía, Cajicá, Mosquera, Barranquilla e Ibagué. Garantía de 6 meses por escrito."
+    "descripcion": "Reparación de lavadoras, neveras, estufas, hornos, calentadores y más a domicilio en Bogotá, Chía, Cajicá, Mosquera, Barranquilla e Ibagué. Garantía de 6 meses por escrito."
   },
 
   "hero": {
     "titulo": "Tu electrodoméstico, reparado en casa.",
-    "texto": "Técnicos a domicilio en Bogotá norte, municipios cercanos, Barranquilla e Ibagué. Diagnóstico claro y garantía de 6 meses por escrito.",
+    "texto": "Técnicos a domicilio en Bogotá, municipios cercanos, Barranquilla e Ibagué. Diagnóstico claro y garantía de 6 meses por escrito.",
     "botones": [
       { "texto": "Escribir por WhatsApp", "tipo": "whatsapp" },
       { "texto": "Llamar ahora", "tipo": "llamar" }
@@ -131,7 +131,7 @@
     "items": [
       {
         "pregunta": "¿En qué ciudades atienden y qué reparan en cada una?",
-        "respuesta": "En Bogotá norte atendemos todos los equipos de la lista. En Chía, Cajicá, Cota, La Calera, Funza, Madrid y Mosquera: lavadoras, neveras, nevecones, calentadores y lavavajillas. En Barranquilla: televisores, lavadoras, lavavajillas, secadoras, estufas, calentadores y neveras. En Ibagué: lavadoras, secadoras y neveras."
+        "respuesta": "En Bogotá atendemos todos los equipos de la lista. En Chía, Cajicá, Cota, La Calera, Funza, Madrid y Mosquera: lavadoras, neveras, nevecones, calentadores y lavavajillas. En Barranquilla: televisores, lavadoras, lavavajillas, secadoras, estufas, calentadores y neveras. En Ibagué: lavadoras, secadoras y neveras."
       },
       {
         "pregunta": "¿Cuánto cuesta el diagnóstico?",
@@ -155,7 +155,7 @@
       },
       {
         "pregunta": "¿Reparan nevecones, lavadoras centrales y equipos comerciales?",
-        "respuesta": "Sí. Atendemos nevecones y lavadoras centrales. En Bogotá norte, además, freidoras industriales, campanas de restaurantes y lavavajillas industriales."
+        "respuesta": "Sí. Atendemos nevecones y lavadoras centrales. En Bogotá, además, freidoras industriales, campanas de restaurantes y lavavajillas industriales."
       },
       {
         "pregunta": "¿Cómo pago el servicio?",

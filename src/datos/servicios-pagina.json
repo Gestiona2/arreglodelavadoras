@@ -2,7 +2,7 @@
   "_comentario": "Contenido de la página /servicios/ (el listado). Las páginas de detalle salen de servicios.json.",
   "meta": {
     "titulo": "Servicios · Reparación de electrodomésticos a domicilio",
-    "descripcion": "Reparación, mantenimiento e instalación de lavadoras, neveras, estufas, hornos, microondas, calentadores y más, a domicilio en Bogotá norte, Barranquilla e Ibagué."
+    "descripcion": "Reparación, mantenimiento e instalación de lavadoras, neveras, estufas, hornos, microondas, calentadores y más, a domicilio en Bogotá, Barranquilla e Ibagué."
   },
   "hero": {
     "titulo": "Cada equipo tiene su diagnóstico",
@@ -32,7 +32,7 @@
     },
     "valores": {
       "garantia": "6 meses por escrito",
-      "cobertura": "Bogotá norte y 9 ciudades más"
+      "cobertura": "Bogotá y 9 ciudades más"
     },
     "donde": "Dónde lo atendemos",
     "agendarTitulo": "Agenda este servicio",

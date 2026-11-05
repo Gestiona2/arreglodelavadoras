@@ -146,21 +146,20 @@ button { font: inherit; color: inherit; cursor: pointer; }
   background: var(--grafito); color: var(--texto);
 }
 
-/* ---------- Logo ---------- */
-.logo { display: inline-flex; align-items: center; gap: 0.7rem; color: var(--texto); --logo-ojo: var(--fondo-alt); }
-.logo-icono .cuerpo { fill: currentColor; }
-.logo-icono .ojo { fill: none; stroke: var(--logo-ojo); stroke-width: 3; }
-.logo-icono .centro { fill: var(--marca); }
-.logo-icono .mando { fill: var(--logo-ojo); }
-.logo-texto { white-space: nowrap; font-family: var(--display); font-size: 1.12rem; letter-spacing: -0.02em; line-height: 1; font-weight: 500; }
-.logo-texto b { font-weight: 700; }
-.oscuro .logo, .pie .logo { color: #fff; --logo-ojo: var(--grafito); }
-.pie .logo-icono .centro, .oscuro .logo-icono .centro { fill: #ff6a3d; }
+/* ---------- Logo (archivo real del cliente) ---------- */
+.logo { display: inline-flex; align-items: center; flex: none; }
+.logo img { height: 46px; width: auto; }
+.logo .l-oscuro { display: none; }
+[data-theme="dark"] .logo .l-claro { display: none; }
+[data-theme="dark"] .logo .l-oscuro { display: block; }
+.logo--sobre-oscuro .l-claro { display: none !important; }
+.logo--sobre-oscuro .l-oscuro { display: block !important; }
+@media (max-width: 560px) { .logo img { height: 40px; } }
 
 /* ---------- Menú ---------- */
 .nav { position: sticky; top: 0; z-index: 50; background: var(--fondo-alt); border-bottom: 1px solid transparent; transition: border-color 0.25s; }
 .nav.bajado { border-bottom-color: var(--linea); }
-.nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; height: var(--nav-alto); }
+.nav-inner { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; height: var(--nav-alto); }
 .nav-links { display: flex; align-items: center; gap: 0.15rem; margin-left: auto; }
 .nav-links > a, .nav-grupo-boton {
   display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.55rem 0.85rem; border-radius: 8px;
@@ -169,13 +168,13 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .nav-links > a:hover, .nav-grupo-boton:hover, .nav-grupo.sub-abierto .nav-grupo-boton { color: var(--texto); background: var(--superficie-2); }
 .nav-links > a.activo, .nav-grupo.activo .nav-grupo-boton { color: var(--texto); font-weight: 600; }
-.nav-grupo { position: relative; }
+.nav-grupo { position: static; }
 .nav-grupo-boton .icono { transition: transform 0.25s var(--salida); }
 .nav-grupo-boton[aria-expanded="true"] .icono { transform: rotate(180deg); }
 
 .nav-sub {
-  position: absolute; top: calc(100% + 10px); left: 50%; translate: -50% 0;
-  width: min(860px, 92vw); background: var(--superficie); border: 1px solid var(--linea); border-radius: var(--radio-lg);
+  position: absolute; top: calc(100% - 6px); left: clamp(1.1rem, 4vw, 2rem); right: clamp(1.1rem, 4vw, 2rem);
+  width: auto; background: var(--superficie); border: 1px solid var(--linea); border-radius: var(--radio-lg);
   padding: 1.6rem 1.8rem 1.2rem; opacity: 0; visibility: hidden; transform: translateY(6px);
   transition: opacity 0.2s, transform 0.25s var(--salida), visibility 0.2s;
 }
@@ -262,11 +261,16 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 
 /* ---------- Marcas ---------- */
-.marcas-tira { padding-block: 1.6rem; }
-.marcas-tira .container { display: flex; flex-wrap: wrap; align-items: center; gap: 0.8rem 2.4rem; }
-.marcas-tira p { font-weight: 600; font-size: 0.95rem; color: var(--texto-suave); }
-.marcas-lista { display: flex; flex-wrap: wrap; gap: 0.5rem 1.8rem; }
-.marcas-lista span { font-family: var(--display); font-weight: 600; font-size: 1.02rem; color: var(--texto); letter-spacing: -0.01em; opacity: 0.8; }
+.marcas-tira { padding-block: clamp(1.8rem, 3vw, 2.6rem); }
+.marcas-tira p { font-weight: 600; font-size: 0.95rem; color: var(--texto-suave); margin-bottom: 1rem; }
+.marcas-lista { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.7rem; }
+.marcas-lista span {
+  display: grid; place-items: center; min-height: 3.4rem; padding: 0 0.6rem; text-align: center;
+  background: var(--superficie); border: 1px solid var(--linea); border-radius: var(--radio);
+  font-family: var(--display); font-weight: 600; font-size: 1.02rem; color: var(--texto); letter-spacing: -0.01em;
+}
+@media (max-width: 900px) { .marcas-lista { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .marcas-lista { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; } .marcas-lista span { font-size: 0.92rem; min-height: 3rem; } }
 
 /* ---------- Dónde atendemos (selector por ciudad) ---------- */
 .donde-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }

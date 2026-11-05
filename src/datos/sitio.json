@@ -5,7 +5,7 @@
   "razonSocial": "Arreglo de Lavadoras",
   "nit": "",
   "tagline": "Servicio técnico de electrodomésticos a domicilio",
-  "descripcion": "Reparación, mantenimiento e instalación de electrodomésticos a domicilio en Bogotá norte, Chía, Cajicá, Cota, La Calera, Funza, Madrid, Mosquera, Barranquilla e Ibagué. Garantía de 6 meses por escrito.",
+  "descripcion": "Reparación, mantenimiento e instalación de electrodomésticos a domicilio en Bogotá, Chía, Cajicá, Cota, La Calera, Funza, Madrid, Mosquera, Barranquilla e Ibagué. Garantía de 6 meses por escrito.",
   "whatsapp": "573123444325",
   "telefono": "312 344 4325",
   "correo": "contacto@arreglodelavadoras.com.co",
@@ -15,7 +15,7 @@
   "_ciudades": "Cada ciudad pertenece a un grupo (ver 'grupos'). El grupo decide qué servicios se ofrecen allí. Para agregar una ciudad: una línea aquí con el grupo que le corresponde.",
   "ciudades": [
     {
-      "nombre": "Bogotá norte",
+      "nombre": "Bogotá",
       "grupo": "bogota"
     },
     {
@@ -58,7 +58,7 @@
   "_grupos": "Qué se repara en cada grupo de ciudades. Los servicios son los 'slug' de servicios.json. Lo confirmó el cliente por WhatsApp el 3 de noviembre.",
   "grupos": {
     "bogota": {
-      "titulo": "Bogotá norte",
+      "titulo": "Bogotá",
       "acciones": "Reparación, mantenimiento, instalación y arreglo, siempre a domicilio.",
       "servicios": [
         "reparacion-de-lavadoras",
