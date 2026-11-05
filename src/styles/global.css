@@ -227,16 +227,19 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .hero { position: relative; background: var(--fondo-alt); padding-block: clamp(2rem, 4vw, 3.5rem) clamp(2.5rem, 5vw, 4.5rem); overflow: clip; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); align-items: center; gap: clamp(2rem, 5vw, 5rem); }
 
-/* Trama de fondo: íconos de electrodomésticos muy tenues. Se desvanece hacia el texto. */
+/* Trama de fondo: íconos de electrodomésticos tenues que derivan despacio en diagonal.
+   Capa 1 (::before) = la trama, más grande que el hero y movida con transform.
+   Capa 2 (::after) = velo que la desvanece hacia el texto. */
 .hero::before {
-  content: ""; position: absolute; inset: 0; pointer-events: none; background: var(--texto); opacity: 0.07;
-  -webkit-mask-image: url("../assets/trama.svg"), linear-gradient(100deg, transparent 15%, #000 75%);
-  mask-image: url("../assets/trama.svg"), linear-gradient(100deg, transparent 15%, #000 75%);
-  -webkit-mask-size: 280px 280px, 100% 100%; mask-size: 280px 280px, 100% 100%;
-  -webkit-mask-composite: source-in; mask-composite: intersect;
+  content: ""; position: absolute; inset: -280px; pointer-events: none; background: var(--texto); opacity: 0.12;
+  -webkit-mask-image: url("../assets/trama.svg"); mask-image: url("../assets/trama.svg");
+  -webkit-mask-size: 280px 280px; mask-size: 280px 280px;
+  animation: deriva 70s linear infinite;
 }
+.hero::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(100deg, var(--fondo-alt) 12%, transparent 72%); }
+@keyframes deriva { to { transform: translate3d(280px, 280px, 0); } }
 .hero-grid { position: relative; z-index: 1; }
-[data-theme="dark"] .hero::before { opacity: 0.09; }
+[data-theme="dark"] .hero::before { opacity: 0.14; }
 .hero-copy { max-width: 40rem; }
 .hero-titulo { font-size: clamp(1.75rem, 0.6rem + 3.2vw, 3.5rem); line-height: 1.04; letter-spacing: -0.04em; font-weight: 700; }
 .hero-texto { margin-top: 1.4rem; font-size: clamp(1.05rem, 1rem + 0.4vw, 1.3rem); color: var(--texto-suave); max-width: 34rem; line-height: 1.5; }
@@ -669,7 +672,7 @@ a.marca-card:hover { border-color: var(--texto); transform: translateY(-3px); }
 .js .reveal .garantia-cifra { transition: none; }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-visual::before, .ojo-buey img, .flota-wa { animation: none !important; }
+  .hero-visual::before, .hero::before, .ojo-buey img, .flota-wa { animation: none !important; }
   .ojo-buey img { clip-path: none; scale: none; }
 }
 
