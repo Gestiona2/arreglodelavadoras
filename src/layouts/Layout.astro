@@ -289,7 +289,7 @@ const datosEstructurados = {
         botonMenu?.addEventListener("click", () => ponerMenu(!navLinks.classList.contains("abierto")));
         $$("#navLinks a").forEach((a) => a.addEventListener("click", () => ponerMenu(false)));
         document.addEventListener("keydown", (e) => { if (e.key === "Escape") ponerMenu(false); });
-        window.addEventListener("resize", () => { if (window.innerWidth > 980) ponerMenu(false); });
+        window.addEventListener("resize", () => { if (window.innerWidth > 1180) ponerMenu(false); });
 
         /* ---------- Submenú de servicios ---------- */
         $$(".nav-grupo").forEach((grupo) => {
@@ -298,9 +298,9 @@ const datosEstructurados = {
             const abierto = grupo.classList.toggle("sub-abierto");
             boton.setAttribute("aria-expanded", String(abierto));
           });
-          grupo.addEventListener("mouseenter", () => { if (window.innerWidth > 980) boton.setAttribute("aria-expanded", "true"); });
+          grupo.addEventListener("mouseenter", () => { if (window.innerWidth > 1180) boton.setAttribute("aria-expanded", "true"); });
           grupo.addEventListener("mouseleave", () => {
-            if (window.innerWidth > 980) {
+            if (window.innerWidth > 1180) {
               grupo.classList.remove("sub-abierto");
               boton.setAttribute("aria-expanded", "false");
             }

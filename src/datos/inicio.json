@@ -21,8 +21,8 @@
       "titulo": "Llama o escribe",
       "nota": "Lunes a sábado"
     },
-    "imagen": "/img/nosotros-tecnico.webp",
-    "imagenAlt": "Técnico revisando un electrodoméstico",
+    "imagen": "/img/tecnico-1.webp",
+    "imagenAlt": "Técnico sonriendo con una caja de herramientas y dos llaves",
     "hechos": [
       {
         "valor": "12+",
@@ -213,7 +213,7 @@
       },
       {
         "pregunta": "¿Reparan nevecones, lavadoras centrales y equipos comerciales?",
-        "respuesta": "Sí. Atendemos nevecones y lavadoras centrales. En Bogotá, además, freidoras industriales, campanas de restaurantes y lavavajillas industriales."
+        "respuesta": "Sí. Atendemos nevecones y lavadoras centrales. En Bogotá, además, campanas de restaurantes y lavavajillas industriales."
       },
       {
         "pregunta": "¿Cómo pago el servicio?",

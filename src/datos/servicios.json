@@ -553,11 +553,11 @@
       "nombre": "Freidoras",
       "icono": "fryer",
       "titulo": "Reparación de freidoras a domicilio",
-      "subtitulo": "Domésticas e industriales. Temperatura estable y aceite caliente a tiempo.",
-      "resumen": "No calienta, no sostiene la temperatura o pierde aceite. Reparamos freidoras domésticas e industriales.",
+      "subtitulo": "Freidoras domésticas. Temperatura estable y aceite caliente a tiempo.",
+      "resumen": "No calienta, no sostiene la temperatura o pierde aceite. Reparamos freidoras domésticas.",
       "intro": [
         "En una freidora, la temperatura lo es todo: si el termostato falla, la comida sale cruda o quemada y el aceite se degrada. Medimos la temperatura real contra la que marca el control.",
-        "Atendemos freidoras domésticas e industriales. En equipos de uso comercial revisamos también las válvulas y los dispositivos de seguridad."
+        "Atendemos freidoras domésticas. No reparamos freidoras industriales."
       ],
       "fallas": [
         "No calienta o tarda demasiado en llegar a temperatura",
@@ -589,11 +589,11 @@
       "faq": [
         {
           "pregunta": "¿Reparan freidoras industriales?",
-          "respuesta": "Sí. Atendemos freidoras domésticas e industriales."
+          "respuesta": "No. Atendemos freidoras domésticas."
         },
         {
-          "pregunta": "¿Cada cuánto se debe hacer mantenimiento?",
-          "respuesta": "En uso comercial, conviene una revisión periódica de termostato, resistencia y válvulas. Te recomendamos la frecuencia según el uso del equipo."
+          "pregunta": "¿Qué debo decirles antes de la visita?",
+          "respuesta": "La marca, el modelo y qué hace la freidora: si no calienta, si no sostiene la temperatura o si pierde aceite."
         },
         {
           "pregunta": "Mi freidora calienta pero el aceite no sube de temperatura, ¿qué es?",
@@ -601,8 +601,8 @@
         }
       ],
       "meta": {
-        "titulo": "Reparación de freidoras domésticas e industriales a domicilio",
-        "descripcion": "Reparación de freidoras domésticas e industriales a domicilio en Bogotá: termostato, resistencia, fugas de aceite. Garantía de 6 meses."
+        "titulo": "Reparación de freidoras domésticas a domicilio",
+        "descripcion": "Reparación de freidoras domésticas a domicilio en Bogotá: termostato, resistencia, fugas de aceite. Garantía de 6 meses."
       },
       "imagen": "",
       "imagenAlt": "",
