@@ -688,7 +688,7 @@
       "resumen": "No calienta, no bombea, gotea o sale muy lento. Reparamos cafeteras automáticas, de molino, industriales y de goteo.",
       "intro": [
         "Una cafetera que deja de calentar o de bombear casi nunca está perdida. La causa suele ser la cal acumulada, la bomba, la resistencia o el termostato.",
-        "Reparamos cuatro tipos: cafeteras automáticas, cafeteras de molino, cafeteras industriales y cafeteras de goteo. Atendemos todas las marcas, entre ellas Cruz, Breville, Nespresso, Nestlé y Dolce Gusto. En Bogotá también hacemos mantenimiento: limpieza interna y descalcificación para alargar la vida del equipo."
+        "Reparamos cuatro tipos: cafeteras automáticas, cafeteras de molino, cafeteras industriales y cafeteras de goteo. Atendemos todas las marcas, entre ellas Krups, Breville, Nespresso, Nestlé y Dolce Gusto. En Bogotá también hacemos mantenimiento: limpieza interna y descalcificación para alargar la vida del equipo."
       ],
       "fallas": [
         "No calienta el agua o el café sale tibio",
@@ -718,7 +718,7 @@
         }
       ],
       "marcas": [
-        "Cruz",
+        "Krups",
         "Breville",
         "Nespresso",
         "Nestlé",
@@ -732,7 +732,7 @@
         },
         {
           "pregunta": "¿Reparan cafeteras de todas las marcas?",
-          "respuesta": "Sí. Atendemos todas las marcas, entre ellas Cruz, Breville, Nespresso, Nestlé y Dolce Gusto. Escríbenos con la marca y el modelo para confirmar la visita."
+          "respuesta": "Sí. Atendemos todas las marcas, entre ellas Krups, Breville, Nespresso, Nestlé y Dolce Gusto. Escríbenos con la marca y el modelo para confirmar la visita."
         },
         {
           "pregunta": "¿Qué incluye el mantenimiento?",
@@ -745,7 +745,7 @@
       ],
       "meta": {
         "titulo": "Reparación de cafeteras automáticas, de molino, industriales y de goteo",
-        "descripcion": "Reparación y mantenimiento de cafeteras automáticas, de molino, industriales y de goteo, de todas las marcas (Cruz, Breville, Nespresso, Nestlé, Dolce Gusto), a domicilio en Bogotá. Garantía por escrito."
+        "descripcion": "Reparación y mantenimiento de cafeteras automáticas, de molino, industriales y de goteo, de todas las marcas (Krups, Breville, Nespresso, Nestlé, Dolce Gusto), a domicilio en Bogotá. Garantía por escrito."
       },
       "imagen": "",
       "imagenAlt": "",

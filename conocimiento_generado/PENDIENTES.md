@@ -109,6 +109,5 @@ documento de garantía que se entrega** y conviene revisarlo con el abogado junt
 
 ## Marcas de cafeteras (13 de noviembre)
 
-El cliente escribió «Cruz, Breville, Nespresso, Nestlé, Dulce Gusto y todas las marcas». En el sitio
-quedó «Dolce Gusto» (la marca se escribe así). **«Cruz» se dejó tal cual: confirmar si es «Krups»**,
-que es la marca de cafeteras más probable.
+Marcas del cliente: Krups (confirmado por el usuario el 13 de noviembre; el cliente había escrito
+«Cruz»), Breville, Nespresso, Nestlé, Dolce Gusto y todas las marcas.
