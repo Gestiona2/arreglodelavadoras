@@ -14,7 +14,7 @@ y en el logo.
   recuerda en el navegador (`arreglodelavadoras-tema`). Nunca sigue la preferencia del sistema.
 - **Bandas oscuras** (selector de ciudad, cierre de Servicios, Nosotros, pie): grafito en los
   dos temas.
-- **Un bloque de color de marca** (la garantía de 6 meses) es el momento más fuerte del inicio.
+- **Un bloque de color de marca** (la garantía por escrito) es el momento más fuerte del inicio.
 - Sin degradados, sin sombras en reposo, sin tipografía monoespaciada, sin etiquetas pequeñas
   sobre los títulos.
 

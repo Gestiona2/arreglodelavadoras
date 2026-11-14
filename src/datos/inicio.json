@@ -2,11 +2,11 @@
   "_comentario": "Contenido de la página de inicio. Una entrada por sección, en el orden en que aparecen. El diseño no se toca para cambiar textos.",
   "meta": {
     "titulo": "Arreglo de Lavadoras · Reparación de electrodomésticos a domicilio",
-    "descripcion": "Reparación de lavadoras, neveras, estufas, hornos, calentadores y más a domicilio en Bogotá, Chía, Cajicá, Mosquera, Barranquilla e Ibagué. Garantía de 6 meses por escrito."
+    "descripcion": "Reparación de lavadoras, neveras, estufas, hornos, calentadores y más a domicilio en Bogotá, Chía, Cajicá, Mosquera, Barranquilla e Ibagué. Garantía por escrito."
   },
   "hero": {
     "titulo": "Tu electrodoméstico, reparado en casa.",
-    "texto": "Técnicos a domicilio en Bogotá, municipios cercanos, Barranquilla e Ibagué. Diagnóstico claro y garantía de 6 meses por escrito.",
+    "texto": "Técnicos a domicilio en Bogotá, municipios cercanos, Barranquilla e Ibagué. Diagnóstico claro y garantía por escrito.",
     "botones": [
       {
         "texto": "Escribir por WhatsApp",
@@ -25,12 +25,12 @@
     "imagenAlt": "Técnico sonriendo con una caja de herramientas y dos llaves",
     "hechos": [
       {
-        "valor": "12+",
+        "valor": "18+",
         "texto": "años reparando"
       },
       {
-        "valor": "6 meses",
-        "texto": "de garantía escrita"
+        "valor": "Garantía",
+        "texto": "por escrito"
       },
       {
         "valor": "10",
@@ -126,13 +126,13 @@
       },
       {
         "titulo": "Reparación",
-        "texto": "Instalamos el repuesto, probamos el equipo contigo y dejamos la garantía de 6 meses por escrito."
+        "texto": "Instalamos el repuesto, probamos el equipo contigo y dejamos la garantía por escrito."
       }
     ]
   },
   "garantia": {
-    "cifra": "6",
-    "unidad": "meses de garantía por escrito",
+    "cifra": "Garantía",
+    "unidad": "por escrito, en cada reparación",
     "titulo": "Si el problema vuelve, volvemos.",
     "texto": "La garantía cubre la reparación y el repuesto instalado, y queda en papel. Tienes soporte directo por WhatsApp después de la visita.",
     "items": [
@@ -153,8 +153,8 @@
         "texto": "Acordamos el día y la franja antes de la visita. Si hay un cambio, te avisamos."
       },
       {
-        "titulo": "12 años de oficio",
-        "texto": "Más de una década reparando línea blanca nos enseñó qué falla en cada modelo y cómo evitarlo."
+        "titulo": "18 años de oficio",
+        "texto": "Cerca de dos décadas reparando línea blanca nos enseñó qué falla en cada modelo y cómo evitarlo."
       }
     ]
   },
@@ -197,7 +197,7 @@
       },
       {
         "pregunta": "¿La reparación tiene garantía?",
-        "respuesta": "Sí: 6 meses sobre la reparación y el repuesto instalado, por escrito. Si el mismo problema vuelve en ese tiempo, regresamos."
+        "respuesta": "Sí, por escrito. Cubre la reparación y el repuesto instalado. Si el mismo problema vuelve, regresamos."
       },
       {
         "pregunta": "¿Usan repuestos originales?",
@@ -232,7 +232,7 @@
     "puntos": [
       "Diagnóstico antes de reparar",
       "Repuestos originales",
-      "Garantía escrita de 6 meses"
+      "Garantía por escrito"
     ]
   },
   "cierre": {

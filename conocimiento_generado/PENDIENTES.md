@@ -100,3 +100,9 @@ Simple Icons; Whirlpool, Electrolux, KitchenAid, Mabe, Frigidaire y Kenmore, de 
 Commons (SVG); Haceb y Challenger son JPG de Commons. Son marcas registradas de sus dueños y
 se usan solo para indicar qué marcas se reparan. Conviene que el cliente confirme que está
 de acuerdo y, si tiene versiones oficiales, reemplazarlas con el mismo nombre de archivo.
+
+## Garantía sin plazo (13 de noviembre)
+
+El cliente pidió quitar «6 meses» y dejar solo «garantía por escrito». El sitio ya no menciona
+plazo, incluidas las páginas legales (términos). **El plazo real debe quedar escrito en el
+documento de garantía que se entrega** y conviene revisarlo con el abogado junto con los términos.

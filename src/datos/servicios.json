@@ -6,7 +6,7 @@
       "slug": "reparacion-de-lavadoras",
       "nombre": "Lavadoras",
       "titulo": "Reparación de lavadoras a domicilio",
-      "subtitulo": "Carga, centrífuga, drenaje y tablero. Diagnóstico a domicilio y garantía de 6 meses.",
+      "subtitulo": "Carga, centrífuga, drenaje y tablero. Diagnóstico a domicilio y garantía por escrito.",
       "icono": "washer",
       "imagen": "/img/servicios/lavadoras.webp",
       "imagenAlt": "Tambor de lavadora con ropa durante el ciclo de lavado",
@@ -38,7 +38,7 @@
         },
         {
           "titulo": "Garantía escrita",
-          "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
+          "texto": "Cubre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
         }
       ],
       "marcas": [
@@ -69,7 +69,7 @@
       ],
       "meta": {
         "titulo": "Reparación de lavadoras · A domicilio",
-        "descripcion": "Técnicos en reparación de lavadoras LG, Samsung, Haceb, Whirlpool y Mabe a domicilio. Diagnóstico, repuestos originales y garantía de 6 meses."
+        "descripcion": "Técnicos en reparación de lavadoras LG, Samsung, Haceb, Whirlpool y Mabe a domicilio. Diagnóstico, repuestos originales y garantía por escrito."
       },
       "categoria": "lavado"
     },
@@ -109,7 +109,7 @@
         },
         {
           "titulo": "Garantía escrita",
-          "texto": "6 meses sobre la reparación y el repuesto instalado, con seguimiento por WhatsApp."
+          "texto": "Cubre la reparación y el repuesto instalado, con seguimiento por WhatsApp."
         }
       ],
       "marcas": [
@@ -140,7 +140,7 @@
       ],
       "meta": {
         "titulo": "Reparación de neveras y nevecones · A domicilio",
-        "descripcion": "Reparación de neveras LG, Samsung, Haceb, Whirlpool, Mabe y Frigidaire a domicilio. Compresor, termostato, fugas y mantenimiento. Garantía de 6 meses."
+        "descripcion": "Reparación de neveras LG, Samsung, Haceb, Whirlpool, Mabe y Frigidaire a domicilio. Compresor, termostato, fugas y mantenimiento. Garantía por escrito."
       },
       "categoria": "frio"
     },
@@ -180,7 +180,7 @@
         },
         {
           "titulo": "Garantía escrita",
-          "texto": "6 meses sobre la reparación y el repuesto instalado."
+          "texto": "Cubre la reparación y el repuesto instalado."
         }
       ],
       "marcas": [
@@ -211,7 +211,7 @@
       ],
       "meta": {
         "titulo": "Reparación de secadoras · A domicilio",
-        "descripcion": "Reparación de secadoras eléctricas y a gas a domicilio. No seca, no calienta, tambor quieto o ruidoso. LG, Samsung, Whirlpool, Haceb. Garantía de 6 meses."
+        "descripcion": "Reparación de secadoras eléctricas y a gas a domicilio. No seca, no calienta, tambor quieto o ruidoso. LG, Samsung, Whirlpool, Haceb. Garantía por escrito."
       },
       "categoria": "lavado"
     },
@@ -251,7 +251,7 @@
         },
         {
           "titulo": "Garantía escrita",
-          "texto": "6 meses sobre la reparación y el repuesto instalado."
+          "texto": "Cubre la reparación y el repuesto instalado."
         }
       ],
       "marcas": [
@@ -282,7 +282,7 @@
       ],
       "meta": {
         "titulo": "Reparación de lavavajillas · A domicilio",
-        "descripcion": "Reparación de lavavajillas Whirlpool, Bosch, LG, Samsung, Electrolux y Mabe a domicilio. Fugas, desagüe, bomba y temperatura. Garantía de 6 meses."
+        "descripcion": "Reparación de lavavajillas Whirlpool, Bosch, LG, Samsung, Electrolux y Mabe a domicilio. Fugas, desagüe, bomba y temperatura. Garantía por escrito."
       },
       "categoria": "lavado"
     },
@@ -322,7 +322,7 @@
         },
         {
           "titulo": "Garantía escrita",
-          "texto": "6 meses sobre la reparación y el repuesto instalado."
+          "texto": "Cubre la reparación y el repuesto instalado."
         }
       ],
       "marcas": [
@@ -353,7 +353,7 @@
       ],
       "meta": {
         "titulo": "Reparación de estufas · A domicilio",
-        "descripcion": "Reparación de estufas a gas, mixtas y de inducción a domicilio. Quemadores, chispa, válvulas y fugas. Instalación y conversión a gas natural. Garantía de 6 meses."
+        "descripcion": "Reparación de estufas a gas, mixtas y de inducción a domicilio. Quemadores, chispa, válvulas y fugas. Instalación y conversión a gas natural. Garantía por escrito."
       },
       "categoria": "coccion"
     },
@@ -393,7 +393,7 @@
         },
         {
           "titulo": "Garantía escrita",
-          "texto": "6 meses sobre la reparación y el repuesto instalado."
+          "texto": "Cubre la reparación y el repuesto instalado."
         }
       ],
       "marcas": [
@@ -424,7 +424,7 @@
       ],
       "meta": {
         "titulo": "Reparación de hornos · A domicilio",
-        "descripcion": "Reparación de hornos eléctricos y a gas a domicilio. Resistencias, termostato, convección y puertas. Electrolux, Haceb, Challenger y más. Garantía de 6 meses."
+        "descripcion": "Reparación de hornos eléctricos y a gas a domicilio. Resistencias, termostato, convección y puertas. Electrolux, Haceb, Challenger y más. Garantía por escrito."
       },
       "categoria": "coccion"
     },
@@ -462,7 +462,7 @@
         },
         {
           "titulo": "Garantía escrita",
-          "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
+          "texto": "Cubre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
         }
       ],
       "marcas": [],
@@ -482,7 +482,7 @@
       ],
       "meta": {
         "titulo": "Reparación de microondas a domicilio",
-        "descripcion": "Reparación de microondas a domicilio: no calienta, chispas, plato que no gira, puerta y tablero. Garantía de 6 meses por escrito."
+        "descripcion": "Reparación de microondas a domicilio: no calienta, chispas, plato que no gira, puerta y tablero. Garantía por escrito."
       },
       "imagen": "",
       "imagenAlt": "",
@@ -522,7 +522,7 @@
         },
         {
           "titulo": "Garantía escrita",
-          "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
+          "texto": "Cubre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
         }
       ],
       "marcas": [],
@@ -542,7 +542,7 @@
       ],
       "meta": {
         "titulo": "Reparación de campanas extractoras a domicilio",
-        "descripcion": "Reparación e instalación de campanas extractoras de cocina y de restaurantes a domicilio en Bogotá. Garantía de 6 meses por escrito."
+        "descripcion": "Reparación e instalación de campanas extractoras de cocina y de restaurantes a domicilio en Bogotá. Garantía por escrito."
       },
       "imagen": "",
       "imagenAlt": "",
@@ -582,7 +582,7 @@
         },
         {
           "titulo": "Garantía escrita",
-          "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
+          "texto": "Cubre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
         }
       ],
       "marcas": [],
@@ -602,7 +602,7 @@
       ],
       "meta": {
         "titulo": "Reparación de freidoras domésticas a domicilio",
-        "descripcion": "Reparación de freidoras domésticas a domicilio en Bogotá: termostato, resistencia, fugas de aceite. Garantía de 6 meses."
+        "descripcion": "Reparación de freidoras domésticas a domicilio en Bogotá: termostato, resistencia, fugas de aceite. Garantía por escrito."
       },
       "imagen": "",
       "imagenAlt": "",
@@ -644,7 +644,7 @@
         },
         {
           "titulo": "Garantía escrita",
-          "texto": "6 meses sobre la reparación y el repuesto instalado."
+          "texto": "Cubre la reparación y el repuesto instalado."
         }
       ],
       "marcas": [
@@ -675,7 +675,7 @@
       ],
       "meta": {
         "titulo": "Reparación de calentadores · A domicilio",
-        "descripcion": "Reparación y mantenimiento de calentadores a gas y eléctricos a domicilio. Bosch, Challenger, Haceb, Sueco y más. Revisión de gas y garantía de 6 meses."
+        "descripcion": "Reparación y mantenimiento de calentadores a gas y eléctricos a domicilio. Bosch, Challenger, Haceb, Sueco y más. Revisión de gas y garantía por escrito."
       },
       "categoria": "agua"
     },
@@ -713,7 +713,7 @@
         },
         {
           "titulo": "Garantía escrita",
-          "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
+          "texto": "Cubre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
         }
       ],
       "marcas": [
@@ -735,7 +735,7 @@
       ],
       "meta": {
         "titulo": "Reparación de cafeteras de todas las marcas a domicilio",
-        "descripcion": "Reparación y mantenimiento de cafeteras de todas las marcas a domicilio en Bogotá: no calienta, no bombea, gotea. Garantía de 6 meses."
+        "descripcion": "Reparación y mantenimiento de cafeteras de todas las marcas a domicilio en Bogotá: no calienta, no bombea, gotea. Garantía por escrito."
       },
       "imagen": "",
       "imagenAlt": "",
@@ -775,7 +775,7 @@
         },
         {
           "titulo": "Garantía escrita",
-          "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
+          "texto": "Cubre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
         }
       ],
       "marcas": [
@@ -797,7 +797,7 @@
       ],
       "meta": {
         "titulo": "Reparación de aspiradoras a domicilio",
-        "descripcion": "Reparación de aspiradoras de todas las marcas (no robóticas) a domicilio en Bogotá. Succión, motor, cables y accesorios. Garantía de 6 meses."
+        "descripcion": "Reparación de aspiradoras de todas las marcas (no robóticas) a domicilio en Bogotá. Succión, motor, cables y accesorios. Garantía por escrito."
       },
       "imagen": "",
       "imagenAlt": "",
@@ -837,7 +837,7 @@
         },
         {
           "titulo": "Garantía escrita",
-          "texto": "6 meses sobre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
+          "texto": "Cubre la reparación y el repuesto instalado, con soporte directo por WhatsApp."
         }
       ],
       "marcas": [],
@@ -857,7 +857,7 @@
       ],
       "meta": {
         "titulo": "Reparación de televisores a domicilio",
-        "descripcion": "Reparación de televisores a domicilio en Bogotá y Barranquilla: no enciende, sin imagen, sin sonido. Garantía de 6 meses por escrito."
+        "descripcion": "Reparación de televisores a domicilio en Bogotá y Barranquilla: no enciende, sin imagen, sin sonido. Garantía por escrito."
       },
       "imagen": "",
       "imagenAlt": "",
@@ -865,23 +865,23 @@
     },
     {
       "slug": "servicio-de-instalacion",
-      "nombre": "Instalación",
-      "titulo": "Instalación de electrodomésticos a domicilio",
-      "subtitulo": "Lavadoras, neveras, estufas, hornos, calentadores y lavavajillas bien instalados desde el primer día.",
+      "nombre": "Instalación, mantenimiento y reparación",
+      "titulo": "Instalación, mantenimiento y reparación a domicilio",
+      "subtitulo": "Un solo servicio para que tu equipo quede bien instalado, cuidado y funcionando.",
       "icono": "wrench",
       "imagen": "/img/servicios/instalacion.webp",
       "imagenAlt": "Lavadora instalada y conectada en un baño de una vivienda",
-      "resumen": "Nivelación, conexiones, prueba y recomendaciones de uso. Una buena instalación evita fallas desde el primer ciclo.",
+      "resumen": "Instalamos, damos mantenimiento y reparamos tus electrodomésticos en casa, con garantía por escrito.",
       "intro": [
-        "Una lavadora que vibra, una nevera que no enfría o un calentador que se apaga pueden ser problemas de instalación, no del equipo. Nivelar, conectar y probar bien evita la mayoría.",
-        "Instalamos equipos nuevos y reubicamos los existentes. También retiramos el equipo viejo si lo necesitas."
+        "Una lavadora que vibra, una nevera que no enfría o un calentador que se apaga pueden ser problemas de instalación, de falta de mantenimiento o una falla del equipo. Revisamos las tres cosas en la misma visita.",
+        "Instalamos equipos nuevos, reubicamos los que ya tienes, hacemos el mantenimiento que alarga su vida y reparamos lo que falló. También retiramos el equipo viejo si lo necesitas."
       ],
       "fallas": [
-        "Lavadoras y secadoras: nivelación, mangueras y desagüe",
-        "Neveras y nevecones: espacio, nivelación y calibración",
-        "Estufas y hornos: conexión a gas y prueba de llama",
-        "Calentadores: montaje, purga y prueba de presión",
-        "Lavavajillas: conexión hidráulica y desagüe",
+        "Instalación: nivelación, conexiones y desagüe de lavadoras y secadoras",
+        "Instalación: estufas, hornos y calentadores con conexión a gas y prueba de llama",
+        "Instalación: neveras, nevecones y lavavajillas, con calibración y conexión hidráulica",
+        "Mantenimiento: limpieza, revisión de piezas de desgaste y ajustes",
+        "Reparación: diagnóstico de la falla y cambio del repuesto correcto",
         "Retiro del equipo anterior y aseo del espacio"
       ],
       "incluye": [
@@ -929,8 +929,8 @@
         }
       ],
       "meta": {
-        "titulo": "Instalación de electrodomésticos · A domicilio",
-        "descripcion": "Instalación de lavadoras, neveras, estufas, hornos, calentadores y lavavajillas a domicilio. Nivelación, conexiones, prueba y recomendaciones."
+        "titulo": "Instalación, mantenimiento y reparación de electrodomésticos a domicilio",
+        "descripcion": "Instalación, mantenimiento y reparación de lavadoras, neveras, estufas, hornos, calentadores y más a domicilio en Bogotá. Garantía por escrito."
       },
       "categoria": "hogar"
     }

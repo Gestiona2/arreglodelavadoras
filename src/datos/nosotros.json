@@ -2,11 +2,11 @@
   "_comentario": "Contenido de /nosotros/. Solo hechos verificables: los que ya estaban publicados en el sitio anterior.",
   "meta": {
     "titulo": "Nosotros · Arreglo de Lavadoras, servicio técnico a domicilio",
-    "descripcion": "Más de 12 años reparando electrodomésticos a domicilio en Bogotá, municipios cercanos, Barranquilla e Ibagué. Técnicos por línea de equipo, repuestos originales y garantía de 6 meses."
+    "descripcion": "Más de 18 años reparando electrodomésticos a domicilio en Bogotá, municipios cercanos, Barranquilla e Ibagué. Técnicos por línea de equipo, repuestos originales y garantía por escrito."
   },
   "hero": {
     "titulo": "Oficio, no improvisación",
-    "texto": "Llevamos más de 12 años reparando electrodomésticos. En ese tiempo aprendimos que el cliente no quiere un discurso técnico: quiere saber qué tiene, cuánto cuesta y cuándo queda listo.",
+    "texto": "Llevamos más de 18 años reparando electrodomésticos. En ese tiempo aprendimos que el cliente no quiere un discurso técnico: quiere saber qué tiene, cuánto cuesta y cuándo queda listo.",
     "imagen": "/img/tecnico-2.webp",
     "imagenAlt": "Técnico de brazos cruzados con uniforme de trabajo"
   },
@@ -33,7 +33,7 @@
       {
         "icono": "shield",
         "titulo": "Responder después",
-        "texto": "La garantía de 6 meses no es un sello: es el compromiso de volver si el mismo problema reaparece."
+        "texto": "La garantía por escrito no es un sello: es el compromiso de volver si el mismo problema reaparece."
       }
     ]
   },
@@ -45,7 +45,7 @@
   "cifras": {
     "items": [
       {
-        "numero": 12,
+        "numero": 18,
         "sufijo": "+",
         "texto": "Años de experiencia",
         "icono": "award"
@@ -61,12 +61,6 @@
         "sufijo": "",
         "texto": "Servicios y equipos",
         "icono": "wrench"
-      },
-      {
-        "numero": 6,
-        "sufijo": "",
-        "texto": "Meses de garantía",
-        "icono": "shield"
       }
     ]
   },

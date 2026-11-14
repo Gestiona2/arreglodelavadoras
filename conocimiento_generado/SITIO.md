@@ -2,7 +2,7 @@
 
 ## Qué es
 
-Servicio técnico de electrodomésticos **a domicilio**, con más de 12 años de oficio. **No tiene
+Servicio técnico de electrodomésticos **a domicilio**, con más de 18 años de oficio. **No tiene
 sede ni dirección pública** (el cliente lo pidió así el 3 de noviembre de 2026). Todo el
 contacto es por **celular y WhatsApp: 312 344 4325** (`573123444325`). Sin teléfono fijo.
 
