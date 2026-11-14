@@ -106,3 +106,9 @@ de acuerdo y, si tiene versiones oficiales, reemplazarlas con el mismo nombre de
 El cliente pidió quitar «6 meses» y dejar solo «garantía por escrito». El sitio ya no menciona
 plazo, incluidas las páginas legales (términos). **El plazo real debe quedar escrito en el
 documento de garantía que se entrega** y conviene revisarlo con el abogado junto con los términos.
+
+## Marcas de cafeteras (13 de noviembre)
+
+El cliente escribió «Cruz, Breville, Nespresso, Nestlé, Dulce Gusto y todas las marcas». En el sitio
+quedó «Dolce Gusto» (la marca se escribe así). **«Cruz» se dejó tal cual: confirmar si es «Krups»**,
+que es la marca de cafeteras más probable.

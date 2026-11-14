@@ -684,17 +684,18 @@
       "nombre": "Cafeteras",
       "icono": "coffee",
       "titulo": "Reparación de cafeteras a domicilio",
-      "subtitulo": "De todas las marcas. Agua caliente, presión y café que vuelve a salir.",
-      "resumen": "No calienta, no bombea, gotea o sale muy lento. Reparamos cafeteras de todas las marcas.",
+      "subtitulo": "Automáticas, de molino, industriales y de goteo, de todas las marcas. Agua caliente, presión y café que vuelve a salir.",
+      "resumen": "No calienta, no bombea, gotea o sale muy lento. Reparamos cafeteras automáticas, de molino, industriales y de goteo.",
       "intro": [
         "Una cafetera que deja de calentar o de bombear casi nunca está perdida. La causa suele ser la cal acumulada, la bomba, la resistencia o el termostato.",
-        "Reparamos cafeteras de todas las marcas y en Bogotá también hacemos mantenimiento: limpieza interna y descalcificación para alargar la vida del equipo."
+        "Reparamos cuatro tipos: cafeteras automáticas, cafeteras de molino, cafeteras industriales y cafeteras de goteo. Atendemos todas las marcas, entre ellas Cruz, Breville, Nespresso, Nestlé y Dolce Gusto. En Bogotá también hacemos mantenimiento: limpieza interna y descalcificación para alargar la vida del equipo."
       ],
       "fallas": [
         "No calienta el agua o el café sale tibio",
         "No bombea o no sale agua por el grupo",
         "Gotea por la base, el depósito o las mangueras",
         "Sale muy lento por cal acumulada",
+        "Molino atascado, ruidoso o que no muele parejo",
         "Vaporizador o espumador sin presión",
         "No enciende o el panel no responde"
       ],
@@ -717,12 +718,21 @@
         }
       ],
       "marcas": [
+        "Cruz",
+        "Breville",
+        "Nespresso",
+        "Nestlé",
+        "Dolce Gusto",
         "Todas las marcas"
       ],
       "faq": [
         {
+          "pregunta": "¿Qué tipos de cafeteras reparan?",
+          "respuesta": "Cuatro: automáticas, de molino, industriales y de goteo."
+        },
+        {
           "pregunta": "¿Reparan cafeteras de todas las marcas?",
-          "respuesta": "Sí. Atendemos cafeteras de todas las marcas. Escríbenos con la marca y el modelo para confirmar la visita."
+          "respuesta": "Sí. Atendemos todas las marcas, entre ellas Cruz, Breville, Nespresso, Nestlé y Dolce Gusto. Escríbenos con la marca y el modelo para confirmar la visita."
         },
         {
           "pregunta": "¿Qué incluye el mantenimiento?",
@@ -734,8 +744,8 @@
         }
       ],
       "meta": {
-        "titulo": "Reparación de cafeteras de todas las marcas a domicilio",
-        "descripcion": "Reparación y mantenimiento de cafeteras de todas las marcas a domicilio en Bogotá: no calienta, no bombea, gotea. Garantía por escrito."
+        "titulo": "Reparación de cafeteras automáticas, de molino, industriales y de goteo",
+        "descripcion": "Reparación y mantenimiento de cafeteras automáticas, de molino, industriales y de goteo, de todas las marcas (Cruz, Breville, Nespresso, Nestlé, Dolce Gusto), a domicilio en Bogotá. Garantía por escrito."
       },
       "imagen": "",
       "imagenAlt": "",
