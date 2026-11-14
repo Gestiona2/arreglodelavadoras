@@ -9,7 +9,7 @@ el dominio definitivo**.
 |---|---|---|
 | **Correo** | `contacto@arreglodelavadoras.com.co` | Confirmar que existe y que alguien lo lee |
 | **NIT** | vacío (`sitio.json → nit`) | Pedirlo; va en el pie si el dueño lo quiere público |
-| **Horario exacto** | «Lunes a sábado · 8:00 a 18:00» | Confirmar. Además hay que corregirlo en `Layout.astro` (ver abajo) |
+| **Horario exacto** | «Lunes a sábado · 7:00 a. m. a 5:00 p. m.» (dato del cliente, 13 nov) | Confirmado. Además hay que corregirlo en `Layout.astro` (ver abajo) |
 | **Redes sociales** | Facebook, Instagram y TikTok con enlace vacío | Pedir las direcciones reales; si no hay, se dejan así (no se muestran) |
 | **Ciudades con ruta** | 10 ciudades, 4 grupos (ver `SITIO.md`) | «Funza» y «La Calera» se interpretaron de «Funda» y «Calera». Confirmar con el cliente |
 | **Freidoras** | Solo domésticas (el cliente dijo que las industriales no) | Resuelto el 12 de noviembre |
@@ -24,7 +24,7 @@ El texto visible sale de `sitio.json → horario`. El dato que leen Google y los
 está escrito a mano en `src/layouts/Layout.astro`:
 
 ```js
-openingHours: "Mo-Sa 08:00-18:00",
+openingHours: "Mo-Sa 07:00-17:00",
 priceRange: "$$",
 ```
 
