@@ -495,14 +495,14 @@
     },
     {
       "slug": "reparacion-de-campanas-extractoras",
-      "nombre": "Campanas extractoras",
+      "nombre": "Campanas extractoras y hongos",
       "icono": "hood",
-      "titulo": "Reparación de campanas extractoras a domicilio",
-      "subtitulo": "Cocinas de hogar y de restaurante. Extracción pareja, sin ruido y con filtros limpios.",
-      "resumen": "Motor sin fuerza, ruido, filtros saturados o luz dañada. Atendemos campanas de cocina y de restaurantes.",
+      "titulo": "Reparación y mantenimiento de campanas extractoras y hongos",
+      "subtitulo": "Cocinas de hogar y de restaurante, campanas y hongos. Extracción pareja, sin ruido y con filtros limpios.",
+      "resumen": "Motor sin fuerza, ruido, filtros saturados o luz dañada. Arreglamos y damos mantenimiento a campanas de cocina, de restaurantes y hongos.",
       "intro": [
         "Una campana que no extrae deja grasa y olor en toda la cocina. Casi siempre el problema es el motor, el condensador o los filtros saturados, y se resuelve sin cambiar el equipo.",
-        "Atendemos campanas extractoras de cocina de hogar y campanas de restaurantes, con revisión del ducto y de la salida cuando hace falta."
+        "Atendemos campanas extractoras de cocina de hogar, campanas de restaurantes y hongos. Los arreglamos y les damos mantenimiento, con revisión del ducto y de la salida cuando hace falta."
       ],
       "fallas": [
         "El motor no gira o gira sin fuerza",
@@ -510,6 +510,7 @@
         "No extrae el humo ni el vapor",
         "Filtros de grasa saturados: limpieza o cambio",
         "Luz, interruptor o control sin respuesta",
+        "Hongos y campanas de restaurante: mantenimiento, limpieza de filtros y ductos",
         "Instalación, ducto y reubicación"
       ],
       "incluye": [
@@ -533,8 +534,8 @@
       "marcas": [],
       "faq": [
         {
-          "pregunta": "¿Reparan campanas de restaurantes?",
-          "respuesta": "Sí. Atendemos campanas extractoras de cocina de hogar y de restaurantes."
+          "pregunta": "¿Reparan campanas de restaurantes y hongos?",
+          "respuesta": "Sí. Arreglamos y damos mantenimiento a campanas extractoras de cocina de hogar, campanas de restaurantes y hongos."
         },
         {
           "pregunta": "¿Cada cuánto se limpian los filtros?",
@@ -546,8 +547,8 @@
         }
       ],
       "meta": {
-        "titulo": "Reparación de campanas extractoras a domicilio",
-        "descripcion": "Reparación e instalación de campanas extractoras de cocina y de restaurantes a domicilio en Bogotá. Garantía por escrito."
+        "titulo": "Reparación y mantenimiento de campanas extractoras y hongos a domicilio",
+        "descripcion": "Reparación, mantenimiento e instalación de campanas extractoras de cocina, de restaurantes y hongos a domicilio en Bogotá. Garantía por escrito."
       },
       "imagen": "",
       "imagenAlt": "",
