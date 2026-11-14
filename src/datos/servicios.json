@@ -290,21 +290,21 @@
       "slug": "reparacion-de-estufas",
       "nombre": "Estufas",
       "titulo": "Reparación de estufas a domicilio",
-      "subtitulo": "Quemadores, chispa, válvulas y conexión a gas. La cocina vuelve a encender parejo.",
+      "subtitulo": "A gas, eléctricas, de inducción y vitrocerámicas, de todas las marcas. La cocina vuelve a encender parejo.",
       "icono": "stove",
       "imagen": "/img/servicios/estufas.webp",
       "imagenAlt": "Estufa a gas moderna con quemadores y utensilios de cocina",
-      "resumen": "Un quemador no prende, la llama es amarilla o hay olor a gas. Revisamos y corregimos con prueba de combustión.",
+      "resumen": "Un quemador o una zona no calienta, la llama es amarilla o hay olor a gas. Reparamos estufas a gas, eléctricas, de inducción y vitrocerámicas.",
       "intro": [
         "La llama dice mucho del estado de una estufa. Una llama amarilla, un quemador que no prende o un olor extraño se revisan el mismo día: son señales de combustión incompleta o fuga.",
-        "Trabajamos estufas a gas, eléctricas y de inducción. También hacemos instalación, conversión de gas natural y mantenimiento preventivo."
+        "Reparamos cuatro tipos: estufas a gas, estufas eléctricas, estufas de inducción y estufas vitrocerámicas, de todas las marcas. También hacemos instalación, conversión de gas natural y mantenimiento preventivo."
       ],
       "fallas": [
         "Un quemador no enciende o la chispa es débil",
         "Llama amarilla, desprendida o con hollín",
         "Olor a gas o fuga en la conexión",
         "Perillas duras, válvulas que no cierran bien",
-        "Parrillas y quemadores obstruidos",
+        "Eléctricas, de inducción y vitrocerámicas: una zona no calienta o se apaga sola",
         "Instalación a gas y conversión de gas natural"
       ],
       "incluye": [
@@ -335,9 +335,14 @@
         "General Electric",
         "Bosch",
         "Tramontina",
-        "Oster"
+        "Oster",
+        "Todas las marcas"
       ],
       "faq": [
+        {
+          "pregunta": "¿Qué tipos de estufas reparan?",
+          "respuesta": "Estufas a gas, eléctricas, de inducción y vitrocerámicas, de todas las marcas."
+        },
         {
           "pregunta": "Huele a gas, ¿qué hago primero?",
           "respuesta": "Cierra la llave general, ventila y no accione interruptores. Escríbenos o llama de inmediato; atendemos la revisión como prioridad."
@@ -347,13 +352,13 @@
           "respuesta": "Sí, con cambio de inyectores y prueba de combustión. La conversión debe quedar certificada, no improvisada."
         },
         {
-          "pregunta": "¿Reparan estufas de inducción?",
+          "pregunta": "¿Reparan estufas de inducción y vitrocerámicas?",
           "respuesta": "Sí. Diagnosticamos placa, sensores y circuito de potencia; cuando el repuesto no existe, te lo decimos antes de cobrar."
         }
       ],
       "meta": {
-        "titulo": "Reparación de estufas · A domicilio",
-        "descripcion": "Reparación de estufas a gas, mixtas y de inducción a domicilio. Quemadores, chispa, válvulas y fugas. Instalación y conversión a gas natural. Garantía por escrito."
+        "titulo": "Reparación de estufas a gas, eléctricas, de inducción y vitrocerámicas",
+        "descripcion": "Reparación de estufas a gas, eléctricas, de inducción y vitrocerámicas, de todas las marcas, a domicilio. Quemadores, chispa, válvulas y fugas. Garantía por escrito."
       },
       "categoria": "coccion"
     },
