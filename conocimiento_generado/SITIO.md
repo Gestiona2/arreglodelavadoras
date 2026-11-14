@@ -12,7 +12,7 @@ Lo confirmó el cliente por WhatsApp. Vive en `src/datos/sitio.json` (`ciudades`
 
 | Grupo | Ciudades | Qué se repara |
 |---|---|---|
-| Bogotá norte | Bogotá (solo norte) | Todo: lavadoras (incl. frontales y torres), neveras y nevecones, secadoras, lavavajillas (domésticos e industriales), estufas (gas, eléctricas, inducción y vitrocerámicas; todas las marcas), hornos (eléctricos y gas), microondas, campanas extractoras (cocina y restaurante), freidoras (solo domésticas), calentadores (paso y acumulación), cafeteras (automáticas, de molino, industriales y de goteo; todas las marcas), aspiradoras (no robóticas), televisores. Además mantenimiento e instalación |
+| Bogotá norte | Bogotá (solo norte) | Todo: lavadoras (incl. frontales y torres), neveras y nevecones, secadoras, lavavajillas (domésticos e industriales), estufas (gas, eléctricas, inducción y vitrocerámicas; todas las marcas), hornos (eléctricos y gas), microondas, campanas extractoras (cocina y restaurante), freidoras (domésticas e industriales), calentadores (paso y acumulación), cafeteras (automáticas, de molino, industriales y de goteo; todas las marcas), aspiradoras (no robóticas), televisores. Además mantenimiento e instalación |
 | Municipios cerca de Bogotá | Chía, Cajicá, Cota, La Calera, Funza, Madrid, Mosquera | Lavadoras, neveras y nevecones, calentadores, lavavajillas |
 | Barranquilla | Barranquilla | Televisores, lavadoras, lavavajillas, secadoras, estufas, calentadores, neveras |
 | Ibagué | Ibagué | Lavadoras, secadoras, neveras y nevecones |

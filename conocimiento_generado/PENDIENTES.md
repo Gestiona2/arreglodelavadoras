@@ -12,7 +12,7 @@ el dominio definitivo**.
 | **Horario exacto** | «Lunes a sábado · 7:00 a. m. a 5:00 p. m.» (dato del cliente, 13 nov) | Confirmado. Además hay que corregirlo en `Layout.astro` (ver abajo) |
 | **Redes sociales** | Facebook, Instagram y TikTok con enlace vacío | Pedir las direcciones reales; si no hay, se dejan así (no se muestran) |
 | **Ciudades con ruta** | 10 ciudades, 4 grupos (ver `SITIO.md`) | «Funza» y «La Calera» se interpretaron de «Funda» y «Calera». Confirmar con el cliente |
-| **Freidoras** | Solo domésticas (el cliente dijo que las industriales no) | Resuelto el 12 de noviembre |
+| **Freidoras** | Domésticas e industriales (el 13 de nov. el cliente pidió incluir las industriales) | Resuelto |
 | **Aspiradoras** | Sin robóticas | Confirmado |
 | **Foto de operarios** | Dos fotos de stock de Pexels (`public/img/tecnico-1.webp` y `tecnico-2.webp`), licencia libre | El cliente pidió imágenes de operarios con teléfono y WhatsApp en el encabezado |
 | **Logo** | Dibujado en código (provisional) | Pedir el vector original |
