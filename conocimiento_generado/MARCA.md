@@ -5,33 +5,30 @@ cliente: esto es lo construido y lo que hay que respetar al editar.
 
 ## La idea visual
 
-**Línea blanca de diseño industrial.** Superficies claras, grafito y un solo acento (rojo
-piloto, como la luz de un electrodoméstico). La forma que identifica a la marca es el **ojo de
-buey de la lavadora**: el círculo. Aparece en la foto de la portada, en la foto de Nosotros
-y en el logo.
+Identidad azul del manual de marca del cliente (`MANUAL-MARCA.md`): azul marino, azul intenso y
+turquesa sobre blanco. El logo es una **A que integra lavadora, nevera y estufa**. La forma que
+sigue usando la web es el **ojo de buey** (la foto de la portada en círculo, con anillo turquesa).
 
-- **Tema claro por defecto.** El oscuro solo se activa si el visitante pulsa la luna; se
-  recuerda en el navegador (`arreglodelavadoras-tema`). Nunca sigue la preferencia del sistema.
-- **Bandas oscuras** (selector de ciudad, cierre de Servicios, Nosotros, pie): grafito en los
-  dos temas.
-- **Un bloque de color de marca** (la garantía por escrito) es el momento más fuerte del inicio.
-- Sin degradados, sin sombras en reposo, sin tipografía monoespaciada, sin etiquetas pequeñas
-  sobre los títulos.
+- **Tema claro por defecto.** El oscuro solo se activa si el visitante pulsa la luna; se recuerda
+  en el navegador. Nunca sigue la preferencia del sistema.
+- **Bandas azul marino** (selector de ciudad, pie, Nosotros): iguales en los dos temas.
+- **Un bloque de azul intenso** (la garantía por escrito) es el momento más fuerte del inicio.
+- Los degradados existen solo dentro del logo. La web no usa degradados decorativos.
 
-## Colores (`src/styles/global.css`, en `:root` y `[data-theme="dark"]`)
+## Colores (`src/styles/global.css`)
 
 | Token | Claro | Oscuro | Uso |
 |---|---|---|---|
-| `--fondo` / `--fondo-alt` | `#f4f5f8` / `#fff` | `#0d1118` / `#111722` | Fondos de sección, alternados |
-| `--texto` | `#10151f` | `#eef1f6` | Texto principal |
-| `--marca` | `#bb3b18` | `#c9431f` | Bloque de garantía, botones de marca |
-| `--marca-texto` | `#b23716` | `#ff8e6b` | Íconos y enlaces de acento |
-| `--grafito` | `#11151e` | igual | Bandas oscuras, pie |
+| `--fondo` / `--fondo-alt` | `#f3f6fb` / `#fff` | `#050d1c` / `#08142b` | Fondos de sección |
+| `--texto` | `#0a1a3a` | `#eaf1fb` | Texto principal |
+| `--marca` | `#0053b6` | `#0875d1` | Botones, bloque de garantía, enlaces |
+| `--grafito` | `#001640` | igual | Bandas oscuras y pie (azul marino) |
+| `--acento` | `#00bfea` | igual | Turquesa: solo detalles (anillo de la portada). **No para texto pequeño sobre blanco** |
+| `--acento-claro` | `#4fd3f5` | igual | Íconos sobre bandas oscuras |
 | `--wa` | `#0f7f3d` | `#138a46` | **Solo** botones de WhatsApp |
 
-Reglas: el verde es solo de WhatsApp; el rojo de marca no se usa para "error"; no se escribe
-un color a mano en un `.astro`, siempre `var(--token)`. Contraste comprobado: texto blanco
-sobre `--marca` y `--wa` supera 4.5:1.
+Los valores salen del manual (`#001640`, `#0053B6`, `#00BFEA`), que a su vez son aproximados:
+hay que confirmarlos con el vector original.
 
 ## Tipografía
 
@@ -45,10 +42,18 @@ JetBrains Mono ya no se usa (el archivo sigue en `public/fonts/` sin cargarse).
 
 ## Logo
 
-Dibujado en código (`src/components/Logo.astro`): frente de lavadora con ojo de buey + el
-nombre. Cambia solo con el tema. **Es provisional**: hay que pedir al cliente el vector
-original. Los PNG de `public/brand/` ya no se usan en el sitio (solo favicon, ícono de iPhone
-y tarjeta al compartir).
+Archivos oficiales en `brand-fuente/` (PNG, **sin vector todavía**). Versiones derivadas en
+`public/brand/` (recorte de fondo y adaptaciones técnicas, pendientes de aprobación):
+
+| Archivo | Uso |
+|---|---|
+| `logo.png` | Menú: símbolo + nombre, sin descriptor (en tema oscuro va sobre placa blanca) |
+| `logo-completo.png` | Logo con descriptor «Reparación de Electrodomésticos»; datos para Google |
+| `logo-blanco.png` | Pie y bandas oscuras (versión blanca apilada) |
+| `isotipo.png`, `favicon*.png`, `apple-touch-icon.png`, `og.jpg` | Pestaña, iPhone y tarjeta al compartir |
+
+El logo anterior (con «Servicio Técnico Autorizado») está en `old/`. No se estira, no se recolorea
+y no se le agregan sombras.
 
 ## Tono de voz
 

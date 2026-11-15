@@ -81,7 +81,7 @@ src/
   pages/          una ruta por página
 public/
   brand/          logos, favicons y og.jpg
-  fonts/          Sora, Instrument Sans (.woff2)
+  fonts/          Sora, Instrument Sans (.woff2); el manual pide Montserrat e Inter (pendiente)
   img/            fotos en .webp
 scripts/          publicar-demo.sh
 ```

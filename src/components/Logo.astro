@@ -1,8 +1,9 @@
 ---
 /**
- * Logo del cliente (archivos reales en public/brand/). Versión tinta para fondo
- * claro y versión blanca para el tema oscuro y para bandas oscuras como el pie.
- * `sobreOscuro` fuerza la versión blanca.
+ * Logo del cliente (archivos en public/brand/, derivados de brand-fuente/).
+ * - Normal: versión compacta a color (símbolo + nombre) para el menú.
+ * - sobreOscuro: versión blanca apilada para el pie y bandas oscuras.
+ * El logo completo con descriptor es public/brand/logo-completo.png.
  */
 import sitio from "../datos/sitio.json";
 import { ruta } from "../lib/ruta.js";
@@ -12,6 +13,9 @@ const { sobreOscuro = false } = Astro.props;
 ---
 
 <a href={ruta("/")} class:list={["logo", { "logo--sobre-oscuro": sobreOscuro }]} aria-label={`${sitio.nombre}: ${sitio.tagline}`}>
-  <img class="l-claro" src={ruta("/brand/logo-tinta.png")} alt={sitio.nombre} width="503" height="79" />
-  <img class="l-oscuro" src={ruta("/brand/logo-blanco.png")} alt="" width="503" height="79" />
+  {sobreOscuro ? (
+    <img src={ruta("/brand/logo-blanco.png")} alt={sitio.nombre} width="900" height="624" loading="lazy" />
+  ) : (
+    <img src={ruta("/brand/logo.png")} alt={sitio.nombre} width="1000" height="319" />
+  )}
 </a>
